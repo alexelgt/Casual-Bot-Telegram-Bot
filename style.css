@@ -595,6 +595,16 @@ img#example {
   width: 300px;
 }
 
+@media (max-width: 340px) {
+  #Output_table_data {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  img#example {
+    width: 100%;
+  }
+}
 @media only screen and (device-width: 375px) and (width: 812px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   #card {
     margin: 8px 44px;
