@@ -677,13 +677,7 @@ img#example {
 // }
 
 @media only screen and (device-width : 375px) and (width : 812px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-    #hamburger {
-        left: 44px;
-    }
-
-    #sidebar {
-        width: 234px;
-        left: -234px;
-        padding-left: 44px;
+    #card {
+        margin: 0 44px;
     }
 }
