@@ -518,7 +518,7 @@ span.log, span.highlight, .select_text_block{
 }
 
 .text_block.info {
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
 }
 /*== Text ==*/
@@ -629,7 +629,11 @@ ul {
 
 li {
     margin-bottom: 10px;
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+ul ul {
+    padding-left: 20px;
 }
 
 .select_text_block {
