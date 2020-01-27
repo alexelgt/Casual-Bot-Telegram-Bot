@@ -1,0 +1,456 @@
+<html lang='es' xml:lang='es'>
+  <head>
+      <title>Documentación Casual Bot</title>
+		  <meta name="title" content="Get EX gyms: Credits">
+      <meta name="keywords" content="Get EX gyms">
+      <meta name="description" content="Get EX gyms given some inputs.">
+      <link rel="icon" sizes="192x192" href="icon_circle.png">
+      <link rel="apple-touch-icon-precomposed" href="icon.png">
+      <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no, viewport-fit=cover" name="viewport">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="language_info();language_sidebar()">
+
+    <div id="sidebar-overlay" onclick='triggerSideBar();'></div>
+
+    <div id="navbar">
+      <h1>Documentación Casual Bot</h1>
+    </div>
+
+    <div id="structure">
+
+      <div id="card" class="padding">
+
+        <div id="block">
+          <div id="block_structure">
+            <div id="element">
+              <img id="icon" src="icon.png">
+              <h2 class="app_title"><a href="https://t.me/KingCasualBot" target="_blank">@KingCasualBot</a></h2>
+
+              <div class="text_block">
+                <p>
+                  <b>Grupo de ayuda:</b> <a href="https://t.me/kingcasualbotayuda" target="_blank"><b>@kingcasualbotayuda</b></a>
+                </p>
+              </div>
+
+              <div class="text_block info">
+                <ul>
+                  <li><a href="#usuario_doc">Documentación para usuarios</a></li>
+                  <ul>
+                    <li><a href="#usuario_eventos">Eventos</a></li>
+                    <li><a href="#usuario_comandos">Comandos</a></li>
+                    <li><a href="#usuario_comandos_pvp">Comandos PVP</a></li>
+                  </ul>
+                  <li><a href="#admin_doc">Documentación para administradores</a></li>
+                  <ul>
+                    <li><a href="#admin_ajustes">Ajustes</a></li>
+                    <ul>
+                      <li><a href="#admin_ajustes_generales">Ajustes generales</a></li>
+                      <ul>
+                        <li><a href="#admin_comandos">Comandos</a></li>
+                        <li><a href="#admin_comandos_pvp">Comandos PVP</a></li>
+                        <li><a href="#admin_borrar_mensajes_comunes">Borrar mensajes comunes</a></li>
+                        <li><a href="#admin_borrar_camigos">Borrar códigos de amigos</a></li>
+                        <li><a href="#admin_anti_spam">Anti Spam</a></li>
+                        <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                      </ul>
+                      <li><a href="#admin_eventos">Eventos</a></li>
+                      <li><a href="#admin_noticias">Noticias</a></li>
+                      <li><a href="#admin_temporizadores">Temporizadores</a></li>
+                      <li><a href="#admin_zona_horaria">Zona horaria</a></li>
+                      <li><a href="#admin_idioma">Idioma</a></li>
+                    </ul>
+                    <li><a href="#admin_botones">Botones</a></li>
+                    <li><a href="#admin_alertas">Alertas</a></li>
+                    <ul>
+                      <li><a href="#admin_alertas_obtener">Obtener una alerta</a></li>
+                      <li><a href="#admin_alertas_borrar">Eliminar una alerta</a></li>
+                    </ul>
+                    <li><a href="#admin_mensaje_bienvenida">Mensaje de bienvenida</a></li>
+                  </ul>
+                  <li><a href="#admin_tablas_informacion">Tablas con información</a></li>
+                  <ul>
+                    <li><a href="#admin_tabla_funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#admin_tabla_permisos">Permisos</a></li>
+                  </ul>
+                </ul>
+              </div>
+
+              <h1 id="usuario_doc">Documentación para usuarios</h1>
+              <h2 id="usuario_eventos">1 Eventos</h2>
+              <div class="text_block info">
+                <p>
+                  La funcionalidad principal disponible en grupos y por privados es un listado de eventos el cual se puede pedir con el comando <span class="highlight">/eventos</span> o escribiendo <span class="highlight">listado de eventos</span>.
+                </p>
+              </div>
+
+              <h2 id="usuario_comandos">2. Comandos</h2>
+              <div class="text_block info">
+                <p>
+                  Casual Bot responderá a diversas frases como por ejemplo:
+                </p>
+                <ul>
+                  <li><b>quiero llorar a Niantic:</b> instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.</li>
+                  <li><b>cuándo es la hora legendaria:</b> indica cuando suelen ser las horas legendarias.</li>
+                  <li><b>enlace al mapa de Pikachu:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b>enlace al mapa de raids:</b> manda un enlace al mapa de comunidades del bot @detectivepikachubot. centrado en la zona de tu grupo mostrando el mapa de calor y los anuncios o raids activas (si inicias sesión con Telegram). Si tienes charla y raids separados puedes usar el comando <span class="highlight">/setraidid seguido del id del grupo de raids</span> para que el enlace funcione correctamente.</li>
+                  <li><b>cómo me registro:</b> instrucciones para registrarse con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b>cómo crear una raid:</b> instrucciones para crear un anuncio o raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                </ul>
+              </div>
+
+              <h2 id="usuario_comandos_pvp">3. Comandos PVP</h2>
+              <div class="text_block info">
+                <ul>
+                  <li><b>/pvpranking:</b> ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
+                </ul>
+              </div>
+
+
+
+
+
+
+
+              <h1 id="admin_doc">Documentación para administradores</h1>
+              <h2 id="admin_ajustes">1. Ajustes</h2>
+              <div class="text_block info">
+                <p>
+                  Para acceder a los ajustes del bot pon el comando <span class="highlight">/setting@KingCasualBot</span>.
+                </p>
+              </div>
+              <h2 id="admin_ajustes_generales">1.1. Ajustes generales</h2>
+              <h3 id="admin_comandos">1.1.1 Comandos</h3>
+              <div class="text_block info">
+                <p>
+                  Para activar o desactivar la opción de <a href="#usuario_comandos">comandos</a>.
+                </p>
+              </div>
+              <h3 id="admin_comandos_pvp">1.1.2 Comandos PVP</h3>
+              <div class="text_block info">
+                <p>
+                  Para activar o desactivar la opción de <a href="#usuario_comandos_pvp">comandos pvp</a>.
+                </p>
+              </div>
+
+              <h3 id="admin_borrar_mensajes_comunes">1.1.3 Borrar mensajes comunes</h3>
+              <div class="text_block info">
+                <p>
+                  Si se activa esta opción, Casual Bot borrará mensajes del estilo "alguién más se apunta", "si va más gente me apunto", "estoy por apuntarme a", etc.
+                </p>
+              </div>
+
+              <h3 id="admin_borrar_camigos">1.1.4 Borrar códigos de amigo</h3>
+              <div class="text_block info">
+                <p>
+                  Con esta opción se borrarán los mensajes que contengan códigos de amigos. Se incluyen capturas de pantalla (salvo las que estén recortadas de forma extraña). Para borrar los mensajes.
+                </p>
+                <p>
+                  Se puede poner un mensaje cuando el Casual Bot borra un código de amigo usando el comando <span class="highlight">/fctextcasual seguido del mensaje que quieres poner</span>.
+                </p>
+                <p>
+                  Para borrar el mensaje pon <span class="highlight">/fctextcasual -</span>.
+                </p>
+                <p>
+                  Para obtener el mensaje actual usa el comando <span class="highlight">/getfctextcasual</span>.
+                </p>
+              </div>
+
+              <h3 id="admin_anti_spam">1.1.5 Anti Spam</h3>
+              <div class="text_block info">
+                <p>
+                  Casual Bot borrará los mensajes de spam y baneará al miembro que mandé el mensaje de forma silenciosa. Se banea si se ponen enlaces del tipo http://t.cn y http://bit.ly (enlaces que suelen poner las cuentas de spam).
+                </p>
+              </div>
+
+              <h3 id="admin_pulsar_boton_hablar">1.1.6 Pulsar botón para hablar</h3>
+              <div class="text_block info">
+                <p>
+                  Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón. <b>El mensaje tiene un retardo de 1 segundo para que en el caso de tener un bot con mensaje de bienvenida, esta se muestre primero.</b>
+                </p>
+                <img id="example" src="press_button_to_talk.jpg">
+              </div>
+
+              <h2 id="admin_eventos">1.2 Eventos</h2>
+              <div class="text_block info">
+                <p>
+                  Si nunca has pedido el listado de eventos, te pedirá que actives las notificaciones. Después de hacer esto (o si ya las tenías activadas), podrás activar o desactivar el comando <span class="highlight">/eventos</span>, la notificación diaria (a las 8:50) con el listado de eventos o las notificaciones cuando empieza o termina un evento.
+                </p>
+              </div>
+
+              <h2 id="admin_noticias">1.3 Noticias</h2>
+              <div class="text_block info">
+                <p>
+                  Permite que se reenvien al grupo los mensajes que se mandan en diversos canales de noticias.
+                </p>
+              </div>
+
+              <h2 id="admin_temporizadores">1.4 Temporizadores</h2>
+              <div class="text_block info">
+                <p>
+                  Permite que se borren algunos mensajes pasado el tiempo que se indique.
+                </p>
+              </div>
+
+              <h2 id="admin_zona_horaria">1.5 Zona horaria</h2>
+              <div class="text_block info">
+                <p>
+                  Permite cambiar la zona horaria del grupo. Esto sirve para recibir las notificaciones de los eventos y las alertas cuando corresponden.
+                </p>
+              </div>
+
+              <h2 id="admin_idioma">1.6 Idioma</h2>
+              <div class="text_block info">
+                <p>
+                  Permite cambiar el idioma del bot.
+                </p>
+              </div>
+
+              <h2 id="admin_botones">3. Botones</h2>
+              <div class="text_block info">
+                <p>
+                  Se pueden incluir botones con enlaces usando el siguiente formato:
+                </p>
+                <p>
+                  <span class="highlight">"Texto botón" = "https://enlace.com"</span>
+                </p>
+                <p>
+                  Para poner más de un botón en la misma fila, pon una coma. Ejemplo:
+                </p>
+                <p>
+                  <span class="highlight">"Texto 1" = "https://enlace1.com", "Texto 2" = "https://enlace2.com"</span>
+                </p>
+              </div>
+
+
+
+
+
+
+              <h2 id="admin_alertas">3. Alertas</h2>
+              <div class="text_block info">
+                <p>
+                  Se pueden mandar mensajes de forma periódica. Hay un límite de <b>10</b> alertas y se configuran con el comando <span class="highlight">/alertcasual</span>.
+                </p>
+                <p>
+                  <b>Ejemplo del comando:</b>
+                </p>
+                <p>
+                  <span class="highlight">/alertcasual 1 2019/10/14-12 3 10-18 Texto alerta</span>
+                </p>
+                <p>
+                  <b>Ayuda:</b>
+                </p>
+                <p>
+                  1: número de la alerta (puede ser un número entre 1 y 10)
+                </p>
+                <p>
+                  2019/10/14-12: fecha de referencia con el formato: año/mes/día-hora
+                </p>
+                <p>
+                  3: frecuencia en horas con la que se repite la alerta
+                </p>
+                <p>
+                  10-18: período de tiempo en el que se manda la alerta
+                </p>
+              </div>
+
+              <h3 id="admin_alertas_obtener">3.1 Obtener una alerta</h3>
+              <div class="text_block info">
+                <p>
+                  Si tienes una alerta y quieres editarla puedes obtener el contenido de la alerta (lo que pusiste con el comando <span class="highlight">/alertcasual</span>). Para ello usa el comando <span class="highlight">/getalert</span> seguido del número de la alerta. Ejemplo: <span class="highlight">/getalert 1</span>
+                </p>
+                <p>
+                  Si quieres ver todas las alertas del grupo escribe <span class="highlight">/getalert all</span>.
+                </p>
+              </div>
+
+              <h3 id="admin_alertas_borrar">3.2 Eliminar una alerta</h3>
+              <div class="text_block info">
+                <p>
+                  Para eliminar una alerta escribe el comando <span class="highlight">/alertcasual</span> seguido del número de la alerta y después -. Ejemplo: <span class="highlight">/alertcasual 1 -</span>.
+                </p>
+              </div>
+
+              <h2 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h2>
+              <div class="text_block info">
+                <p>
+                  Para añadir un mensaje de bienvenida usa el comando /welcomecasual seguido del mensaje de bienvenida. Ejemplo: <span class="highlight">/welcomecasual Hola casual</span>.
+                </p>
+                <p>
+                  Para borrar el mensaje de bienvenida pon <span class="highlight">/welcomecasual -</span>.
+                </p>
+                <p>
+                  <b>Sustitución de texto:</b>
+                </p>
+                <ul>
+                  <li><b>Nombre del nuevo miembro:</b> <span class="highlight">{user_name}</span>.</li>
+                  <li><b>Nombre del grupo:</b> <span class="highlight">{chat_title}</span>.</li>
+                </ul>
+              </div>
+
+
+              <h1 id="usuario_doc">Tablas con información</h1>
+              <div class="text_block info">
+                <p>
+                  A continuación se muestran unas tablas con información adicional del bot.
+                </p>
+              </div>
+
+              <h2 id="admin_tabla_funcionalidades">1 Funcionalidades</h2>
+              <div class="text_block info">
+                <p>
+                  <b>Leyenda:</b><br>
+                  ✅: disponible<br>
+                  ❌: no disponible<br>
+                  <b>?</b>: desactivado por defecto
+                </p>
+                <table id="Output_table_data">
+                  <tr>
+                    <th>Funcionalidad</th>
+                    <th>Privado</th>
+                    <th>Grupos</th>
+                  </tr>
+                  <tr>
+                    <td>Comando eventos</td>
+                    <td>✅</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Notificación diaria (eventos)</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Notificación evento empezado/terminado</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Comandos</td>
+                    <td>✅</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Comandos PVP</td>
+                    <td>✅</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Ajustes</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Noticias</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Alertas</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Borrar mensajes comunes</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Borrar códigos de amigos</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Anti Spam</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Pulsar botón para hablar</td>
+                    <td>❌</td>
+                    <td><b>?</b></td>
+                  </tr>
+                  <tr>
+                    <td>Mensaje de bienvenida</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h2 id="admin_tabla_permisos">2 Permisos necesarios</h2>
+              <div class="text_block info">
+                <table id="Output_table_data">
+                  <tr>
+                    <th>Funcionalidad</th>
+                    <th>Permisos</th>
+                  </tr>
+                  <tr>
+                    <td>Comando eventos</td>
+                    <td>Eliminar mensajes (recomendado)</td> 
+                  </tr>
+                  <tr>
+                    <td>Notificación diaria (eventos)</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Notificación evento empezado/terminado</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Comandos</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Comandos PVP</td>
+                    <td>Eliminar mensajes (recomendado)</td>
+                  </tr>
+                  <tr>
+                    <td>Ajustes</td>
+                    <td>Eliminar mensajes (recomendado)</td>
+                  </tr>
+                  <tr>
+                    <td>Noticias</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Alertas</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Borrar mensajes comunes</td>
+                    <td>Eliminar mensajes</td>
+                  </tr>
+                  <tr>
+                    <td>Borrar códigos de amigos</td>
+                    <td>Eliminar mensajes</td>
+                  </tr>
+                  <tr>
+                    <td>Anti Spam</td>
+                    <td>Eliminar mensajes</td>
+                  </tr>
+                  <tr>
+                    <td>Pulsar botón para hablar</td>
+                    <td>Eliminar mensajes (recomendado), suspender usuarios</td>
+                  </tr>
+                  <tr>
+                    <td>Mensaje de bienvenida</td>
+                    <td>Eliminar mensajes (recomendado)</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+       
+    </div>
+
+  </body>
+</html>
