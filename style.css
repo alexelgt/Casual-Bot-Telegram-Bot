@@ -23,7 +23,12 @@ body {
 }
 
 a {
+  color: #2196f3;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 * {
@@ -552,13 +557,6 @@ span.log, .select_text_block {
 ul {
   list-style-type: decimal;
   font-size: 17px;
-}
-ul a {
-  color: #5085ec;
-  text-decoration: none;
-}
-ul a:hover {
-  text-decoration: underline;
 }
 
 li {

@@ -61,7 +61,11 @@ body {
 }
 
 a {
+    color: $interface-color;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 * {
@@ -618,13 +622,6 @@ span.log, .select_text_block{
 ul {
     list-style-type:decimal;
     font-size: 17px;
-    a {
-        color: #5085ec;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
 }
 
 li {
