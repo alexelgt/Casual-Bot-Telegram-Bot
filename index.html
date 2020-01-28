@@ -84,6 +84,15 @@
                 <p>
                   La funcionalidad principal disponible en grupos y por privados es un listado de eventos el cual se puede pedir con el comando <span class="highlight">/eventos</span> o escribiendo <span class="highlight">listado de eventos</span>.
                 </p>
+                <p>
+                  <b>Canales de eventos:</b><br>
+                  <ul style="list-style-type: disc">
+                    <li>Europe/Madrid: <a href="https://t.me/pokemongoeventos" target="_blank">@pokemongoeventos</a></li>
+                    <li>Portugal: <a href="https://t.me/pokemongoeventosPT" target="_blank">@pokemongoeventosPT</a></li>
+                    <li>Europe/Rome: <a href="https://t.me/pokemongoeventi" target="_blank">@pokemongoeventi</a></li>
+                    <li>Atlantic/Canary: <a href="https://t.me/pokemongoeventosCanarias" target="_blank">@pokemongoeventosCanarias</a></li>
+                  </ul>
+                </p>
               </div>
 
               <h2 id="usuario_comandos">2. Comandos</h2>
@@ -92,19 +101,51 @@
                   Casual Bot responderá a diversas frases como por ejemplo:
                 </p>
                 <ul>
-                  <li><b>quiero llorar a Niantic:</b> instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.</li>
-                  <li><b>cuándo es la hora legendaria:</b> indica cuando suelen ser las horas legendarias.</li>
-                  <li><b>enlace al mapa de Pikachu:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
-                  <li><b>enlace al mapa de raids:</b> manda un enlace al mapa de comunidades del bot @detectivepikachubot. centrado en la zona de tu grupo mostrando el mapa de calor y los anuncios o raids activas (si inicias sesión con Telegram). Si tienes charla y raids separados puedes usar el comando <span class="highlight">/setraidid seguido del id del grupo de raids</span> para que el enlace funcione correctamente.</li>
-                  <li><b>cómo me registro:</b> instrucciones para registrarse con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
-                  <li><b>cómo crear una raid:</b> instrucciones para crear un anuncio o raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">quiero llorar a Niantic</span>:</b> instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.</li>
+                  <li><b><span class="highlight">cuándo es la hora legendaria</span>:</b> indica cuando suelen ser las horas legendarias.</li>
+                  <li><b><span class="highlight">enlace al mapa de Pikachu</span>:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">enlace al mapa de raids</span>:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>. centrado en la zona de tu grupo mostrando el mapa de calor y los anuncios o raids activas (si inicias sesión con Telegram).<br><br>Si tienes charla y raids separados puedes usar el comando <span class="highlight">/setraidid seguido del id del grupo de raids</span> para que el enlace funcione correctamente.</li>
+                  <li><b><span class="highlight">cómo me registro</span>:</b> instrucciones para registrarse con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">cómo crear una raid</span>:</b> instrucciones para crear un anuncio o raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
                 </ul>
               </div>
 
               <h2 id="usuario_comandos_pvp">3. Comandos PVP</h2>
               <div class="text_block info">
                 <ul>
-                  <li><b>/pvpranking:</b> ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
+                  <li>
+                    <span class="highlight">/casualdex Pokémon</span>: información sobre un Pokémon.
+                    <img id="example" src="casualdex.jpg">
+                  </li>
+                  <li>
+                    <span class="highlight">/pokemoncodes Pokémon [liga (básico) (IV mínimo) (amistad)]</span>: códigos para filtrar un Pokémon.
+                    <br><br>
+                    Los parámetros entre corchetes son opcionales y son usados para obtener un código para PVP. Si se quiere obtener este código es necesario incluir la liga (el resto de párametros son opcionales).
+                    <br><br>
+                    <ul style="list-style-type: disc">
+                      <li><b>liga:</b> great, ultra o master.</li>
+                      <li><b>básico:</b> incluir si quieres el código para la primera fase evolutiva.</li>
+                      <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
+                      <li><b>amistad:</b> hacer los cálculos hasta nivel 41 en vez de 40.</li>
+                    </ul>
+                    Los corchetes y paréntesis no se tienen que incluir.
+                    <img id="example" src="pokemoncodes.jpg">
+                  </li>
+                  <li>
+                    <span class="highlight">/pokemonpvp Pokémon (liga) (IVa/IVd/IVps) (IV mínimo) (amistad)</span>: información relacionada con PVP sobre un Pokémon.
+                    <br><br>
+                    Los parámetros entre paréntesis son opcionales.
+                    <br><br>
+                    <ul style="list-style-type: disc">
+                      <li><b>liga:</b> great, ultra o master.</li>
+                      <li><b>IVa/IVd/IVps:</b> combinación de IVs a comprobar.</li>
+                      <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
+                      <li><b>amistad:</b> hacer los cálculos hasta nivel 41 en vez de 40.</li>
+                    </ul>
+                    Los paréntesis no se tienen que incluir.
+                    <img id="example" src="pokemonpvp.jpg">
+                  </li>
+                  <li><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
                 </ul>
               </div>
 
@@ -211,7 +252,10 @@
               <h2 id="admin_botones">2. Botones</h2>
               <div class="text_block info">
                 <p>
-                  Se pueden incluir botones con enlaces usando el siguiente formato:
+                  Se pueden incluir botones en las <a href="#admin_alertas">alertas</a> y <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a>.
+                </p>
+                <p>
+                  Formato:
                 </p>
                 <p>
                   <span class="highlight">"Texto botón" = "https://enlace.com"</span>
@@ -272,7 +316,10 @@
               <h2 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h2>
               <div class="text_block info">
                 <p>
-                  Para añadir un mensaje de bienvenida usa el comando /welcomecasual seguido del mensaje de bienvenida. Ejemplo: <span class="highlight">/welcomecasual Hola casual</span>.
+                  Para añadir un mensaje de bienvenida usa el comando <span class="highlight">/welcomecasual seguido del mensaje de bienvenida</span>.
+                </p>
+                <p>
+                  Ejemplo: <span class="highlight">/welcomecasual Hola casual</span>.
                 </p>
                 <p>
                   Para borrar el mensaje de bienvenida pon <span class="highlight">/welcomecasual -</span>.

@@ -436,7 +436,7 @@ span.highlight {
   padding: 2px;
 }
 
-span.log, span.highlight, .select_text_block {
+span.log, .select_text_block {
   font-family: monospace;
 }
 
