@@ -5,7 +5,7 @@
 ![MariaDB version](https://img.shields.io/badge/MariaDB-v15.1-blue)
 ![python-telegram-bot version](https://img.shields.io/badge/python\%20telegram\%20bot-v12.2-blue)
 
-Casual Bot is a project I started to learn Python and SQL and runs in a Raspberry Pi 3 Model B+.
+Casual Bot is a project I started to learn Python and SQL. It runs on a Raspberry Pi 3 Model B+.
 
 It's a Telegram Bot which users can interact with by sending messages.
 
@@ -38,12 +38,10 @@ The bot handles the events for multiple time zones. Each time zone has its own c
 
 ## **Channels available**
 
-* Europe/Madrid: [@pokemongoeventos](https://t.me/pokemongoeventos)
-* Portugal: [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
-* Central European Time: [@pokemongoeventsCET](https://t.me/pokemongoeventsCET)
-* Atlantic/Canary: [@pokemongoeventosCanarias](https://t.me/pokemongoeventosCanarias)
-
-*Right now Europe/Madrid has +500 subscribers and Portugal has +800 subscribers.*
+* **Europe/Madrid** *(+500 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
+* **Portugal** *(+800 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
+* **Central European Time:** [@pokemongoeventsCET](https://t.me/pokemongoeventsCET)
+* **Atlantic/Canary:** [@pokemongoeventosCanarias](https://t.me/pokemongoeventosCanarias)
 
 ## **How do events work?**
 Since the events is the most used function of the bot I'd like to explain it in more depth.
@@ -153,7 +151,7 @@ With the commands /casualdex, /pokemoncodes y /pokemonpvp you can check informat
 
 *Example of /pokemonpvp*
 
-Commands casualdex and pokemonpvp also support Telegram Inline Mode. This is especially useful if you want a check an IV combination with the command pokemonpvp because there's no need to send a message.
+Commands casualdex and pokemonpvp also support Telegram Inline Mode. This is especially useful if you want to check an IV combination with the command pokemonpvp because there's no need to send a message.
 
 ![example of inline mode](docs/images/pokemonpvp_inlinemode.gif)
 
