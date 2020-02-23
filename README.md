@@ -1,6 +1,6 @@
 # **Casual Bot Telegram Bot**
 
-![Raspberry](https://img.shields.io/badge/Raspberry\%20Pi\%203-Model\%20B+-lightgrey)
+![Raspberry](https://img.shields.io/badge/Raspberry\%20Pi-3\%20Model\%20B+-lightgrey)
 ![Python version](https://img.shields.io/badge/Python-v3.7-blue)
 ![MariaDB version](https://img.shields.io/badge/MariaDB-v15.1-blue)
 ![python-telegram-bot version](https://img.shields.io/badge/python\%20telegram\%20bot-v12.2-blue)
