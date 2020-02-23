@@ -32,7 +32,7 @@ Daily notification is sent with the event list at 8:50 and also when an event be
 
 The bot handles the events for multiple time zones. Each time zone has its own channel and when the bot sends a message to a channel it's also forwarded to the groups that match the time zone and have the option enabled.
 
-![example of the event list](images/event_list.jpg)
+![example of the event list](docs/images/event_list.jpg)
 
 *Example of a channel*
 
@@ -102,7 +102,7 @@ Pieces of text that may appear at the begining of the list. They are save into a
 * **announce_date_end:** local date when the message should be stop to be displayed.
 * **text:** dictionary with the texts in each language. If the key for a language is not included then no custom message is displayed for time zones with that language.
 
-![example of a custom message](images/events_custom_message.jpg)
+![example of a custom message](docs/images/events_custom_message.jpg)
 
 *Example of a custom message*
 
@@ -141,30 +141,30 @@ Forward news from some channels (only in groups with +16 members).
 
 The bot checks for edited messages ands forwards then again if the original message is not older than a given time.
 
-![example of a news](images/news.jpg)
+![example of a news](docs/images/news.jpg)
 
 *Example of a forwarded news*
 
 # **Pokédex**
 With the commands /casualdex, /pokemoncodes y /pokemonpvp you can check information about a Pokémon (disabled by default in groups).
 
-![example of /pokemonpvp](images/pokemonpvp.jpg)
+![example of /pokemonpvp](docs/images/pokemonpvp.jpg)
 
 *Example of /pokemonpvp*
 
 Commands casualdex and pokemonpvp also support Telegram Inline Mode. This is especially useful if you want a check an IV combination with the command pokemonpvp because there's no need to send a message.
 
-![example of inline mode](images/pokemonpvp_inlinemode.gif)
+![example of inline mode](docs/images/pokemonpvp_inlinemode.gif)
 
 *Example of Inline Mode*
 
 # **Alerts**
 Send predefined messages periodically. For more help write /alertcasual (only in groups).
 
-![alerts help](images/alerts_help.jpg)
+![alerts help](docs/images/alerts_help.jpg)
 
 *Alerts help*
 
-![example of an alert](images/alerts_example.jpg)
+![example of an alert](docs/images/alerts_example.jpg)
 
 *Example of an alerts*
