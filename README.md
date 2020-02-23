@@ -18,8 +18,8 @@ Right now the bot is used by more than 200 groups.
     * [Channels available](#channels-available)
     * [How do events work?](#how-do-events-work)
         * [Database info](#database-info)
-        * [Event list sorting criteria](#event-list-sorting-criteria)
         * [Custom messages](#custom-messages)
+        * [Event list sorting criteria](#event-list-sorting-criteria)
 * [Time zones](#time-zones)
 * [News](#news)
 * [Pokédex](#pokédex)
@@ -69,16 +69,6 @@ If an event has ended in all time zones (i.e. Notified Status = 2 for all time z
 
 The events are manually added, edited and deleted using some commands sent via a Telegram conversation with the bot.
 
-### **Event list sorting criteria**
-1. Custom messages
-2. Events that end today
-3. Events that begin today
-4. Events that end tomorrow
-5. Events that begin tomorrow
-6. Events that have started (and don't match 1. or 3.)
-7. Events that have not started (and don't match 2. or 4.)
-8. "Manual" events
-
 ### **Custom messages**
 Pieces of text that may appear at the begining of the list. They are save into a JSON file with this structure:
 
@@ -103,6 +93,16 @@ Pieces of text that may appear at the begining of the list. They are save into a
 ![example of a custom message](docs/images/events_custom_message.jpg)
 
 *Example of a custom message*
+
+### **Event list sorting criteria**
+1. Custom messages
+2. Events that end today
+3. Events that begin today
+4. Events that end tomorrow
+5. Events that begin tomorrow
+6. Events that have started (and don't match 1. or 3.)
+7. Events that have not started (and don't match 2. or 4.)
+8. "Manual" events
 
 # **Time zones**
 Dealing with time zones is really important for the events to work. Here is an example of the info stored for the time zone "Central European Time":
