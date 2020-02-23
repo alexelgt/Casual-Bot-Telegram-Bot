@@ -128,6 +128,7 @@ Dealing with time zones is really important for the events to work. Here is an e
 * **name:** name of the time zone.
 * **language:** since the messages are sent to a channel and then forwarded, each time zone has a language associated.
 * **dateformat:** the order of the language strings are different in some languages.
+* **hemisphere:** North or South. Some events start at a different time depending on the hemisphere.
 * **dailyNotificationEnabled:** toggle to enable/disable daily event list message.
 * **eventNotificationEnabled:** toggle to enable/disable events notification messages.
 * **customMessagesEnabled:** toggle to enable/disable custom messages.
