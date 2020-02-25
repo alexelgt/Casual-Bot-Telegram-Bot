@@ -38,7 +38,7 @@ The bot handles the events for multiple time zones. Each time zone has its own c
 
 ## **Channels available**
 
-* **Europe/Madrid** *(+500 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
+* **Europe/Madrid** *(+600 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
 * **Portugal** *(+800 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
 * **Central European Time:** [@pokemongoeventsCET](https://t.me/pokemongoeventsCET)
 * **Atlantic/Canary:** [@pokemongoeventosCanarias](https://t.me/pokemongoeventosCanarias)
