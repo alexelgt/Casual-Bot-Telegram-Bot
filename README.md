@@ -18,7 +18,7 @@ Right now the bot is used by more than 200 groups.
     * [Channels available](#channels-available)
     * [How do events work?](#how-do-events-work)
         * [Database info](#database-info)
-        * [Custom messages](#custom-messages)
+        * [Announcements](#announcements)
         * [Event list sorting criteria](#event-list-sorting-criteria)
 * [Time zones](#time-zones)
 * [News](#news)
@@ -38,8 +38,8 @@ The bot handles the events for multiple time zones. Each time zone has its own c
 
 ## **Channels available**
 
-* **Europe/Madrid** *(+600 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
-* **Portugal** *(+800 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
+* **Europe/Madrid** *(+700 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
+* **Portugal** *(+900 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
 * **Central European Time:** [@pokemongoeventsCET](https://t.me/pokemongoeventsCET)
 * **Atlantic/Canary:** [@pokemongoeventosCanarias](https://t.me/pokemongoeventosCanarias)
 
@@ -69,7 +69,7 @@ If an event has ended in all time zones (i.e. Notified Status = 2 for all time z
 
 The events are manually added, edited and deleted using some commands sent via a Telegram conversation with the bot.
 
-### **Custom messages**
+### **Announcements**
 Pieces of text that may appear at the begining of the list. They are save into a JSON file with this structure:
 
 ```
@@ -78,8 +78,8 @@ Pieces of text that may appear at the begining of the list. They are save into a
     "announce_date_begin": "2020-01-06 0:00:00",
     "announce_date_end": "2020-01-10 23:59:59",
     "text": {
-        "ES": "Hola",
-        "EN": "Hello"
+        "Europe/Madrid": "Hola",
+        "Portugal": "Olá"
         ...
     }
 }
@@ -88,14 +88,14 @@ Pieces of text that may appear at the begining of the list. They are save into a
 * **name:** not used in the code. It's just to differentiate between elements.
 * **announce_date_begin:** local date when the message should be begin to be displayed.
 * **announce_date_end:** local date when the message should be stop to be displayed.
-* **text:** dictionary with the texts in each language. If the key for a language is not included then no custom message is displayed for time zones with that language.
+* **text:** dictionary with the texts for each time zone. If the key for a time zone is not included then no announcement is displayed for that time zone.
 
-![example of a custom message](docs/images/events_custom_message.jpg)
+![example of a announcement](docs/images/events_announcements.jpg)
 
-*Example of a custom message*
+*Example of an announcement*
 
 ### **Event list sorting criteria**
-1. Custom messages
+1. Announcements
 2. Events that end today
 3. Events that begin today
 4. Events that end tomorrow
@@ -114,9 +114,12 @@ Dealing with time zones is really important for the events to work. Here is an e
     "language": "EN",
     "dateformat": "month-day",
     "hemisphere": "North",
+    "eventCommandEnabled": True,
+    "onlyPVP": True,
     "dailyNotificationEnabled": True,
     "eventNotificationEnabled": True,
     "customMessagesEnabled": True,
+    "announcementsEnabled": True,
     "channel_alias": "@pokemongoeventsCET",
     "channel_id": -1001...
 }
@@ -127,9 +130,12 @@ Dealing with time zones is really important for the events to work. Here is an e
 * **language:** since the messages are sent to a channel and then forwarded, each time zone has a language associated.
 * **dateformat:** the order of the language strings are different in some languages.
 * **hemisphere:** North or South. Some events start at a different time depending on the hemisphere.
+* **eventCommandEnabled:** allows the use of the commando /events.
+* **onlyPVP:** only show PVP related events. This toggle was added due to the Coronavirus pandemic to limit the events shown in the most affected areas.
 * **dailyNotificationEnabled:** toggle to enable/disable daily event list message.
 * **eventNotificationEnabled:** toggle to enable/disable events notification messages.
-* **customMessagesEnabled:** toggle to enable/disable custom messages.
+* **customMessagesEnabled:** toggle to enable/disable custom messages. This messages are sent to an event channel and then forwarded to all the groups with events enabled for that time zone.
+* **announcementsEnabled:** toggle to enable/disable announcements.
 * **channel_alias:** this is put at the end of the list. If key not present then nothing is added.
 * **channel_id:** unique id (given by Telegram) of the channel associated.
 
