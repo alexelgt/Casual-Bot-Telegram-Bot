@@ -89,6 +89,10 @@
                     <li><a href="#admin_tabla_funcionalidades">Funcionalidades</a></li>
                     <li><a href="#admin_tabla_permisos">Permisos</a></li>
                   </ul>
+                  <li><a href="#faq">Preguntas frecuentes</a></li>
+                  <ul>
+                    <li><a href="#faq_evitar_spam">¿Cómo evito el spam?</a></li>
+                  </ul>
                 </ul>
               </div>
 
@@ -261,6 +265,9 @@
                 <p>
                   Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón. <b>El mensaje tiene un retardo de 1 segundo para que en el caso de tener un bot con mensaje de bienvenida, esta se muestre primero.</b>
                 </p>
+                <p>
+                  Si se tiene un mensaje de bienvenida configurado con otro bot y se quiere usar esta opción, lo más recomendable es configurar el <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> con Casual Bot ya que solo se mostraría si el nuevo miembro pulsa el botón correcto.
+                </p>
                 <img id="example" src="images/press_button_to_talk.jpg">
               </div>
 
@@ -410,6 +417,9 @@
                 </p>
                 <p>
                   Para borrar el mensaje de bienvenida pon <span class="highlight">/welcomecasual -</span>.
+                </p>
+                <p>
+                  Para consultar el mensaje de bienvenida actual pon <span class="highlight">/getwelcomecasual</span>.
                 </p>
                 <p>
                   <b>Sustitución de texto:</b>
@@ -593,6 +603,23 @@
                 </table>
               </div>
 
+              <h1 id="faq">Preguntas frecuentes</h1>
+              <h2 id="faq_evitar_spam">¿Cómo evito el spam?</h2>
+              <div class="text_block info">
+                <p>
+                  El bot cuenta con 2 opciones para evitar el spam:
+                  <ul style="list-style-type: disc">
+                    <li><a href="#admin_anti_spam">Anti Spam</a></li>
+                    <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                  </ul>
+                </p>
+                <p>
+                  La primera sirve para banear las cuentas que ya estén en el grupo y manden un mensaje que el bot considere como spam.
+                </p>
+                <p>
+                  La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo. <b>En la práctica esta opción es la más efectiva ya que el filtro anti spam podría no saltar.</b>
+                </p>
+              </div>
             </div>
 
           </div>
