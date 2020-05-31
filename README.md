@@ -114,14 +114,23 @@ Dealing with time zones is really important for the events to work. Here is an e
     "language": "EN",
     "dateformat": "month-day",
     "hemisphere": "North",
-    "eventCommandEnabled": True,
-    "onlyPVP": True,
+    "showInSettings": True,
     "dailyNotificationEnabled": True,
     "eventNotificationEnabled": True,
-    "customMessagesEnabled": True,
     "announcementsEnabled": True,
-    "channel_alias": "@pokemongoeventsCET",
-    "channel_id": -1001...
+    "remindersEnabled": True,
+    "telegram_info": {
+        "eventCommandEnabled": True,
+        "customMessagesEnabled": True,
+        "dailyNotificationEnabled": True,
+        "eventNotificationEnabled": True,
+        "groupDailyNotificationEnabled": True,
+        "groupEventNotificationEnabled": False,
+        "channel_alias": "@pokemongoeventsCET",
+        "channel_id": -1001...
+    },
+    "twitter_info": None,
+    "discord_info": None
 }
 ```
 
@@ -130,16 +139,21 @@ Dealing with time zones is really important for the events to work. Here is an e
 * **language:** since the messages are sent to a channel and then forwarded, each time zone has a language associated.
 * **dateformat:** the order of the language strings are different in some languages.
 * **hemisphere:** North or South. Some events start at a different time depending on the hemisphere.
-* **eventCommandEnabled:** allows the use of the commando /events.
-* **onlyPVP:** only show PVP related events. This toggle was added due to the Coronavirus pandemic to limit the events shown in the most affected areas.
+* **showInSettings:** show this time zone in settings.
 * **dailyNotificationEnabled:** toggle to enable/disable daily event list message.
 * **eventNotificationEnabled:** toggle to enable/disable events notification messages.
-* **customMessagesEnabled:** toggle to enable/disable custom messages. This messages are sent to an event channel and then forwarded to all the groups with events enabled for that time zone.
 * **announcementsEnabled:** toggle to enable/disable announcements.
+* **remindersEnabled:** toggle to enable/disable notification one hour before an event ends.
+
+**telegram_info:**
+* **eventCommandEnabled:** allows the use of the commando /events.
+* **customMessagesEnabled:** toggle to enable/disable custom messages. This messages are sent to an event channel and then forwarded to all the groups with events enabled for that time zone.
+* **groupDailyNotificationEnabled:** toggle to enable/disable forward of daily event list message to groups.
+* **groupEventNotificationEnabled:** toggle to enable/disable forward of events notification messages to groups.
 * **channel_alias:** this is put at the end of the list. If key not present then nothing is added.
 * **channel_id:** unique id (given by Telegram) of the channel associated.
 
-**dailyNotificationEnabled** and **eventNotificationEnabled** are mainly used testing purposes. There are also "global" toggles called **dailyNotificationGlobalEnabled** and **eventNotificationGlobalEnabled**.
+There are also "global" toggles called **announcementsGlobalEnabled**, **eventCommandGlobalEnabled**, **dailyNotificationGlobalEnabled** and **eventNotificationGlobalEnabled** and **customMessagesGlobalEnabled**.
 
 # **News**
 Forward news from some channels (only in groups with +16 members).
@@ -172,4 +186,4 @@ Send predefined messages periodically. For more help write /alertcasual (only in
 
 ![example of an alert](docs/images/alerts_example.jpg)
 
-*Example of an alerts*
+*Example of an alert*
