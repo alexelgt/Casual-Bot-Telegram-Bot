@@ -62,24 +62,24 @@
                   </ul>
                   <li><a href="#admin_doc">Documentation for admins</a></li>
                   <ul>
-                    <li><a href="#admin_ajustes">Ajustes</a></li>
+                    <li><a href="#admin_settings">Settings</a></li>
                     <ul>
-                      <li><a href="#admin_activar_o_desactivar_bot">Activar o desactivar el bot</a></li>
-                      <li><a href="#admin_ajustes_generales">Ajustes generales</a></li>
+                      <li><a href="#admin_enable_or_disable_bot">Enable or disable the bot</a></li>
+                      <li><a href="#admin_general_settings">General settings</a></li>
                       <ul>
-                        <li><a href="#admin_comandos">Comandos</a></li>
-                        <li><a href="#admin_comandos_pvp">Comandos PVP</a></li>
-                        <li><a href="#admin_borrar_mensajes_comunes">Borrar mensajes comunes</a></li>
-                        <li><a href="#admin_borrar_camigos">Borrar códigos de amigos</a></li>
+                        <li><a href="#admin_commands">Commands</a></li>
+                        <li><a href="#admin_pvp_commands">PVP commands</a></li>
+                        <li><a href="#admin_delete_common_messages">Delete common messages</a></li>
+                        <li><a href="#admin_delete_friendcodes">Delete friend codes</a></li>
                         <li><a href="#admin_anti_spam">Anti Spam</a></li>
-                        <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                        <li><a href="#admin_press_button_to_talk">Press button to talk</a></li>
                       </ul>
-                      <li><a href="#admin_eventos">Eventos</a></li>
-                      <li><a href="#admin_noticias">Noticias</a></li>
-                      <li><a href="#admin_temporizadores">Temporizadores</a></li>
-                      <li><a href="#admin_notificaciones_nocturnas">Notificaciones nocturnas</a></li>
-                      <li><a href="#admin_zona_horaria">Zona horaria</a></li>
-                      <li><a href="#admin_idioma">Idioma</a></li>
+                      <li><a href="#admin_events">Events</a></li>
+                      <li><a href="#admin_news">News</a></li>
+                      <li><a href="#admin_timers">Timers</a></li>
+                      <li><a href="#admin_nightly_notifications">Nightly notifications</a></li>
+                      <li><a href="#admin_time_zone">Time zone</a></li>
+                      <li><a href="#admin_language">Language</a></li>
                     </ul>
                     <li><a href="#admin_botones">Botones</a></li>
                     <li><a href="#admin_alertas">Alertas</a></li>
@@ -88,7 +88,7 @@
                       <li><a href="#admin_alertas_obtener">Obtener una alerta</a></li>
                       <li><a href="#admin_alertas_borrar">Eliminar una alerta</a></li>
                     </ul>
-                    <li><a href="#admin_mensaje_bienvenida">Mensaje de bienvenida</a></li>
+                    <li><a href="#admin_welcome_message">Mensaje de bienvenida</a></li>
                     <li><a href="#admin_etiquetas_html">Etiquetas HTML en mensajes</a></li>
                   </ul>
                   <li><a href="#admin_tablas_informacion">Tablas con información</a></li>
@@ -215,138 +215,138 @@
               </div>
 
               <h1 id="admin_doc">Documentation for admins</h1>
-              <h2 id="admin_ajustes">1. Ajustes</h2>
+              <h2 id="admin_settings">1. Settings</h2>
               <div class="text_block info">
                 <p>
-                  Para acceder a los ajustes del bot pon el comando <span class="highlight">/settings@KingCasualBot</span>.
+                  To access the bot's settings put the command <span class="highlight">/settings@KingCasualBot</span>.
                 </p>
               </div>
 
-              <h2 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h2>
+              <h2 id="admin_enable_or_disable_bot">1.1. Enable or disable the bot</h2>
               <div class="text_block info">
                 <p>
-                  Permite activar o desactivar el bot. Cuando está desactivado se mantiene activo lo siguiente:
+                  Allows you to enable or disable the bot. When disabled, the following remains active:
                 </p>
                 <ul style="list-style-type: disc">
-                  <li>Comandos solo disponibles para administradores (para ahorrar comprobaciones).</li>
+                  <li>Commands only available to administrators.</li>
                   <li>Anti Spam</li>
-                  <li>Pulsar botón para hablar</li>
-                  <li>Mensaje de bienvenida</li>
+                  <li>Press button to talk</li>
+                  <li>Welcome message</li>
                 </ul>
               </div>
 
-              <h2 id="admin_ajustes_generales">1.2. Ajustes generales</h2>
-              <h3 id="admin_comandos">1.2.1. Comandos</h3>
+              <h2 id="admin_general_settings">1.2. General settings</h2>
+              <h3 id="admin_commands">1.2.1. Commands</h3>
               <div class="text_block info">
                 <p>
-                  Para activar o desactivar la opción de <a href="#user_commands">comandos</a>.
+                  To enable or disable the <a href="#user_commands">commands</a> option.
                 </p>
               </div>
-              <h3 id="admin_comandos_pvp">1.2.2. Comandos PVP</h3>
+              <h3 id="admin_pvp_commands">1.2.2. PVP commands</h3>
               <div class="text_block info">
                 <p>
-                  Para activar o desactivar la opción de <a href="#user_pvp_commands">comandos pvp</a>.
-                </p>
-              </div>
-
-              <h3 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h3>
-              <div class="text_block info">
-                <p>
-                  Si se activa esta opción, Casual Bot borrará mensajes del estilo "alguién más se apunta", "si va más gente me apunto", "estoy por apuntarme a", etc.
+                  To enable or disable the <a href="#user_pvp_commands">pvp commands</a> option.
                 </p>
               </div>
 
-              <h3 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h3>
+              <h3 id="admin_delete_common_messages">1.2.3. Delete common messages</h3>
               <div class="text_block info">
                 <p>
-                  Con esta opción se borrarán los mensajes que contengan códigos de amigos. Se incluyen capturas de pantalla (salvo las que estén recortadas de forma extraña). Para borrar los mensajes.
+                  If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.
+                </p>
+              </div>
+
+              <h3 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h3>
+              <div class="text_block info">
+                <p>
+                  With this option, messages containing friend codes will be deleted. Screenshots are included (except for oddly cropped ones).
                 </p>
                 <p>
-                  Se puede poner un mensaje cuando el Casual Bot borra un código de amigo usando el comando <span class="highlight">/fctextcasual seguido del mensaje que quieres poner</span>.
+                  You can put a message when the Casual Bot deletes a friend code using the command <span class="highlight">/fctextcasual followed by the message you want to put</span>.
                 </p>
                 <p>
-                  Para borrar el mensaje pon <span class="highlight">/fctextcasual -</span>.
+                  To delete the message put <span class="highlight">/fctextcasual -</span>.
                 </p>
                 <p>
-                  Para obtener el mensaje actual usa el comando <span class="highlight">/getfctextcasual</span>.
+                  To get the current message use the command <span class="highlight">/getfctextcasual</span>.
                 </p>
               </div>
 
               <h3 id="admin_anti_spam">1.2.5. Anti Spam</h3>
               <div class="text_block info">
                 <p>
-                  Casual Bot borrará los mensajes de spam y baneará al miembro que mandé el mensaje de forma silenciosa. Se banea si se ponen enlaces del tipo http://t.cn y http://bit.ly (enlaces que suelen poner las cuentas de spam).
+                  Casual Bot will delete spam messages and ban the member who sent the message.
                 </p>
               </div>
 
-              <h3 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h3>
+              <h3 id="admin_press_button_to_talk">1.2.6. Press button to talk</h3>
               <div class="text_block info">
                 <p>
-                  Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón. <b>El mensaje tiene un retardo de 1 segundo para que en el caso de tener un bot con mensaje de bienvenida, esta se muestre primero.</b>
+                  With this option when a new member enters the group he/she will have to answer a question by pressing a button. <b>The message has a delay of 1 second so that in the case of having another bot with a welcome message, it's displayed first.</b>
                 </p>
                 <p>
-                  Si se tiene un mensaje de bienvenida configurado con otro bot y se quiere usar esta opción, lo más recomendable es configurar el <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> con Casual Bot ya que solo se mostraría si el nuevo miembro pulsa el botón correcto.
+                  If you have a welcome message configured with another bot and you want to use this option, it's better to configure the <a href="#admin_welcome_message">welcome message</a> with Casual Bot as it would only show it if the new member clicks the correct button.
                 </p>
                 <img id="example" src="../images/press_button_to_talk.jpg">
               </div>
 
-              <h2 id="admin_eventos">1.3. Eventos</h2>
+              <h2 id="admin_events">1.3. Events</h2>
               <div class="text_block info">
                 <p>
-                  Si no has activado los eventos, te pedirá que actives lo actives. Después de hacer esto (o si ya las tenías activadas), podrás activar o desactivar el comando <span class="highlight">/eventos</span>, la notificación diaria (a las 8:50) con el listado de eventos o las notificaciones cuando empieza o termina un evento.
+                  If you have not activated the events, it will ask you to activate it. After doing this (or if you already had them enabled), you can enable or disable the command <span class="highlight">/events</span>, the daily notification (at 8:50 am) with the event list or notifications when an event starts or ends.
                 </p>
                 <p>
-                  <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 16 miembros.</i>
+                  <i>To be able to modify these settings the group must have at least 16 members.</i>
                 </p>
               </div>
 
-              <h2 id="admin_noticias">1.4. Noticias</h2>
+              <h2 id="admin_news">1.4. News</h2>
               <div class="text_block info">
                 <p>
-                  Permite que se reenvien al grupo los mensajes que se mandan en diversos canales de noticias.
+                  Allows messages sent on various news channels to be forwarded to the group.
                 </p>
                 <p>
-                  <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 16 miembros.</i>
+                  <i>To be able to modify these settings the group must have at least 16 members.</i>
                 </p>
               </div>
 
-              <h2 id="admin_temporizadores">1.5. Temporizadores</h2>
+              <h2 id="admin_timers">1.5. Timers</h2>
               <div class="text_block info">
                 <p>
-                  Permite que se borren algunos mensajes pasado el tiempo que se indique.
+                  Allow some messages to be deleted after the specified time.
                 </p>
               </div>
 
-              <h2 id="admin_notificaciones_nocturnas">1.6. Notificaciones nocturnas</h2>
+              <h2 id="admin_nightly_notifications">1.6. Nightly notifications</h2>
               <div class="text_block info">
                 <p>
-                  Permite configurar el comportamiento del algunos mensajes que se manden de 1:00 a 7:59.
+                  It allows to configure the behavior of some messages that are sent from 1:00 to 7:59.
                 </p>
                 <p>
-                  ✅: enviar con sonido<br>
-                  🔇: enviar sin sonido<br>
-                  ❌: no enviar
-                </p>
-              </div>
-
-              <h2 id="admin_zona_horaria">1.7. Zona horaria</h2>
-              <div class="text_block info">
-                <p>
-                  Permite cambiar la zona horaria del grupo. Esto sirve para recibir las notificaciones de los eventos y las alertas cuando corresponden.
+                  ✅: send with sound<br>
+                  🔇: send without sound<br>
+                  ❌: don't send
                 </p>
               </div>
 
-              <h2 id="admin_idioma">1.8. Idioma</h2>
+              <h2 id="admin_time_zone">1.7. Time zone</h2>
               <div class="text_block info">
                 <p>
-                  Permite cambiar el idioma del bot.
+                  Allows you to change the time zone of the group. This is used to receive notifications of events and alerts at the correct time.
+                </p>
+              </div>
+
+              <h2 id="admin_language">1.8. Language</h2>
+              <div class="text_block info">
+                <p>
+                  Allows you to change the language of the bot.
                 </p>
               </div>
 
               <h2 id="admin_botones">2. Botones</h2>
               <div class="text_block info">
                 <p>
-                  Se pueden incluir botones en las <a href="#admin_alertas">alertas</a>, <a href="#admin_borrar_camigos">mensaje al borrar un código de amigo</a> y <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a>.
+                  Se pueden incluir botones en las <a href="#admin_alertas">alertas</a>, <a href="#admin_delete_friendcodes">mensaje al borrar un código de amigo</a> y <a href="#admin_welcome_message">mensajes de bienvenida</a>.
                 </p>
                 <p>
                   Además se puede usar el comando <span class="highlight">/casualbotones</span> para que el bot devuelva un mensaje con botones.
@@ -426,7 +426,7 @@
                 </p>
               </div>
 
-              <h2 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h2>
+              <h2 id="admin_welcome_message">4. Mensaje de bienvenida</h2>
               <div class="text_block info">
                 <p>
                   Para añadir un mensaje de bienvenida usa el comando <span class="highlight">/welcomecasual seguido del mensaje de bienvenida</span>.
@@ -452,7 +452,7 @@
               <h2 id="admin_etiquetas_html">5. Etiquetas HTML en mensajes</h2>
               <div class="text_block info">
                 <p>
-                  Se pueden añadir etiquetas html en <a href="#admin_alertas">alertas</a>, <a href="#admin_borrar_camigos">mensaje al borrar un código de amigo</a>, <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> y con el <a href="#admin_botones">comando /casualbotones</a>.
+                  Se pueden añadir etiquetas html en <a href="#admin_alertas">alertas</a>, <a href="#admin_delete_friendcodes">mensaje al borrar un código de amigo</a>, <a href="#admin_welcome_message">mensajes de bienvenida</a> y con el <a href="#admin_botones">comando /casualbotones</a>.
                 </p>
                 <p>
                   <b>Etiquetas:</b>
@@ -625,21 +625,21 @@
                 </table>
               </div>
 
-              <h1 id="faq">Preguntas frecuentes</h1>
-              <h2 id="faq_evitar_spam">1. ¿Cómo evito el spam?</h2>
+              <h1 id="faq">F.A.Q.</h1>
+              <h2 id="faq_evitar_spam">1. How do I avoid spam?</h2>
               <div class="text_block info">
                 <p>
-                  El bot cuenta con 2 opciones para evitar el spam:
+                  The bot has 2 options to avoid spam:
                   <ul style="list-style-type: disc">
                     <li><a href="#admin_anti_spam">Anti Spam</a></li>
-                    <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                    <li><a href="#admin_press_button_to_talk">Press button to talk</a></li>
                   </ul>
                 </p>
                 <p>
-                  La primera sirve para banear las cuentas que ya estén en el grupo y manden un mensaje que el bot considere como spam.
+                  The first is used to ban accounts that are already in the group and send a message that the bot considers spam.
                 </p>
                 <p>
-                  La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo. <b>En la práctica esta opción es la más efectiva ya que el filtro anti spam podría no saltar.</b>
+                  The second is to prevent spamming accounts from staying in the group. <b>In practice this option is the most effective since the anti spam filter may not be triggered.</b>
                 </p>
               </div>
             </div>
