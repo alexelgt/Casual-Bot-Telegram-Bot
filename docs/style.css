@@ -152,7 +152,7 @@ input + span {
 }
 
 button, input[type=file] + label, #button_structure > div, a#btn {
-  margin: 5px 0;
+  margin: 5px 10px;
   position: relative;
   display: inline-block;
   box-sizing: border-box;

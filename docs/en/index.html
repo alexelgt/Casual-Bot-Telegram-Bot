@@ -1,22 +1,22 @@
 <html lang='es' xml:lang='es'>
   <head>
-      <title>Documentación Casual Bot</title>
-		  <meta name="title" content="Documentación Casual Bot">
-      <meta name="keywords" content="Documentación Casual Bot">
-      <meta name="description" content="Documentación del bot más casual de Telegram para Pokémon GO">
-      <link rel="icon" sizes="192x192" href="icon_circle.png">
-      <link rel="apple-touch-icon-precomposed" href="icon.png">
+      <title>Casual Bot documentation</title>
+		  <meta name="title" content="Casual Bot documentation">
+      <meta name="keywords" content="Casual Bot documentation">
+      <meta name="description" content="Documentation of the most casual Telegram bot for Pokémon GO">
+      <link rel="icon" sizes="192x192" href="../icon_circle.png">
+      <link rel="apple-touch-icon-precomposed" href="../icon.png">
       <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no, viewport-fit=cover" name="viewport">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link href="style.css" rel="stylesheet" type="text/css">
+      <link href="../style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
     <div id="sidebar-overlay" onclick='triggerSideBar();'></div>
 
     <div id="navbar">
-      <h1>Bot de Telegram Casual Bot</h1>
+      <h1>Telegram Casual Bot</h1>
     </div>
 
     <div id="structure">
@@ -28,17 +28,17 @@
 
             <div id="element">
               <div id="input_button_structure">
-                <a href="en/" id='btn'>English documentation</a>
+                <a href="../" id='btn'>Documentación en español</a>
               </div>
             </div>
 
             <div id="element">
-              <img id="icon" src="icon.png">
+              <img id="icon" src="../icon.png">
               <h2 class="app_title"><a href="https://t.me/KingCasualBot" target="_blank">@KingCasualBot</a></h2>
 
               <div class="text_block">
                 <p>
-                  <b>Grupo de ayuda:</b> <a href="https://t.me/kingcasualbotayuda" target="_blank"><b>@kingcasualbotayuda</b></a><br>
+                  <b>Help group:</b> <a href="https://t.me/kingcasualbotayuda" target="_blank"><b>@kingcasualbotayuda</b></a><br>
                 </p>
                 <p>
                   <a href="https://github.com/alexelgt/Casual-Bot-Telegram-Bot" target="_blank"><b>GitHub Repo</b></a>
@@ -47,20 +47,20 @@
 
               <div class="text_block info">
                 <ul>
-                  <li><a href="#usuario_doc">Documentación para usuarios</a></li>
+                  <li><a href="#user_doc">Documentation for users</a></li>
                   <ul>
-                    <li><a href="#usuario_eventos">Eventos</a></li>
-                    <li><a href="#usuario_comandos">Comandos</a></li>
-                    <li><a href="#usuario_comandos_pvp">Comandos PVP</a></li>
+                    <li><a href="#user_events">Events</a></li>
+                    <li><a href="#user_commands">Commands</a></li>
+                    <li><a href="#user_pvp_commands">PVP commands</a></li>
                     <ul>
-                      <li><a href="#usuario_casualdex">/casualdex</a></li>
-                      <li><a href="#usuario_pokemoncodes">/pokemoncodes</a></li>
-                      <li><a href="#usuario_pokemonpvp">/pokemonpvp</a></li>
-                      <li><a href="#usuario_pvpranking">/pvpranking</a></li>
+                      <li><a href="#user_casualdex">/casualdex</a></li>
+                      <li><a href="#user_pokemoncodes">/pokemoncodes</a></li>
+                      <li><a href="#user_pokemonpvp">/pokemonpvp</a></li>
+                      <li><a href="#user_pvpranking">/pvpranking</a></li>
                     </ul>
-                    <li><a href="#modo_inline">Modo inline</a></li>
+                    <li><a href="#inline_mode">Inline mode</a></li>
                   </ul>
-                  <li><a href="#admin_doc">Documentación para administradores</a></li>
+                  <li><a href="#admin_doc">Documentation for admins</a></li>
                   <ul>
                     <li><a href="#admin_ajustes">Ajustes</a></li>
                     <ul>
@@ -103,17 +103,17 @@
                 </ul>
               </div>
 
-              <h1 id="usuario_doc">Documentación para usuarios</h1>
-              <h2 id="usuario_eventos">1. Eventos</h2>
+              <h1 id="user_doc">Documentation for users</h1>
+              <h2 id="user_events">1. Events</h2>
               <div class="text_block info">
                 <p>
-                  La funcionalidad principal disponible en grupos y en canales es un listado de eventos el cual se puede pedir con el comando <span class="highlight">/eventos</span> o escribiendo <span class="highlight">listado de eventos</span>.
+                  The main functionality available in groups and channels is an event list which can be requested with the command <span class="highlight">/events</span> or writing <span class="highlight">event list</span>.
                 </p>
                 <p>
-                  También se manda notificación cuando empieza o termina un evento.
+                  A notification is also sent when an event begins or ends.
                 </p>
                 <p>
-                  <b>Canales de eventos:</b><br>
+                  <b>Event channels:</b><br>
                   <ul style="list-style-type: disc">
                     <li>Europe/Madrid: <a href="https://t.me/pokemongoeventos" target="_blank">@pokemongoeventos</a> | <a href="https://twitter.com/PoGOEventos" target="_blank">Twitter</a></li>
                     <li>Portugal: <a href="https://t.me/pokemongoeventosPT" target="_blank">@pokemongoeventosPT</a> | <a href="https://twitter.com/PoGOEventosPT" target="_blank">Twitter</a></li>
@@ -126,94 +126,94 @@
                     <li>Eastern European Time: <a href="https://t.me/pokemongoeventsEET" target="_blank">@pokemongoeventsEET</a></li>
                     <li>America/Mexico_City: <a href="https://t.me/pokemongoeventosMexicoCity" target="_blank">@pokemongoeventosMexicoCity</a> | <a href="https://twitter.com/PoGOEventosCDMX" target="_blank">Twitter</a></li>
                   </ul>
-                  Los canales de eventos están disponibles en <a href="https://discord.gg/kEVFTvh" target="_blank">Discord</a>.
+                  Event channels are available at <a href="https://discord.gg/kEVFTvh" target="_blank">Discord</a>.
                 </p>
               </div>
 
-              <h2 id="usuario_comandos">2. Comandos</h2>
+              <h2 id="user_commands">2. Commands</h2>
               <div class="text_block info">
                 <p>
-                  Casual Bot responderá a diversas frases como por ejemplo:
+                  Casual Bot will answer to various phrases such as:
                 </p>
                 <ul>
-                  <li><b><span class="highlight">info huevos/raids/investigaciones</span>:</b> información sobre huevos, raids o investigaciones.<br>Ejemplo <span class="highlight">info huevos</span>. La información es de <a href="https://thesilphroad.com" target="_blank">https://thesilphroad.com</a>.</li>
-                  <li><b><span class="highlight">quiero llorar a Niantic</span>:</b> instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.</li>
-                  <li><b><span class="highlight">cuándo es la hora legendaria</span>:</b> indica cuándo suelen ser las horas legendarias.</li>
-                  <li><b><span class="highlight">enlace al mapa de Pikachu</span>:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
-                  <li><b><span class="highlight">enlace al mapa de raids</span>:</b> manda un enlace al mapa de comunidades del bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a> centrado en la zona de tu grupo mostrando el mapa de calor y los anuncios o raids activas (si inicias sesión con Telegram).<br><br>Si tienes charla y raids separados puedes usar el comando <span class="highlight">/setraidid seguido del id del grupo de raids</span> para que el enlace funcione correctamente.</li>
-                  <li><b><span class="highlight">cómo me registro con Pikachu</span>:</b> instrucciones para registrarse con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
-                  <li><b><span class="highlight">cómo crear una raid</span>:</b> instrucciones para crear un anuncio o raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">info eggs/raids/research tasks</span>:</b> info about eggs, raids or research tasks.<br>Example <span class="highlight">info eggs</span>. The information is from <a href="https://thesilphroad.com" target="_blank">https://thesilphroad.com</a>.</li>
+                  <li><b><span class="highlight">i want to cry to niantic</span>:</b> instructions on how to claim Niantic if you have lost a premium pass or similar.</li>
+                  <li><b><span class="highlight">when is the legendary hour</span>:</b> indicates when legendary hours usually occur.</li>
+                  <li><b><span class="highlight">link to Pikachu map</span>:</b> sends a link to the community map of the bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">link to raid map</span>:</b> sends a link to the community map of the bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a> centered on your group area showing the heat map and active announces or raids (if you log in with Telegram).<br><br>If you have chat and raids splitted you can use the command <span class="highlight">/setraidid followed by the id of the raid group</span> so that the link to works properly.</li>
+                  <li><b><span class="highlight">how do i register with Pikachu</span>:</b> instructions for registering with the bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
+                  <li><b><span class="highlight">how to create a raid</span>:</b> instructions for creating an announce or raid with the bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
                 </ul>
               </div>
 
-              <h2 id="usuario_comandos_pvp">3. Comandos PVP</h2>
+              <h2 id="user_pvp_commands">3. PVP commands</h2>
               <div class="text_block info">
                 <ul>
-                  <li id="usuario_casualdex">
-                    <span class="highlight">/casualdex Pokémon</span>: información sobre un Pokémon.
-                    <img id="example" src="images/casualdex.jpg">
+                  <li id="user_casualdex">
+                    <span class="highlight">/casualdex Pokémon</span>: info about a Pokémon.
+                    <img id="example" src="../images/casualdex.jpg">
                   </li>
-                  <li id="usuario_pokemoncodes">
-                    <span class="highlight">/pokemoncodes Pokémon [liga (básico) (IV mínimo) (amistad)]</span>: códigos para filtrar un Pokémon.
+                  <li id="user_pokemoncodes">
+                    <span class="highlight">/pokemoncodes Pokémon [league (basic) (min IV) (friendship)]</span>: codes to filter a Pokémon.
                     <br><br>
-                    Los parámetros entre corchetes son opcionales y son usados para obtener un código para PVP. Si se quiere obtener este código es necesario incluir la liga (el resto de párametros son opcionales).
+                    The parameters in square brackets are optional and are used to obtain a code for PVP. If you want to get this code you need to include the league (the rest of the parameters are optional).
                     <br><br>
                     <ul style="list-style-type: disc">
-                      <li><b>liga:</b> great, ultra o master.</li>
-                      <li><b>básico:</b> incluir si quieres el código para la primera fase evolutiva.</li>
-                      <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
-                      <li><b>amistad:</b> hacer los cálculos hasta nivel 41 en vez de 40.</li>
+                      <li><b>league:</b> great, ultra or master.</li>
+                      <li><b>basic:</b> include if you want the code for the first evolutionary phase.</li>
+                      <li><b>min IV:</b> combination of minimum IVs to be taken into account in the calculations (example: 0/0/0). Format: min# (where # is a number between 0 and 14).</li>
+                      <li><b>friendship:</b> do the calculations up to level 41 instead of 40.</li>
                     </ul>
-                    Los corchetes y paréntesis no se tienen que incluir.
-                    <img id="example" src="images/pokemoncodes.jpg">
+                    Square brackets and brackets do not have to be included.
+                    <img id="example" src="../images/pokemoncodes.jpg">
                   </li>
-                  <li id="usuario_pokemonpvp">
-                    <span class="highlight">/pokemonpvp Pokémon (liga) (IVa/IVd/IVps) (IV mínimo) (nivel mínimo) (amistad) (extra)</span>: información relacionada con PVP sobre un Pokémon.
+                  <li id="user_pokemonpvp">
+                    <span class="highlight">/pokemonpvp Pokémon (league) (IVa/IVd/IVhp) (min IV) (min level) (friendship) (extra)</span>: PVP-related info about a Pokémon.
                     <br><br>
-                    Los parámetros entre paréntesis son opcionales.
+                    The parameters in brackets are optional.
                     <br><br>
                     <ul style="list-style-type: disc">
-                      <li><b>liga:</b> great, ultra o master.</li>
-                      <li><b>IVa/IVd/IVps:</b> combinación de IVs a comprobar.</li>
-                      <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
-                      <li><b>nivel mínimo:</b> nivel mínimo a tener en cuenta en los cálculos.<br>Formato: nivel# (donde # es un número entre 1 y 41).</li>
-                      <li><b>amistad:</b> hacer los cálculos hasta nivel 41 en vez de 40.</li>
-                      <li><b>extra:</b> muestra más información.</li>
+                      <li><b>league:</b> great, ultra or master.</li>
+                      <li><b>IVa/IVd/IVhp:</b> combination of IVs to be checked.</li>
+                      <li><b>min IV:</b> combination of minimum IVs to be taken into account in the calculations (example: 0/0/0). Format: min# (where # is a number between 0 and 14).</li>
+                      <li><b>min level:</b> minimum level to be taken into account in the calculations. Format: level# (where # is a number between 1 and 41).</li>
+                      <li><b>friendship:</b> do the calculations up to level 41 instead of 40.</li>
+                      <li><b>extra:</b> shows more information.</li>
                     </ul>
-                    Los paréntesis no se tienen que incluir.
-                    <img id="example" src="images/pokemonpvp.jpg">
+                    Brackets do not have to be included.
+                    <img id="example" src="../images/pokemonpvp.jpg">
                   </li>
-                  <li id="usuario_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
+                  <li id="user_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
                 </ul>
               </div>
 
-              <h2 id="modo_inline">4. Modo inline</h2>
+              <h2 id="inline_mode">4. Inline mode</h2>
               <div class="text_block info">
                 <p>
-                  Telegram ofrece un modo llamado inline el cual permite a los bots poder mandar ciertos mensajes desde cualquier chat si se ha iniciado conversación con estos.
+                  Telegram offers a mode called inline which allows bots to be able to send certain messages from any chat if a conversation has been started with them.
                 </p>
                 <p>
-                  Una vez has iniciado conversación con el bot, para poder usar este modo escribe en un chat <span class="highlight">@KingCasualBot</span> seguido del comando y sus parámetros.
+                  Once you have started a conversation with the bot, to be able to use this mode write in a chat <span class="highlight">@KingCasualBot</span> followed by the command and its parameters.
                 </p>
                 <p>
-                  En el caso del Casual Bot los comandos <span class="highlight">casualdexes</span> y <span class="highlight">pkmnpvpes</span> están disponibles para usarse con este modo.
+                  In the case of the Casual Bot the commands <span class="highlight">casualdexen</span> y <span class="highlight">pkmnpvpen</span> are available for use with this mode.
                 </p>
                 <p>
-                  Los comandos son ligeramente distintos a los comandos de PVP para poder soportar diversos idiomas.
+                  The commands are slightly different from the PVP commands in order to support multiple languages.
                 </p>
                 <p>
-                  Los parámetros de estos 2 comandos son iguales que en su versión normal con el añadido de que para indicar una forma alternativa se hace poniendo <span class="highlight">?forma</span>.
+                  The parameters of these 2 commands are the same as in their normal version with the addition to indicate an alternative form it is done by putting <span class="highlight">?form</span>.
                 </p>
                 <p>
-                  <b>Ejemplo:</b>
+                  <b>Example:</b>
                 </p>
                 <p>
-                  <span class="highlight">@KingCasualBot pkmnpvpes Giratina ?origen</span>
+                  <span class="highlight">@KingCasualBot pkmnpvpen Giratina ?origin</span>
                 </p>
-                <img id="example" src="images/pokemonpvp_inlinemode.gif">
+                <img id="example" src="../images/pokemonpvp_inlinemode.gif">
               </div>
 
-              <h1 id="admin_doc">Documentación para administradores</h1>
+              <h1 id="admin_doc">Documentation for admins</h1>
               <h2 id="admin_ajustes">1. Ajustes</h2>
               <div class="text_block info">
                 <p>
@@ -238,13 +238,13 @@
               <h3 id="admin_comandos">1.2.1. Comandos</h3>
               <div class="text_block info">
                 <p>
-                  Para activar o desactivar la opción de <a href="#usuario_comandos">comandos</a>.
+                  Para activar o desactivar la opción de <a href="#user_commands">comandos</a>.
                 </p>
               </div>
               <h3 id="admin_comandos_pvp">1.2.2. Comandos PVP</h3>
               <div class="text_block info">
                 <p>
-                  Para activar o desactivar la opción de <a href="#usuario_comandos_pvp">comandos pvp</a>.
+                  Para activar o desactivar la opción de <a href="#user_pvp_commands">comandos pvp</a>.
                 </p>
               </div>
 
@@ -286,7 +286,7 @@
                 <p>
                   Si se tiene un mensaje de bienvenida configurado con otro bot y se quiere usar esta opción, lo más recomendable es configurar el <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> con Casual Bot ya que solo se mostraría si el nuevo miembro pulsa el botón correcto.
                 </p>
-                <img id="example" src="images/press_button_to_talk.jpg">
+                <img id="example" src="../images/press_button_to_talk.jpg">
               </div>
 
               <h2 id="admin_eventos">1.3. Eventos</h2>
@@ -357,13 +357,13 @@
                   <span class="highlight">"Texto botón" = "https://enlace.com"</span>
                 </p>
                 <p>
-                  Para poner más de un botón en la misma fila, pon una coma. Ejemplo:
+                  Para poner más de un botón en la misma fila, pon una coma. Example:
                 </p>
                 <p>
                   <span class="highlight">"Texto 1" = "https://enlace1.com", "Texto 2" = "https://enlace2.com"</span>
                 </p>
                 <p>
-                  <b>Ejemplo:</b>
+                  <b>Example:</b>
                 </p>
                 <p>
                   <span class="highlight">Texto<br>"Texto botón" = "https://enlace.com"</span>
@@ -376,7 +376,7 @@
                   Se pueden mandar mensajes de forma periódica. Hay un límite de <b>10</b> alertas y se configuran con el comando <span class="highlight">/alertcasual</span>.
                 </p>
                 <p>
-                  <b>Ejemplo del comando:</b>
+                  <b>Command example:</b>
                 </p>
                 <p>
                   <span class="highlight">/alertcasual 1 2019/10/14-12 3 10-18 Texto alerta</span>
@@ -404,14 +404,14 @@
                   Si quieres que el Casual Bot ancle la alerta que manda puedes usar los parámetros <span class="highlight">anclarnotificar</span> (notifica a los miembros del grupo) o <span class="highlight">anclar</span>.
                 </p>
                 <p>
-                  Ejemplo: <span class="highlight">/alertcasual 1 2019/10/14-12 3 10-18 anclarnotificar Texto alerta</span>.
+                  Example: <span class="highlight">/alertcasual 1 2019/10/14-12 3 10-18 anclarnotificar Texto alerta</span>.
                 </p>
               </div>
 
               <h3 id="admin_alertas_obtener">3.2. Obtener una alerta</h3>
               <div class="text_block info">
                 <p>
-                  Si tienes una alerta y quieres editarla puedes obtener el contenido de la alerta (lo que pusiste con el comando <span class="highlight">/alertcasual</span>). Para ello usa el comando <span class="highlight">/getalert</span> seguido del número de la alerta. Ejemplo: <span class="highlight">/getalert 1</span>
+                  Si tienes una alerta y quieres editarla puedes obtener el contenido de la alerta (lo que pusiste con el comando <span class="highlight">/alertcasual</span>). Para ello usa el comando <span class="highlight">/getalert</span> seguido del número de la alerta. Example: <span class="highlight">/getalert 1</span>
                 </p>
                 <p>
                   Si quieres ver todas las alertas del grupo escribe <span class="highlight">/getalert all</span>.
@@ -421,7 +421,7 @@
               <h3 id="admin_alertas_borrar">3.3. Eliminar una alerta</h3>
               <div class="text_block info">
                 <p>
-                  Para eliminar una alerta escribe el comando <span class="highlight">/alertcasual</span> seguido del número de la alerta y después -. Ejemplo: <span class="highlight">/alertcasual 1 -</span>.
+                  Para eliminar una alerta escribe el comando <span class="highlight">/alertcasual</span> seguido del número de la alerta y después -. Example: <span class="highlight">/alertcasual 1 -</span>.
                 </p>
               </div>
 
@@ -431,7 +431,7 @@
                   Para añadir un mensaje de bienvenida usa el comando <span class="highlight">/welcomecasual seguido del mensaje de bienvenida</span>.
                 </p>
                 <p>
-                  Ejemplo: <span class="highlight">/welcomecasual Hola casual</span>.
+                  Example: <span class="highlight">/welcomecasual Hola casual</span>.
                 </p>
                 <p>
                   Para borrar el mensaje de bienvenida pon <span class="highlight">/welcomecasual -</span>.
