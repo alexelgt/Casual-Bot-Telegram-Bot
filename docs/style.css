@@ -25,9 +25,6 @@ body {
 a {
   color: #2196f3;
   text-decoration: none;
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  user-select: all;
 }
 
 a:hover {
@@ -35,16 +32,7 @@ a:hover {
 }
 
 * {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-tr, th, tr, td, .log, .select_text_block, span.highlight {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  user-select: text;
 }
 
 /*== Basico ==*/
