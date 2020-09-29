@@ -86,6 +86,21 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
   padding: 1px 0;
 }
 
+#card.donors {
+  font-size: 15px;
+  background-color: #ecd0d0;
+  padding: 5px 10px;
+}
+#card.donors h2, #card.donors p {
+  margin: 0;
+}
+#card.donors h3 {
+  margin: 5px 0;
+}
+#card.donors p.donors {
+  padding-left: 10px;
+}
+
 /*== Card ==*/
 /*==== Block ====*/
 #block {
@@ -590,6 +605,15 @@ img#icon, img#example {
 
 img#example {
   width: 300px;
+}
+
+img#ball {
+  display: block;
+  position: relative;
+  float: left;
+  width: 24px;
+  top: 5px;
+  margin-right: 4px;
 }
 
 @media (max-width: 340px) {
