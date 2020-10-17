@@ -45,7 +45,7 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
 
 /*== Basico ==*/
 /*==== Navbar ====*/
-#navbar {
+nav.main {
   z-index: 2;
   background-color: #5085ec;
   width: 100%;
@@ -53,7 +53,7 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-#navbar h1 {
+nav.main h1 {
   font-size: 20px;
   text-align: center;
   margin: 0;
@@ -63,7 +63,7 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
 
 /*== Navbar ==*/
 /*==== Structure ====*/
-#structure {
+.structure {
   position: relative;
   z-index: 1;
   padding: 0 0 10px;
@@ -74,7 +74,7 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
 
 /*== Structure ==*/
 /*==== Card ====*/
-#card {
+.card {
   background-color: #fff;
   box-sizing: border-box;
   margin: 8px;
@@ -82,54 +82,54 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-#card.padding {
+.card.padding {
   padding: 1px 0;
 }
 
-#card.donors {
+.card.donors {
   font-size: 15px;
   background-color: #ecd0d0;
   padding: 5px 10px;
 }
-#card.donors h2, #card.donors p {
+.card.donors h3, .card.donors p {
   margin: 0;
 }
-#card.donors h3 {
+.card.donors h4 {
   margin: 5px 0;
 }
-#card.donors p.donors {
+.card.donors p.donors {
   padding-left: 10px;
 }
 
 /*== Card ==*/
 /*==== Block ====*/
-#block {
+.block {
   margin: 6px 0;
 }
-#block #block_structure {
+.block .block_structure {
   font-size: 14px;
   box-sizing: border-box;
 }
-#block #block_structure.log {
+.block .block_structure.log {
   margin: 20px 10px 10px;
   padding: 15px 10px 10px;
   border: 1px solid #000;
   border-radius: 6px;
 }
-#block #block_structure.log h2 {
+.block .block_structure.log h3 {
   padding: 0px 3px;
   position: absolute;
   background-color: #fff;
   margin-top: -25px;
   border-radius: 6px;
 }
-#block #block_structure #element {
+.block .block_structure .element {
   padding: 0px 10px;
 }
-#block #block_structure.block_files #element {
+.block .block_structure.block_files .element {
   padding: 0;
 }
-#block h2.app_title {
+.block h3.app_title {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -150,7 +150,7 @@ input + span {
   box-sizing: border-box;
 }
 
-#input_button_structure {
+.input_button_structure {
   width: 100%;
   margin: 4px auto;
   display: flex;
@@ -160,12 +160,12 @@ input + span {
   box-sizing: border-box;
 }
 
-#block #block_structure #element.files > div {
+.block .block_structure .element.files > div {
   flex-direction: column;
   margin: 0 auto;
 }
 
-button, input[type=file] + label, #button_structure > div, a#btn {
+button, input[type=file] + label, #button_structure > div, a.btn {
   margin: 5px 10px;
   position: relative;
   display: inline-block;
@@ -212,13 +212,13 @@ input[type=file]#exclusionareasfile + label {
   background-color: #5756ce;
 }
 
-button::-moz-focus-inner, input[type=file] + label::-moz-focus-inner, #button_structure > div::-moz-focus-inner, a#btn::-moz-focus-inner {
+button::-moz-focus-inner, input[type=file] + label::-moz-focus-inner, #button_structure > div::-moz-focus-inner, a.btn::-moz-focus-inner {
   border: none;
 }
 
 /* Overlay */
 button::before,
-button::after, input[type=file] + label::before, input[type=file] + label::after, #button_structure > div::before, #button_structure > div::after, a#btn::before, a#btn::after {
+button::after, input[type=file] + label::before, input[type=file] + label::after, #button_structure > div::before, #button_structure > div::after, a.btn::before, a.btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -229,30 +229,30 @@ button::after, input[type=file] + label::before, input[type=file] + label::after
   opacity: 0;
 }
 
-button::before, input[type=file] + label::before, #button_structure > div::before, a#btn::before {
+button::before, input[type=file] + label::before, #button_structure > div::before, a.btn::before {
   transition: opacity 0.2s;
 }
 
-button::after, input[type=file] + label::after, #button_structure > div::after, a#btn::after {
+button::after, input[type=file] + label::after, #button_structure > div::after, a.btn::after {
   background: radial-gradient(circle at center, currentColor 1%, transparent 1%) center/10000% 10000% no-repeat;
   transition: opacity 1s, background-size 0.5s;
 }
 
 /* Hover, Focus */
 button:hover,
-button:focus, input[type=file] + label:hover, input[type=file] + label:focus, #button_structure > div:hover, #button_structure > div:focus, a#btn:hover, a#btn:focus {
+button:focus, input[type=file] + label:hover, input[type=file] + label:focus, #button_structure > div:hover, #button_structure > div:focus, a.btn:hover, a.btn:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-button:hover::before, input[type=file] + label:hover::before, #button_structure > div:hover::before, a#btn:hover::before {
+button:hover::before, input[type=file] + label:hover::before, #button_structure > div:hover::before, a.btn:hover::before {
   opacity: 0.08;
 }
 
-button:focus::before, input[type=file] + label:focus::before, #button_structure > div:focus::before, a#btn:focus::before {
+button:focus::before, input[type=file] + label:focus::before, #button_structure > div:focus::before, a.btn:focus::before {
   opacity: 0.24;
 }
 
-button:hover:focus::before, input[type=file] + label:hover:focus::before, #button_structure > div:hover:focus::before, a#btn:hover:focus::before {
+button:hover:focus::before, input[type=file] + label:hover:focus::before, #button_structure > div:hover:focus::before, a.btn:hover:focus::before {
   opacity: 0.32;
 }
 
@@ -261,18 +261,18 @@ button:hover:focus::before, input[type=file] + label:hover:focus::before, #butto
 }
 
 /* Active */
-button:active, input[type=file] + label:active, #button_structure > div:active, a#btn:active {
+button:active, input[type=file] + label:active, #button_structure > div:active, a.btn:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-button:active::after, input[type=file] + label:active::after, #button_structure > div:active::after, a#btn:active::after {
+button:active::after, input[type=file] + label:active::after, #button_structure > div:active::after, a.btn:active::after {
   opacity: 0.32;
   background-size: 100% 100%;
   transition: background-size 0s;
 }
 
 /* Disabled */
-button:disabled, button#btnresetareas:disabled, input[type=file]:disabled + label, input[type=file]#gymsfile:disabled + label, input[type=file]#EXareasfile:disabled + label, input[type=file]#exclusionareasfile:disabled + label, #button_structure > div:disabled, a#btn:disabled {
+button:disabled, button#btnresetareas:disabled, input[type=file]:disabled + label, input[type=file]#gymsfile:disabled + label, input[type=file]#EXareasfile:disabled + label, input[type=file]#exclusionareasfile:disabled + label, #button_structure > div:disabled, a.btn:disabled {
   color: rgba(0, 0, 0, 0.38);
   background-color: rgba(0, 0, 0, 0.12);
   box-shadow: none;
@@ -280,7 +280,7 @@ button:disabled, button#btnresetareas:disabled, input[type=file]:disabled + labe
 }
 
 button:disabled::before,
-button:disabled::after, input[type=file]:disabled + label::before, input[type=file]:disabled + label::after, #button_structure > div:disabled::before, #button_structure > div:disabled::after, a#btn:disabled::before, a#btn:disabled::after {
+button:disabled::after, input[type=file]:disabled + label::before, input[type=file]:disabled + label::after, #button_structure > div:disabled::before, #button_structure > div:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
   opacity: 0;
 }
 
@@ -343,7 +343,7 @@ span.inputfile {
 
 /*== Button ==*/
 /*==== Tables ====*/
-#Output_table_data {
+.Output_table_data {
   position: relative;
   overflow: hidden;
   border-collapse: collapse;
@@ -354,30 +354,30 @@ span.inputfile {
   border-radius: 6px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-#Output_table_data th {
+.Output_table_data th {
   background-color: #000;
   color: #fff;
 }
-#Output_table_data td, #Output_table_data th {
+.Output_table_data td, .Output_table_data th {
   padding: 5px;
   border-right: 1px solid #000;
   text-align: center;
 }
-#Output_table_data td:last-child, #Output_table_data th:last-child {
+.Output_table_data td:last-child, .Output_table_data th:last-child {
   border: none;
 }
-#Output_table_data tr.ex {
+.Output_table_data tr.ex {
   background-color: #d7ffd7;
 }
-#Output_table_data tr.blocked {
+.Output_table_data tr.blocked {
   background-color: #ffd7d7;
 }
-#Output_table_data tr {
+.Output_table_data tr {
   border: 1px solid #000;
   border-left: none;
   border-right: none;
 }
-#Output_table_data tr:last-child {
+.Output_table_data tr:last-child {
   border-bottom: none;
 }
 
@@ -433,19 +433,19 @@ input:focus {
 
 /*== Input URL ==*/
 /*==== Text ====*/
-h1 {
+h1, h2 {
   font-size: 26px;
 }
 
-h2 {
+h3 {
   font-size: 23px;
 }
 
-h3 {
+h4 {
   font-size: 20px;
 }
 
-h2, h3 {
+h3, h4 {
   margin: 10px 0 0px;
 }
 
@@ -535,7 +535,7 @@ span.log, .select_text_block {
   -o-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-#sidebar h2 {
+#sidebar h3 {
   font-size: 20px;
   padding: 0px;
   margin: 7px 0 20px;
@@ -568,8 +568,7 @@ span.log, .select_text_block {
   box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
-ul {
-  list-style-type: decimal;
+ul, ol {
   font-size: 17px;
 }
 
@@ -578,8 +577,8 @@ li {
   padding-right: 20px;
 }
 
-ul ul {
-  padding-left: 20px;
+li ol {
+  padding: 10px 0 0px 20px;
 }
 
 .select_text_block {
@@ -594,7 +593,7 @@ p {
   margin-bottom: 0;
 }
 
-img#icon, img#example {
+img.icon, img.example {
   display: block;
   position: relative;
   width: 80px;
@@ -603,11 +602,11 @@ img#icon, img#example {
   margin: 10px auto;
 }
 
-img#example {
+img.example {
   width: 300px;
 }
 
-img#ball {
+img.ball {
   display: block;
   position: relative;
   float: left;
@@ -617,17 +616,17 @@ img#ball {
 }
 
 @media (max-width: 340px) {
-  #Output_table_data {
+  .Output_table_data {
     font-size: 14px;
     width: 100%;
   }
 
-  img#example {
+  img.example {
     width: 100%;
   }
 }
 @media only screen and (device-width: 375px) and (width: 812px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  #card {
+  .card {
     margin: 8px 44px;
   }
 }

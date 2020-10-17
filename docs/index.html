@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang='es' xml:lang='es'>
   <head>
       <title>Documentación Casual Bot</title>
@@ -6,33 +7,32 @@
       <meta name="description" content="Documentación del bot más casual de Telegram para Pokémon GO">
       <link rel="icon" sizes="192x192" href="icon_circle.png">
       <link rel="apple-touch-icon-precomposed" href="icon.png">
-      <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no, viewport-fit=cover" name="viewport">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-    <div id="navbar">
+    <nav class="main">
       <h1>Bot de Telegram Casual Bot</h1>
-    </div>
+    </nav>
 
-    <div id="structure">
+    <div class="structure">
 
-      <div id="card" class="padding">
+      <div class="card padding">
 
-        <div id="block">
-          <div id="block_structure">
+        <div class="block">
+          <div class="block_structure">
 
-            <div id="element">
-              <div id="input_button_structure">
-                <a href="en/" id='btn'>English</a>
+            <div class="element">
+              <div class="input_button_structure">
+                <a href="en/" class="btn">English</a>
               </div>
             </div>
 
-            <div id="element">
-              <img id="icon" src="icon.png">
-              <h2 class="app_title"><a href="https://t.me/KingCasualBot" target="_blank">@KingCasualBot</a></h2>
+            <div class="element">
+              <img class="icon" src="icon.png" alt="icon">
+              <h3 class="app_title"><a href="https://t.me/KingCasualBot" target="_blank">@KingCasualBot</a></h3>
 
               <div class="text_block">
                 <p>
@@ -43,90 +43,112 @@
                 </p>
               </div>
 
-              <div id="card" class="donors">
-                <h2>Donadores</h2>
+              <div class="card donors">
+                <h3>Donadores</h3>
                 <p>
                   El bot puede seguir funcionando gracias a las donaciones de la gente que ayudan desde <b><u><a href="https://www.patreon.com/alexelgt" target="_blank">Patreon</a></u></b>.
                   <br><br>
                   Si realizas una donación puedes hacer que los grupos de los que eres creador pasen a ser <a href="#admin_grupos_premium">premium</a> durante un tiempo determinado.
                 </p>
-                <img id="ball" src="images/HonorBall.png"><h3>Honor Ball</h3>
+                <img class="ball" src="images/HonorBall.png" alt="Honor Ball"><h4>Honor Ball</h4>
                 <p class="donors">Zeldabalca y Tina Arroyo</p>
 
-                <!-- <img id="ball" src="images/MasterBall.png"><h3>Master Ball</h3>
+                <!-- <img class="ball" src="images/MasterBall.png" alt="Master Ball"><h4>Master Ball</h4>
                 <p class="donors">Holo</p>
 
-                <img id="ball" src="images/UltraBall.png"><h3>Ultra Ball</h3>
+                <img class="ball" src="images/UltraBall.png" alt="Ultra Ball"><h4>Ultra Ball</h4>
                 <p class="donors">Holo</p>
 
-                <img id="ball" src="images/SuperBall.png"><h3>Super Ball</h3>
+                <img class="ball" src="images/SuperBall.png" alt="Super Ball"><h4>Super Ball</h4>
                 <p class="donors">Holo</p>
 
-                <h3>Desconocido</h3>
+                <h4>Desconocido</h4>
                 <p class="donors">Holo</p> -->
               </div>
 
               <div class="text_block info">
-                <ul>
-                  <li><a href="#usuario_doc">Documentación para usuarios</a></li>
-                  <ul>
-                    <li><a href="#usuario_eventos">Eventos</a></li>
-                    <li><a href="#usuario_comandos">Comandos</a></li>
-                    <li><a href="#usuario_comandos_pvp">Comandos PVP</a></li>
-                    <ul>
-                      <li><a href="#usuario_casualdex">/casualdex</a></li>
-                      <li><a href="#usuario_pokemoncodes">/pokemoncodes</a></li>
-                      <li><a href="#usuario_pokemonpvp">/pokemonpvp</a></li>
-                      <li><a href="#usuario_pvpranking">/pvpranking</a></li>
-                    </ul>
-                    <li><a href="#modo_inline">Modo inline</a></li>
-                  </ul>
-                  <li><a href="#admin_doc">Documentación para administradores</a></li>
-                  <ul>
-                    <li><a href="#admin_ajustes">Ajustes</a></li>
-                    <ul>
-                      <li><a href="#admin_activar_o_desactivar_bot">Activar o desactivar el bot</a></li>
-                      <li><a href="#admin_ajustes_generales">Ajustes generales</a></li>
-                      <ul>
-                        <li><a href="#admin_comandos">Comandos</a></li>
-                        <li><a href="#admin_comandos_pvp">Comandos PVP</a></li>
-                        <li><a href="#admin_borrar_mensajes_comunes">Borrar mensajes comunes</a></li>
-                        <li><a href="#admin_borrar_camigos">Borrar códigos de amigos</a></li>
-                        <li><a href="#admin_anti_spam">Anti Spam</a></li>
-                        <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
-                      </ul>
-                      <li><a href="#admin_eventos">Eventos</a></li>
-                      <li><a href="#admin_noticias">Noticias</a></li>
-                      <li><a href="#admin_temporizadores">Temporizadores</a></li>
-                      <li><a href="#admin_notificaciones_nocturnas">Notificaciones nocturnas</a></li>
-                      <li><a href="#admin_zona_horaria">Zona horaria</a></li>
-                      <li><a href="#admin_idioma">Idioma</a></li>
-                    </ul>
-                    <li><a href="#admin_botones">Botones</a></li>
-                    <li><a href="#admin_alertas">Alertas</a></li>
-                    <ul>
-                      <li><a href="#admin_alertas_anclar">Anclar una alerta</a></li>
-                      <li><a href="#admin_alertas_obtener">Obtener una alerta</a></li>
-                      <li><a href="#admin_alertas_borrar">Eliminar una alerta</a></li>
-                    </ul>
-                    <li><a href="#admin_mensaje_bienvenida">Mensaje de bienvenida</a></li>
-                    <li><a href="#admin_etiquetas_html">Etiquetas HTML en mensajes</a></li>
-                  </ul>
+                <ol>
+                  <li><a href="#usuario_doc">Documentación para usuarios</a>
+                    <ol>
+                      <li><a href="#usuario_eventos">Eventos</a></li>
+                      <li><a href="#usuario_comandos">Comandos</a></li>
+                      <li><a href="#usuario_comandos_pvp">Comandos PVP</a>
+                        <ol>
+                          <li><a href="#usuario_casualdex">/casualdex</a></li>
+                          <li><a href="#usuario_pokemoncodes">/pokemoncodes</a></li>
+                          <li><a href="#usuario_pokemonpvp">/pokemonpvp</a></li>
+                          <li><a href="#usuario_movimientoselite">/elitefast y /elitecharged</a></li>
+                          <li><a href="#usuario_pvpranking">/pvpranking</a></li>
+                        </ol>
+                      </li>
+                      <li><a href="#modo_inline">Modo inline</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#admin_doc">Documentación para administradores</a>
+                    <ol>
+                      <li><a href="#admin_ajustes">Ajustes</a>
+                        <ol>
+                          <li><a href="#admin_activar_o_desactivar_bot">Activar o desactivar el bot</a></li>
+                          <li><a href="#admin_ajustes_generales">Ajustes generales</a>
+                            <ol>
+                              <li><a href="#admin_comandos">Comandos</a></li>
+                              <li><a href="#admin_comandos_pvp">Comandos PVP</a></li>
+                              <li><a href="#admin_borrar_mensajes_comunes">Borrar mensajes comunes</a></li>
+                              <li><a href="#admin_borrar_camigos">Borrar códigos de amigos</a></li>
+                              <li><a href="#admin_anti_spam">Anti Spam</a></li>
+                              <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                            </ol>
+                          </li>
+                          <li><a href="#admin_eventos">Eventos</a></li>
+                          <li><a href="#admin_noticias">Noticias</a></li>
+                          <li><a href="#admin_temporizadores">Temporizadores</a></li>
+                          <li><a href="#admin_notificaciones_nocturnas">Notificaciones nocturnas</a></li>
+                          <li><a href="#admin_zona_horaria">Zona horaria</a></li>
+                          <li><a href="#admin_idioma">Idioma</a></li>
+                        </ol>
+                      </li>
+                      <li><a href="#admin_botones">Botones</a></li>
+                      <li><a href="#admin_alertas">Alertas</a>
+                        <ol>
+                          <li><a href="#admin_alertas_anclar">Anclar una alerta</a></li>
+                          <li><a href="#admin_alertas_obtener">Obtener una alerta</a></li>
+                          <li><a href="#admin_alertas_borrar">Eliminar una alerta</a></li>
+                        </ol>
+                      </li>
+                      <li><a href="#admin_mensaje_bienvenida">Mensaje de bienvenida</a>
+                        <ol>
+                          <li><a href="#admin_img_mensaje_bienvenida">Imagen en mensaje de bienvenida [PREMIUM]</a></li>
+                        </ol>
+                      </li>
+                      <li><a href="#admin_etiquetas_html">Etiquetas HTML en mensajes</a></li>
+                    </ol>
+                  </li>
                   <li><a href="#admin_grupos_premium">Grupos premium</a></li>
-                  <li><a href="#admin_tablas_informacion">Tablas con información</a></li>
-                  <ul>
-                    <li><a href="#admin_tabla_funcionalidades">Funcionalidades</a></li>
-                    <li><a href="#admin_tabla_permisos">Permisos necesarios</a></li>
-                  </ul>
-                  <li><a href="#faq">Preguntas frecuentes</a></li>
-                  <ul>
-                    <li><a href="#faq_evitar_spam">¿Cómo evito el spam?</a></li>
-                  </ul>
-                </ul>
+                  <li><a href="#admin_tablas_informacion">Tablas con información</a>
+                    <ol>
+                      <li><a href="#admin_tabla_funcionalidades">Funcionalidades</a></li>
+                      <li><a href="#admin_tabla_permisos">Permisos necesarios</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#faq">Preguntas frecuentes</a>
+                    <ol>
+                      <li><a href="#faq_evitar_spam">¿Cómo evito el spam?</a></li>
+                    </ol>
+                  </li>
+                </ol>
               </div>
 
-              <h1 id="usuario_doc">Documentación para usuarios</h1>
-              <h2 id="usuario_eventos">1. Eventos</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card padding">
+
+        <div class="block">
+          <div class="block_structure">
+            <div class="element">
+              <h2 id="usuario_doc">Documentación para usuarios</h2>
+              <h3 id="usuario_eventos">1. Eventos</h3>
               <div class="text_block info">
                 <p>
                   La funcionalidad principal disponible en grupos y en canales es un listado de eventos el cual se puede pedir con el comando <span class="highlight">/eventos</span> o escribiendo <span class="highlight">listado de eventos</span>.
@@ -134,30 +156,30 @@
                 <p>
                   También se manda notificación cuando empieza o termina un evento.
                 </p>
+                <h4>Canales de eventos:</h4>
+                <ul>
+                  <li>Europe/Madrid: <a href="https://t.me/pokemongoeventos" target="_blank">@pokemongoeventos</a> | <a href="https://twitter.com/PoGOEventos" target="_blank">Twitter</a></li>
+                  <li>Portugal: <a href="https://t.me/pokemongoeventosPT" target="_blank">@pokemongoeventosPT</a> | <a href="https://twitter.com/PoGOEventosPT" target="_blank">Twitter</a></li>
+                  <li>Central European Time: <a href="https://t.me/pokemongoeventsCET" target="_blank">@pokemongoeventsCET</a></li>
+                  <li>Atlantic/Canary: <a href="https://t.me/pokemongoeventosCanarias" target="_blank">@pokemongoeventosCanarias</a></li>
+                  <li>America/Santiago: <a href="https://t.me/pokemongoeventosSantiago" target="_blank">@pokemongoeventosSantiago</a> | <a href="https://twitter.com/PoGOEventosCL" target="_blank">Twitter</a></li>
+                  <li>America/Buenos_Aires: <a href="https://t.me/pokemongoeventosBuenosAires" target="_blank">@pokemongoeventosBuenosAires</a> | <a href="https://twitter.com/PoGOEventosAR" target="_blank">Twitter</a></li>
+                  <li>America/Lima: <a href="https://t.me/pokemongoeventosLima" target="_blank">@pokemongoeventosLima</a> | <a href="https://twitter.com/PoGOEventosLima" target="_blank">Twitter</a></li>
+                  <li>America/Sao_Paulo: <a href="https://t.me/pokemongoeventosSaoPaulo" target="_blank">@pokemongoeventosSaoPaulo</a> | <a href="https://twitter.com/PoGOEventosSP" target="_blank">Twitter</a></li>
+                  <li>Eastern European Time: <a href="https://t.me/pokemongoeventsEET" target="_blank">@pokemongoeventsEET</a></li>
+                  <li>America/Mexico_City: <a href="https://t.me/pokemongoeventosMexicoCity" target="_blank">@pokemongoeventosMexicoCity</a> | <a href="https://twitter.com/PoGOEventosCDMX" target="_blank">Twitter</a></li>
+                </ul>
                 <p>
-                  <b>Canales de eventos:</b><br>
-                  <ul style="list-style-type: disc">
-                    <li>Europe/Madrid: <a href="https://t.me/pokemongoeventos" target="_blank">@pokemongoeventos</a> | <a href="https://twitter.com/PoGOEventos" target="_blank">Twitter</a></li>
-                    <li>Portugal: <a href="https://t.me/pokemongoeventosPT" target="_blank">@pokemongoeventosPT</a> | <a href="https://twitter.com/PoGOEventosPT" target="_blank">Twitter</a></li>
-                    <li>Central European Time: <a href="https://t.me/pokemongoeventsCET" target="_blank">@pokemongoeventsCET</a></li>
-                    <li>Atlantic/Canary: <a href="https://t.me/pokemongoeventosCanarias" target="_blank">@pokemongoeventosCanarias</a></li>
-                    <li>America/Santiago: <a href="https://t.me/pokemongoeventosSantiago" target="_blank">@pokemongoeventosSantiago</a> | <a href="https://twitter.com/PoGOEventosCL" target="_blank">Twitter</a></li>
-                    <li>America/Buenos_Aires: <a href="https://t.me/pokemongoeventosBuenosAires" target="_blank">@pokemongoeventosBuenosAires</a> | <a href="https://twitter.com/PoGOEventosAR" target="_blank">Twitter</a></li>
-                    <li>America/Lima: <a href="https://t.me/pokemongoeventosLima" target="_blank">@pokemongoeventosLima</a> | <a href="https://twitter.com/PoGOEventosLima" target="_blank">Twitter</a></li>
-                    <li>America/Sao_Paulo: <a href="https://t.me/pokemongoeventosSaoPaulo" target="_blank">@pokemongoeventosSaoPaulo</a> | <a href="https://twitter.com/PoGOEventosSP" target="_blank">Twitter</a></li>
-                    <li>Eastern European Time: <a href="https://t.me/pokemongoeventsEET" target="_blank">@pokemongoeventsEET</a></li>
-                    <li>America/Mexico_City: <a href="https://t.me/pokemongoeventosMexicoCity" target="_blank">@pokemongoeventosMexicoCity</a> | <a href="https://twitter.com/PoGOEventosCDMX" target="_blank">Twitter</a></li>
-                  </ul>
                   Los canales de eventos están disponibles en <a href="https://discord.gg/kEVFTvh" target="_blank">Discord</a>.
                 </p>
               </div>
 
-              <h2 id="usuario_comandos">2. Comandos</h2>
+              <h3 id="usuario_comandos">2. Comandos</h3>
               <div class="text_block info">
                 <p>
                   Casual Bot responderá a diversas frases como por ejemplo:
                 </p>
-                <ul>
+                <ol>
                   <li><b><span class="highlight">info huevos/raids/investigaciones</span> <a href="https://t.me/KingCasualBot?start=cmd-infoeggs" target="_blank">[Enlace huevos]</a> | <a href="https://t.me/KingCasualBot?start=cmd-inforaids" target="_blank">[Enlace raids]</a> | <a href="https://t.me/KingCasualBot?start=cmd-infortasks" target="_blank">[Enlace investigaciones]</a>:</b> información sobre huevos, raids o investigaciones.<br>Ejemplo: <span class="highlight">info huevos</span>. La información es de <a href="https://thesilphroad.com" target="_blank">https://thesilphroad.com</a>.</li>
                   <li><b><span class="highlight">quiero llorar a Niantic</span> <a href="https://t.me/KingCasualBot?start=cmd-crytoniantic" target="_blank">[Enlace]</a>:</b> instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.</li>
                   <li><b><span class="highlight">cuándo es la hora legendaria</span>:</b> indica cuándo suelen ser las horas legendarias.</li>
@@ -166,46 +188,46 @@
                   <li><b><span class="highlight">cómo me registro con Pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-registerpikachu" target="_blank">[Enlace]</a>:</b> instrucciones para registrarse con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
                   <li><b><span class="highlight">cómo crear una raid</span> <a href="https://t.me/KingCasualBot?start=cmd-createraid" target="_blank">[Enlace]</a>:</b> instrucciones para crear un anuncio o raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
                   <li><b><span class="highlight">instrucciones invitar pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-invitepikachu" target="_blank">[Enlace]</a>:</b> instrucciones para invitar a una raid con el bot <a href="https://t.me/detectivepikachubot" target="_blank">@detectivepikachubot</a>.</li>
-                </ul>
+                </ol>
                 <p>
                   Los comandos que tienen enlace los puedes poner en un mensaje para que si alguien lo pulsa, le mande la información por privado.
                 </p>
               </div>
 
-              <h2 id="usuario_comandos_pvp">3. Comandos PVP</h2>
+              <h3 id="usuario_comandos_pvp">3. Comandos PVP</h3>
               <div class="text_block info">
-                <ul>
+                <ol>
                   <li id="usuario_casualdex">
                     <span class="highlight">/casualdex Pokémon</span>: información sobre un Pokémon.
                     <br><br>
                     Los parámetros entre paréntesis son opcionales.
                     <br><br>
-                    <ul style="list-style-type: disc">
+                    <ul>
                       <li><b>pve:</b> mostrar estadísticas de movimientos para PVE.</li>
                     </ul>
                     Los paréntesis no se tienen que incluir.
-                    <img id="example" src="images/casualdex.jpg">
+                    <img class="example" src="images/casualdex.jpg" alt="casualdex">
                   </li>
                   <li id="usuario_pokemoncodes">
                     <span class="highlight">/pokemoncodes Pokémon [liga (básico) (IV mínimo) (amistad)]</span>: códigos para filtrar un Pokémon.
                     <br><br>
                     Los parámetros entre corchetes son opcionales y son usados para obtener un código para PVP. Si se quiere obtener este código es necesario incluir la liga (el resto de párametros son opcionales).
                     <br><br>
-                    <ul style="list-style-type: disc">
+                    <ul>
                       <li><b>liga:</b> great, ultra o master.</li>
                       <li><b>básico:</b> incluir si quieres el código para la primera fase evolutiva.</li>
                       <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
                       <li><b>amistad:</b> hacer los cálculos hasta nivel 41 en vez de 40.</li>
                     </ul>
                     Los corchetes y paréntesis no se tienen que incluir.
-                    <img id="example" src="images/pokemoncodes.jpg">
+                    <img class="example" src="images/pokemoncodes.jpg" alt="pokemoncodes">
                   </li>
                   <li id="usuario_pokemonpvp">
                     <span class="highlight">/pokemonpvp Pokémon (liga) (IVa/IVd/IVps) (IV mínimo) (nivel mínimo) (amistad) (extra)</span>: información relacionada con PVP sobre un Pokémon.
                     <br><br>
                     Los parámetros entre paréntesis son opcionales.
                     <br><br>
-                    <ul style="list-style-type: disc">
+                    <ul>
                       <li><b>liga:</b> great, ultra o master.</li>
                       <li><b>IVa/IVd/IVps:</b> combinación de IVs a comprobar.</li>
                       <li><b>IV mínimo:</b> combinación de IVs mínimos a tener en cuenta en los cálculos (ejemplo: 0/0/0).<br>Formato: min# (donde # es un número entre 0 y 14).</li>
@@ -214,13 +236,14 @@
                       <li><b>extra:</b> muestra más información.</li>
                     </ul>
                     Los paréntesis no se tienen que incluir.
-                    <img id="example" src="images/pokemonpvp.jpg">
+                    <img class="example" src="images/pokemonpvp.jpg" alt="pokemonpvp">
                   </li>
+                  <li id="usuario_movimientoselite"><span class="highlight">/elitefast</span> y <span class="highlight">/elitecharged</span>: lista de movimientos rápidos y cargados que solo están disponibles usando MT élite. <b>Estos comandos solo están disponibles por privado</b>.</li>
                   <li id="usuario_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank">silph.gg</a>.</li>
-                </ul>
+                </ol>
               </div>
 
-              <h2 id="modo_inline">4. Modo inline</h2>
+              <h3 id="modo_inline">4. Modo inline</h3>
               <div class="text_block info">
                 <p>
                   Telegram ofrece un modo llamado inline el cual permite a los bots poder mandar ciertos mensajes desde cualquier chat si se ha iniciado conversación con estos.
@@ -256,23 +279,33 @@
                 <p>
                   <span class="highlight">@KingCasualBot pkmnpvpes Giratina ?origen</span>
                 </p>
-                <img id="example" src="images/pokemonpvp_inlinemode.gif">
+                <img class="example" src="images/pokemonpvp_inlinemode.gif" alt="pokemonpvp modo inline">
               </div>
 
-              <h1 id="admin_doc">Documentación para administradores</h1>
-              <h2 id="admin_ajustes">1. Ajustes</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card padding">
+
+        <div class="block">
+          <div class="block_structure">
+            <div class="element">
+
+              <h2 id="admin_doc">Documentación para administradores</h2>
+              <h3 id="admin_ajustes">1. Ajustes</h3>
               <div class="text_block info">
                 <p>
                   Para acceder a los ajustes del bot pon el comando <span class="highlight">/settings@KingCasualBot</span>.
                 </p>
               </div>
 
-              <h2 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h2>
+              <h3 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h3>
               <div class="text_block info">
                 <p>
                   Permite activar o desactivar el bot. Cuando está desactivado se mantiene activo lo siguiente:
                 </p>
-                <ul style="list-style-type: disc">
+                <ul>
                   <li>Comandos solo disponibles para administradores (para ahorrar comprobaciones).</li>
                   <li>Anti Spam</li>
                   <li>Pulsar botón para hablar</li>
@@ -280,28 +313,28 @@
                 </ul>
               </div>
 
-              <h2 id="admin_ajustes_generales">1.2. Ajustes generales</h2>
-              <h3 id="admin_comandos">1.2.1. Comandos</h3>
+              <h3 id="admin_ajustes_generales">1.2. Ajustes generales</h3>
+              <h4 id="admin_comandos">1.2.1. Comandos</h4>
               <div class="text_block info">
                 <p>
                   Para activar o desactivar la opción de <a href="#usuario_comandos">comandos</a>.
                 </p>
               </div>
-              <h3 id="admin_comandos_pvp">1.2.2. Comandos PVP</h3>
+              <h4 id="admin_comandos_pvp">1.2.2. Comandos PVP</h4>
               <div class="text_block info">
                 <p>
                   Para activar o desactivar la opción de <a href="#usuario_comandos_pvp">comandos pvp</a>.
                 </p>
               </div>
 
-              <h3 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h3>
+              <h4 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h4>
               <div class="text_block info">
                 <p>
                   Si se activa esta opción, Casual Bot borrará mensajes del estilo "alguién más se apunta", "si va más gente me apunto", "estoy por apuntarme a", etc.
                 </p>
               </div>
 
-              <h3 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h3>
+              <h4 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h4>
               <div class="text_block info">
                 <p>
                   Con esta opción se borrarán los mensajes que contengan códigos de amigos. Se incluyen capturas de pantalla (salvo las que estén recortadas de forma extraña).
@@ -317,14 +350,14 @@
                 </p>
               </div>
 
-              <h3 id="admin_anti_spam">1.2.5. Anti Spam</h3>
+              <h4 id="admin_anti_spam">1.2.5. Anti Spam</h4>
               <div class="text_block info">
                 <p>
                   Casual Bot borrará los mensajes de spam y baneará al miembro que mandó el mensaje.
                 </p>
               </div>
 
-              <h3 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h3>
+              <h4 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h4>
               <div class="text_block info">
                 <p>
                   Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón. <b>El mensaje tiene un retardo de 1 segundo para que en el caso de tener otro bot con mensaje de bienvenida, esta se muestre primero.</b>
@@ -332,10 +365,10 @@
                 <p>
                   Si se tiene un mensaje de bienvenida configurado con otro bot y se quiere usar esta opción, lo más recomendable es configurar el <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> con Casual Bot ya que solo se mostraría si el nuevo miembro pulsa el botón correcto.
                 </p>
-                <img id="example" src="images/press_button_to_talk.jpg">
+                <img class="example" src="images/press_button_to_talk.jpg" alt="pulsar botón para hablar">
               </div>
 
-              <h2 id="admin_eventos">1.3. Eventos</h2>
+              <h3 id="admin_eventos">1.3. Eventos</h3>
               <div class="text_block info">
                 <p>
                   Si no has activado los eventos, te pedirá que actives lo actives. Después de hacer esto (o si ya las tenías activadas), podrás activar o desactivar el comando <span class="highlight">/eventos</span>, la notificación diaria (a las 8:50) con el listado de eventos o las notificaciones cuando empieza o termina un evento.
@@ -345,7 +378,7 @@
                 </p>
               </div>
 
-              <h2 id="admin_noticias">1.4. Noticias</h2>
+              <h3 id="admin_noticias">1.4. Noticias</h3>
               <div class="text_block info">
                 <p>
                   Permite que se reenvien al grupo los mensajes que se mandan en diversos canales de noticias.
@@ -355,14 +388,14 @@
                 </p>
               </div>
 
-              <h2 id="admin_temporizadores">1.5. Temporizadores</h2>
+              <h3 id="admin_temporizadores">1.5. Temporizadores</h3>
               <div class="text_block info">
                 <p>
                   Permite que se borren algunos mensajes pasado el tiempo que se indique.
                 </p>
               </div>
 
-              <h2 id="admin_notificaciones_nocturnas">1.6. Notificaciones nocturnas</h2>
+              <h3 id="admin_notificaciones_nocturnas">1.6. Notificaciones nocturnas</h3>
               <div class="text_block info">
                 <p>
                   Permite configurar el comportamiento del algunos mensajes que se manden de 1:00 a 7:59.
@@ -374,21 +407,21 @@
                 </p>
               </div>
 
-              <h2 id="admin_zona_horaria">1.7. Zona horaria</h2>
+              <h3 id="admin_zona_horaria">1.7. Zona horaria</h3>
               <div class="text_block info">
                 <p>
                   Permite cambiar la zona horaria del grupo. Esto sirve para recibir las notificaciones de los eventos y las alertas cuando corresponden.
                 </p>
               </div>
 
-              <h2 id="admin_idioma">1.8. Idioma</h2>
+              <h3 id="admin_idioma">1.8. Idioma</h3>
               <div class="text_block info">
                 <p>
                   Permite cambiar el idioma del bot.
                 </p>
               </div>
 
-              <h2 id="admin_botones">2. Botones</h2>
+              <h3 id="admin_botones">2. Botones</h3>
               <div class="text_block info">
                 <p>
                   Se pueden incluir botones en las <a href="#admin_alertas">alertas</a>, <a href="#admin_borrar_camigos">mensaje al borrar un código de amigo</a> y <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a>.
@@ -416,7 +449,7 @@
                 </p>
               </div>
 
-              <h2 id="admin_alertas">3. Alertas</h2>
+              <h3 id="admin_alertas">3. Alertas</h3>
               <div class="text_block info">
                 <p>
                   Se pueden mandar mensajes de forma periódica. Hay un límite de <b>10</b> alertas y se configuran con el comando <span class="highlight">/alertcasual</span>.
@@ -444,7 +477,7 @@
                 </p>
               </div>
 
-              <h3 id="admin_alertas_anclar">3.1. Anclar una alerta</h3>
+              <h4 id="admin_alertas_anclar">3.1. Anclar una alerta</h4>
               <div class="text_block info">
                 <p>
                   Si quieres que Casual Bot ancle la alerta que manda puedes usar los parámetros <span class="highlight">anclarnotificar</span> (notifica a los miembros del grupo) o <span class="highlight">anclar</span>.
@@ -454,7 +487,7 @@
                 </p>
               </div>
 
-              <h3 id="admin_alertas_obtener">3.2. Obtener una alerta</h3>
+              <h4 id="admin_alertas_obtener">3.2. Obtener una alerta</h4>
               <div class="text_block info">
                 <p>
                   Si tienes una alerta y quieres editarla puedes obtener el contenido de la alerta (lo que pusiste con el comando <span class="highlight">/alertcasual</span>). Para ello usa el comando <span class="highlight">/getalert</span> seguido del número de la alerta. Ejemplo: <span class="highlight">/getalert 1</span>
@@ -464,14 +497,14 @@
                 </p>
               </div>
 
-              <h3 id="admin_alertas_borrar">3.3. Eliminar una alerta</h3>
+              <h4 id="admin_alertas_borrar">3.3. Eliminar una alerta</h4>
               <div class="text_block info">
                 <p>
                   Para eliminar una alerta escribe el comando <span class="highlight">/alertcasual</span> seguido del número de la alerta y después -. Ejemplo: <span class="highlight">/alertcasual 1 -</span>.
                 </p>
               </div>
 
-              <h2 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h2>
+              <h3 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h3>
               <div class="text_block info">
                 <p>
                   Para añadir un mensaje de bienvenida usa el comando <span class="highlight">/welcomecasual seguido del mensaje de bienvenida</span>.
@@ -495,7 +528,24 @@
                 </ul>
               </div>
 
-              <h2 id="admin_etiquetas_html">5. Etiquetas HTML en mensajes</h2>
+              <h4 id="admin_img_mensaje_bienvenida">4.1 Imagen en mensaje de bienvenida [PREMIUM]</h4>
+              <div class="text_block info">
+                <p>
+                  Instrucciones para añadir una imagen de bienvenida:
+                </p>
+                <ol>
+                  <li>Manda una imagen al grupo.</li>
+                  <li>Cita la imagen y pon el siguiente comando: <span class="highlight">/welcomeimagecasual</span></li>
+                </ol>
+                <p>
+                  Instrucciones para borrar una imagen de bienvenida:
+                </p>
+                <ol>
+                  <li>Escribe: <span class="highlight">/welcomeimagecasual -</span></li>
+                </ol>
+              </div>
+
+              <h3 id="admin_etiquetas_html">5. Etiquetas HTML en mensajes</h3>
               <div class="text_block info">
                 <p>
                   Se pueden añadir etiquetas HTML en <a href="#admin_alertas">alertas</a>, <a href="#admin_borrar_camigos">mensaje al borrar un código de amigo</a>, <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a> y con el <a href="#admin_botones">comando /casualbotones</a>.
@@ -512,30 +562,37 @@
                 </ul>
               </div>
 
-              <h1 id="admin_grupos_premium">Grupos premium</h1>
+              <h2 id="admin_grupos_premium">Grupos premium</h2>
               <div class="text_block info">
                 <p>
                   Si realizas una donación desde <b><u><a href="https://www.patreon.com/alexelgt" target="_blank">Patreon</a></u></b> puedes hacer que los grupos de los que eres creador pasen a ser premium durante un tiempo determinado.
                 </p>
-                <p>
-                  <h3>Ventajas de los grupos premium:</h3>
-                  <ul style="list-style-type: disc">
-                    <li>Prioridad extra a la hora de recibir los eventos y noticias.</li>
-                    <li>Poder activar eventos y noticias en grupos con pocos miembros.</li>
-                    <li>Se pueden configurar 25 alertas en vez de 10.</li>
-                    <li>Se puede establecer una imagen en el mensaje de bienvenida.</li>
-                  </ul>
-                </p>
+                <h4>Ventajas de los grupos premium:</h4>
+                <ul>
+                  <li>Prioridad extra a la hora de recibir los eventos y noticias.</li>
+                  <li>Poder activar eventos y noticias en grupos con pocos miembros.</li>
+                  <li>Se pueden configurar 25 alertas en vez de 10.</li>
+                  <li>Se puede establecer una imagen en el mensaje de bienvenida.</li>
+                </ul>
               </div>
 
-              <h1 id="admin_tablas_informacion">Tablas con información</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card padding">
+
+        <div class="block">
+          <div class="block_structure">
+            <div class="element">
+              <h2 id="admin_tablas_informacion">Tablas con información</h2>
               <div class="text_block info">
                 <p>
                   A continuación se muestran unas tablas con información adicional del bot.
                 </p>
               </div>
 
-              <h2 id="admin_tabla_funcionalidades">1. Funcionalidades</h2>
+              <h3 id="admin_tabla_funcionalidades">1. Funcionalidades</h3>
               <div class="text_block info">
                 <p>
                   <b>Leyenda:</b><br>
@@ -544,7 +601,7 @@
                   <b>?</b>: desactivado por defecto<br>
                   +XX👨‍👩‍👧‍👦: solo grupos con +XX miembros
                 </p>
-                <table id="Output_table_data">
+                <table class="Output_table_data">
                   <tr>
                     <th>Funcionalidad</th>
                     <th>Privado</th>
@@ -618,12 +675,12 @@
                 </table>
               </div>
 
-              <h2 id="admin_tabla_permisos">2. Permisos necesarios</h2>
+              <h3 id="admin_tabla_permisos">2. Permisos necesarios</h3>
               <div class="text_block info">
                 <p>
                   <b>Si el grupo tiene el modo lento activado es muy recomendable que se añada al bot como administrador para que no se le apliquen las restricciones de tiempo al mandar mensajes.</b>
                 </p>
-                <table id="Output_table_data">
+                <table class="Output_table_data">
                   <tr>
                     <th>Funcionalidad</th>
                     <th>Permisos</th>
@@ -687,16 +744,25 @@
                 </table>
               </div>
 
-              <h1 id="faq">Preguntas frecuentes</h1>
-              <h2 id="faq_evitar_spam">1. ¿Cómo evito el spam?</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card padding">
+
+        <div class="block">
+          <div class="block_structure">
+            <div class="element">
+              <h2 id="faq">Preguntas frecuentes</h2>
+              <h3 id="faq_evitar_spam">1. ¿Cómo evito el spam?</h3>
               <div class="text_block info">
                 <p>
                   El bot cuenta con 2 opciones para evitar el spam:
-                  <ul style="list-style-type: disc">
-                    <li><a href="#admin_anti_spam">Anti Spam</a></li>
-                    <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
-                  </ul>
                 </p>
+                <ul>
+                  <li><a href="#admin_anti_spam">Anti Spam</a></li>
+                  <li><a href="#admin_pulsar_boton_hablar">Pulsar botón para hablar</a></li>
+                </ul>
                 <p>
                   La primera sirve para banear las cuentas que ya estén en el grupo y manden un mensaje que el bot considere como spam.
                 </p>
@@ -713,5 +779,5 @@
        
     </div>
 
-  </bod>
+  </body>
 </html>
