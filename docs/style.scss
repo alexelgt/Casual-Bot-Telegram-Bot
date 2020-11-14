@@ -7,6 +7,7 @@ $header-color: #5085ec;
 $header-text-color: #fff;
 
 $card-color: #fff;
+$card-donors-color: #ecd0d0;
 
 $button-text-color: #fff;
 $button_structure-text-color: #000;
@@ -18,6 +19,21 @@ $table-green-color: #d7ffd7;
 $table-red-color: #ffd7d7;
 
 $select-text-block-color: #e3e3e3;
+
+$h2-color: #e4e4e4;
+$h2-border-color: #c3c3c3;
+
+$h2-color-green: #d4ffe3;
+$h2-border-color-green: #6ed091;
+
+$h2-color-blue: #cfeaff;
+$h2-border-color-blue: #7dc7ff;
+
+$h2-color-yellow: #fffeca;
+$h2-border-color-yellow: #e3e278;
+
+$h2-color-orange: #ffe4c6;
+$h2-border-color-orange: #edb578;
 /*== Variables ==*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
@@ -100,21 +116,25 @@ main {
 
 /*==== Section ====*/
 section {
-    position: relative;
     z-index: 1;
     width: 100%;
     max-width: 1000px;
-    padding: 8px 12px;
+    padding-bottom: 12px;
     background-color: $card-color;
     box-sizing: border-box;
     margin: 8px 0;
-    border-radius: 6px;
+    border-radius: 24px;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+section div {
+    padding: 0 12px;
+}
+
 section.donors {
+    border-radius: 14px;
     font-size: 15px;
-    background-color: #ecd0d0;
+    background-color: $card-donors-color;
     padding: 5px 10px;
     margin: 8px auto;
     max-width: 900px;
@@ -126,14 +146,13 @@ section.donors {
 }
 
 main section:last-child {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 /*== Section ==*/
 
 /*==== Button ====*/
 button, a.btn {
     margin: 5px 10px;
-    position: relative;
     display: inline-block;
     box-sizing: border-box;
     border: none;
@@ -239,7 +258,6 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
 
 /*==== Tables ====*/
 .Output_table_data {
-    position: relative;
     overflow: hidden;
     border-collapse:collapse;
     width: 280px;
@@ -291,7 +309,32 @@ h1, h2 {
 }
 
 h2 {
-    text-decoration: underline;
+    text-align: center;
+    border-radius: 24px 24px 0 0;
+    margin: 0;
+    padding: 8px;
+    background-color: $h2-color;
+    border-bottom: 1px solid $h2-border-color;
+}
+
+h2.green {
+    background-color: $h2-color-green;
+    border-bottom: 1px solid $h2-border-color-green;
+}
+
+h2.blue {
+    background-color: $h2-color-blue;
+    border-bottom: 1px solid $h2-border-color-blue;
+}
+
+h2.yellow {
+    background-color: $h2-color-yellow;
+    border-bottom: 1px solid $h2-border-color-yellow;
+}
+
+h2.orange {
+    background-color: $h2-color-orange;
+    border-bottom: 1px solid $h2-border-color-orange;
 }
 
 h3 {
@@ -345,7 +388,6 @@ p {
 
 img.icon, img.example {
     display: block;
-    position: relative;
     width: 80px;
     border-radius: 8px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
