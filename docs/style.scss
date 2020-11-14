@@ -107,6 +107,7 @@ header.main {
 /*== Header ==*/
 
 nav {
+    position: relative;
     margin: 10px 0;
 }
 
@@ -177,13 +178,9 @@ button, a.btn {
     transition: box-shadow 0.2s;
 }
 
-
-
 button {
     margin: 5px 3px 12px;
 }
-
-
 
 button::-moz-focus-inner, a.btn::-moz-focus-inner {
     border: none;
@@ -228,8 +225,6 @@ button:focus::before, a.btn:focus::before {
 button:hover:focus::before, a.btn:hover:focus::before {
     opacity: 0.32;
 }
-
-
 
 /* Active */
 button:active, a.btn:active {

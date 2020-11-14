@@ -69,6 +69,7 @@ header.main h1 {
 
 /*== Header ==*/
 nav {
+  position: relative;
   margin: 10px 0;
 }
 
