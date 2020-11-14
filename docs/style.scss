@@ -1,38 +1,21 @@
 /*==== Variables ====*/
 $background-color: #e5e5e5;
 $color-main: #000;
-$interface-color: #2196f3; //used for buttons background and text input fields focus
+$interface-color: #2196f3;
 
-$navbar-color: #5085ec;
-$navbar-text-color: #fff;
+$header-color: #5085ec;
+$header-text-color: #fff;
 
 $card-color: #fff;
 
 $button-text-color: #fff;
-$button-color-alert: #cc0000;
-$button-color-gymsfile: #6d90af;
-$button-color-EXareasfile: #69be65;
-$button-color-exclusionareasfile: #5756ce;
-
 $button_structure-text-color: #000;
 $button_structure-border-color: #c4c4c4;
-$button_structure-color-hover: #f5f5f5;
-$button_structure-border-color-hover: #bdbdbd;
-$button_structure-color-active: #e2e2e2;
-$button_structure-border-color-selected: #ccaef9;
-$button_structure-color-selected: #ece1fd;
-$button_structure-text-color-selected: #7b1efb;
 
 $table-main-color: #000;
 $table-header-text-color: #fff;
 $table-green-color: #d7ffd7;
 $table-red-color: #ffd7d7;
-
-$output-error-orange: #dd8f00;
-$output-error-red: #e50000;
-
-$sidebar-overlay-color: #000;
-$sidebar-color: #fff;
 
 $select-text-block-color: #e3e3e3;
 /*== Variables ==*/
@@ -57,7 +40,13 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: $color-main
+    color: $color-main;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 a {
@@ -82,11 +71,10 @@ tr, th, tr, td, .log, .select_text_block, span.highlight {
 }
 /*== Basico ==*/
 
-/*==== Navbar ====*/
-nav.main {
+/*==== Header ====*/
+header.main {
     z-index: 2;
-    background-color: $navbar-color;
-    // position: fixed;
+    background-color: $header-color;
     width: 100%;
     height: 45px;
     box-sizing: border-box;
@@ -97,116 +85,53 @@ nav.main {
         text-align: center;
         margin: 0;
         line-height: 45px;
-        color: $navbar-text-color
+        color: $header-text-color
     }
 }
-/*== Navbar ==*/
+/*== Header ==*/
 
-/*==== Structure ====*/
-.structure {
+nav {
+    margin: 10px 0;
+}
+
+main {
+    padding: 0 8px;
+}
+
+/*==== Section ====*/
+section {
     position: relative;
     z-index: 1;
-    padding: 0 0 10px;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-}
-/*== Structure ==*/
-
-/*==== Card ====*/
-.card {
+    max-width: 1000px;
+    padding: 8px 12px;
     background-color: $card-color;
     box-sizing: border-box;
-    margin: 8px;
+    margin: 8px 0;
     border-radius: 6px;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.card.padding {
-    padding: 1px 0
-}
-
-.card.donors {
+section.donors {
     font-size: 15px;
     background-color: #ecd0d0;
     padding: 5px 10px;
+    margin: 8px auto;
+    max-width: 900px;
 
     h3, p {margin: 0;}
     h4 {margin: 5px 0;}
 
     p.donors {padding-left: 10px;}
 }
-/*== Card ==*/
 
-/*==== Block ====*/
-.block {
-    margin: 6px 0;
-
-    .block_structure {
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-
-    .block_structure.log {
-        margin: 20px 10px 10px;
-        padding: 15px 10px 10px;
-        border: 1px solid $color-main;
-        border-radius: 6px;
-    }
-    
-    .block_structure.log h3{
-        padding: 0px 3px;
-        position: absolute;
-        background-color: $card-color;
-        margin-top:-25px;
-        border-radius: 6px;
-    }
-    
-    .block_structure .element {
-        padding: 0px 10px;
-    }
-    
-    .block_structure.block_files .element {
-        padding: 0;
-    }
-
-    h3.app_title {
-        box-sizing: border-box;
-        width: 100%;
-        text-align: center;
-    }
+main section:last-child {
+    margin-bottom: 16px;
 }
-input + span {
-    padding: 8px 10px 2px;
-    font-size: 16px;
-    margin: 0;
-}
-/*== Block ==*/
+/*== Section ==*/
 
 /*==== Button ====*/
-#button_structure {
-    display: flex;
-    flex-flow: row;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.input_button_structure {
-    width: 100%;
-    margin: 4px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.block .block_structure .element.files > div {
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-button, input[type=file] + label, #button_structure > div, a.btn {
+button, a.btn {
     margin: 5px 10px;
     position: relative;
     display: inline-block;
@@ -233,33 +158,21 @@ button, input[type=file] + label, #button_structure > div, a.btn {
     transition: box-shadow 0.2s;
 }
 
-button#btnresetareas {
-    background-color: $button-color-alert;
-}
+
 
 button {
     margin: 5px 3px 12px;
 }
 
-input[type=file]#gymsfile + label {
-    background-color: $button-color-gymsfile;
-}
 
-input[type=file]#EXareasfile + label {
-    background-color: $button-color-EXareasfile;
-}
 
-input[type=file]#exclusionareasfile + label {
-    background-color: $button-color-exclusionareasfile;
-}
-
-button::-moz-focus-inner, input[type=file] + label::-moz-focus-inner, #button_structure > div::-moz-focus-inner, a.btn::-moz-focus-inner {
+button::-moz-focus-inner, a.btn::-moz-focus-inner {
     border: none;
 }
 
 /* Overlay */
 button::before,
-button::after, input[type=file] + label::before, input[type=file] + label::after, #button_structure > div::before, #button_structure > div::after, a.btn::before, a.btn::after {
+button::after, a.btn::before, a.btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -270,51 +183,48 @@ button::after, input[type=file] + label::before, input[type=file] + label::after
     opacity: 0;
 }
 
-button::before, input[type=file] + label::before, #button_structure > div::before, a.btn::before {
+button::before, a.btn::before {
     transition: opacity 0.2s;
 }
 
-button::after, input[type=file] + label::after, #button_structure > div::after, a.btn::after {
+button::after, a.btn::after {
     background: radial-gradient(circle at center, currentColor 1%, transparent 1%) center/10000% 10000% no-repeat;
     transition: opacity 1s, background-size 0.5s;
 }
 
 /* Hover, Focus */
 button:hover,
-button:focus, input[type=file] + label:hover, input[type=file] + label:focus, #button_structure > div:hover, #button_structure > div:focus, a.btn:hover, a.btn:focus{
+button:focus, a.btn:hover, a.btn:focus{
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-button:hover::before, input[type=file] + label:hover::before, #button_structure > div:hover::before, a.btn:hover::before {
+button:hover::before, a.btn:hover::before {
     opacity: 0.08;
 }
 
-button:focus::before, input[type=file] + label:focus::before, #button_structure > div:focus::before, a.btn:focus::before {
+button:focus::before, a.btn:focus::before {
     opacity: 0.24;
 }
 
-button:hover:focus::before, input[type=file] + label:hover:focus::before, #button_structure > div:hover:focus::before, a.btn:hover:focus::before {
+button:hover:focus::before, a.btn:hover:focus::before {
     opacity: 0.32;
 }
 
 
-#button_structure > div, #button_structure > div:hover, #button_structure > div:focus {
-    box-shadow: none;
-}
 
 /* Active */
-button:active, input[type=file] + label:active, #button_structure > div:active, a.btn:active {
+button:active, a.btn:active {
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-button:active::after, input[type=file] + label:active::after, #button_structure > div:active::after, a.btn:active::after {
+button:active::after, a.btn:active::after {
     opacity: 0.32;
     background-size: 100% 100%;
     transition: background-size 0s;
 }
 
 /* Disabled */
-button:disabled, button#btnresetareas:disabled, input[type=file]:disabled + label, input[type=file]#gymsfile:disabled + label, input[type=file]#EXareasfile:disabled + label, input[type=file]#exclusionareasfile:disabled + label, #button_structure > div:disabled, a.btn:disabled {
+button:disabled, a.btn:disabled {
     color: rgba(0, 0, 0, 0.38);
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
@@ -322,66 +232,8 @@ button:disabled, button#btnresetareas:disabled, input[type=file]:disabled + labe
 }
 
 button:disabled::before,
-button:disabled::after, input[type=file]:disabled + label::before, input[type=file]:disabled + label::after, #button_structure > div:disabled::before, #button_structure > div:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
+button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
     opacity: 0;
-}
-
-#button_structure > div {
-    flex-grow: 1;
-    margin: 5px 3px;
-    border-radius: 40px;
-    padding: 0 10px;
-    min-width: 64px;
-    height: 30px;
-    min-height: 30px;
-    color: $button_structure-text-color;
-    background-color: $card-color;
-    line-height: 30px;
-    border:1px solid $button_structure-border-color;
-    text-transform: none;
-
-}
-
-#button_structure > div:hover {
-    background-color: $button_structure-color-hover;
-    border-color: $button_structure-border-color-hover;
-}
-
-#button_structure > div.selected {
-    border-color: $button_structure-border-color-selected;
-    background-color: $button_structure-color-selected;
-    color: $button_structure-text-color-selected;
-}
-
-#button_structure > div:first-child {
-    margin-left: 0;
-}
-
-#button_structure > div:last-child {
-    margin-right: 0;
-}
-
-input[type=file] {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-
-input[type=file] + label {
-    flex-grow: 1;
-    cursor: pointer;
-    width: 100%;
-    min-height: 26px;
-    line-height: 26px;
-    padding: 3px 6px;
-}
-
-span.inputfile {
-    font-size: 12px;
-    font-style: italic;
 }
 /*== Button ==*/
 
@@ -433,61 +285,13 @@ span.inputfile {
 
 /*== Tables ==*/
 
-/*==== Input URL ====*/
-input {
-    height: 36px;
-    line-height: 13px;
-    font-size: 13px;
-    margin: 10px 0 5px;
-    padding: 18px 10px 10px;
-    border: 1px solid $color-main;
-    border-radius: 6px;
-    box-sizing: border-box;
-    resize: none;
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-input:focus {
-    border-color: $interface-color;
-}
-
-input + span {
-    position: relative;
-    font-weight: bold;
-    top:-30px;
-    left:10px;
-
-    padding: 0px 3px;
-    
-    background-color: $card-color;
-    
-    border-radius: 6px;
-}
-
-input:first-child{
-    margin-top: -10px;
-}
-input {
-    position: relative;
-    top:20px;
-}
-
-input:focus + span {
-    color: $interface-color
-}
-
-input:focus {
-    -webkit-appearance: none;
-    outline: none;
-    border-color: $interface-color
-}
-/*== Input URL ==*/
-
 /*==== Text ====*/
 h1, h2 {
     font-size: 26px;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 h3 {
@@ -499,7 +303,7 @@ h4 {
 }
 
 h3, h4 {
-    margin: 10px 0 0px;
+    margin: 20px 0 0px;
 }
 
 // p {
@@ -516,119 +320,11 @@ span.log, .select_text_block{
     font-family: monospace;
 }
 
-#Output_error_orange {
-    color: $output-error-orange;
-}
-
-#Output_error_red, #Output_error_gyms, #Output_error_EXAreas, #Output_error_exclusionAreas {
-    color: $output-error-red;
-}
-
-.text_block {
-    box-sizing: border-box;
-    padding-bottom: 10px;
-    width: 100%;
+.text-center {
     text-align: center;
-    margin: 10px auto;
-}
-
-.text_block.info {
-    text-align: left;
-    font-size: 18px;
 }
 /*== Text ==*/
 
-#hamburger {
-    position: fixed;
-    top: 7px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background-image: url("hamburger-icon.png");
-    background-size: 100% 100%
-}
-
-
-#sidebar-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    background: $sidebar-overlay-color;
-    z-index: -1;
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-}
-
-#sidebar-overlay.active {
-    z-index: 3;
-    opacity: 0.5;
-}
-
-#sidebar-overlay.semiactive {
-    z-index: 3;
-}
-
-#sidebar {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    box-sizing: border-box;
-    padding: 3px 10px;
-    z-index: 4;
-    position: fixed;
-    background: $sidebar-color;
-    color: $color-main;
-    width: 200px;
-    height: 100%;
-    top: 0px;
-    left: -200px;
-    font-weight: bold;
-    -webkit-transition: left 0.3s ease-in-out;
-    -moz-transition: left 0.3s ease-in-out;
-    -ms-transition: left 0.3s ease-in-out;
-    -o-transition: left 0.3s ease-in-out;
-    transition: left 0.3s ease-in-out;
-
-    h3 {
-        font-size: 20px;
-        padding: 0px;
-        margin: 7px 0 20px
-    }
-    a {
-        color: $button_structure-text-color;
-        text-decoration: none;
-        position: relative;
-        display:inline-block;
-        margin: 5px 0;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 6px;
-        padding: 8px 10px;
-        font-size: 13px
-    }
-    
-    a:hover {
-        background-color: $button_structure-color-hover;
-    }
-    
-    a:hover:active {
-        background-color: $button_structure-color-active;
-    }
-    
-    a.selected, a.selected:hover:active {
-        color: $button_structure-text-color-selected;
-        background-color: $button_structure-color-selected;
-    }
-}
-
-#sidebar.out {
-    left: 0px;
-    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
-}
 
 ul, ol {
     font-size: 17px;
@@ -641,14 +337,6 @@ li {
 
 li ol {
     padding: 10px 0 0px 20px;
-}
-
-.select_text_block {
-    width: 100%;
-    background-color: $select-text-block-color;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 0
 }
 
 p {
@@ -688,8 +376,9 @@ img.ball {
     }
 }
 
-@media only screen and (device-width : 375px) and (width : 812px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-    .card {
-        margin: 8px 44px;
+@supports (padding-left: env(safe-area-inset-left)) {
+    main {
+        padding-left: calc(8px + env(safe-area-inset-left));
+        padding-right: calc(8px + env(safe-area-inset-right));
     }
 }
