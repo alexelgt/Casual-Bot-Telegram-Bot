@@ -106,9 +106,9 @@ header.main {
 }
 /*== Header ==*/
 
-nav {
+.buttons {
     position: relative;
-    margin: 10px 0;
+    margin: 6px 0;
 }
 
 main {
@@ -116,7 +116,7 @@ main {
 }
 
 /*==== Section ====*/
-section {
+section, nav {
     z-index: 1;
     width: 100%;
     max-width: 1000px;
@@ -139,11 +139,21 @@ section.donors {
     padding: 5px 10px;
     margin: 8px auto;
     max-width: 900px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 
     h3, p {margin: 0;}
     h4 {margin: 5px 0;}
 
     p.donors {padding-left: 10px;}
+}
+
+nav {
+    border-radius: 14px;
+    padding: 0;
+    margin: 8px auto;
+    max-width: 850px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    
 }
 
 main section:last-child {
@@ -260,7 +270,7 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
     box-sizing: border-box;
     margin: 10px auto;
     border-radius: 6px;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 
     th {
         background-color: $table-main-color;
@@ -308,32 +318,36 @@ h2 {
     border-radius: 24px 24px 0 0;
     margin: 0;
     padding: 8px;
+}
+
+.gray {
     background-color: $h2-color;
     border-bottom: 1px solid $h2-border-color;
 }
 
-h2.green {
+.green {
     background-color: $h2-color-green;
     border-bottom: 1px solid $h2-border-color-green;
 }
 
-h2.blue {
+.blue {
     background-color: $h2-color-blue;
     border-bottom: 1px solid $h2-border-color-blue;
 }
 
-h2.yellow {
+.yellow {
     background-color: $h2-color-yellow;
     border-bottom: 1px solid $h2-border-color-yellow;
 }
 
-h2.orange {
+.orange {
     background-color: $h2-color-orange;
     border-bottom: 1px solid $h2-border-color-orange;
 }
 
 h3 {
     font-size: 23px;
+    text-decoration: underline;
 }
 
 h4 {
@@ -342,6 +356,10 @@ h4 {
 
 h3, h4 {
     margin: 20px 0 0px;
+}
+
+img.icon + h3 {
+    margin: 0;
 }
 
 // p {
@@ -368,13 +386,110 @@ ul, ol {
     font-size: 17px;
 }
 
-li {
+section li {
     margin-bottom: 10px;
     padding-right: 20px;
 }
 
-li ol {
+section li ol {
     padding: 10px 0 0px 20px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+        width: 100%;
+        list-style-type: none;
+        
+        margin-bottom: 0;
+        padding-right: 0;
+
+        a {
+            display: block;
+            padding: 6px;
+            font-size: 15px;
+            color: black;
+            border-bottom: 1px solid $h2-border-color;
+        }
+
+        a:hover {
+            background-color: #eaeaea;
+        }
+
+        a.green:hover {
+            background-color: #c4ecd2;
+        }
+
+        a.blue:hover {
+            background-color: #c3dcf0;
+        }
+
+        a.yellow:hover {
+            background-color: #f4f3c1;
+        }
+
+        a.orange:hover {
+            background-color: #f5dbbe;
+        }
+
+        a:active {
+            background-color: #dadada;
+        }
+
+        a.green:active {
+            background-color: #b5dac2;
+        }
+
+        a.blue:active {
+            background-color: #b7cfe2;
+        }
+
+        a.yellow:active {
+            background-color: #edecbb;
+        }
+
+        a.orange:active {
+            background-color: #edd4b8;
+        }
+
+        ol {
+            padding: 0;
+
+            li > a, li > a:hover {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            li > ol > li > a, li > ol > li > a:hover {
+                text-decoration: none;
+                font-weight: normal;
+            }
+
+            li > ol > li > ol > li > a, li > ol > li > ol > li > a:hover {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+nav ul:first-child > li:first-child > a {
+    border-radius: 14px 14px 0 0;
+}
+
+nav ul:last-child li:last-child > ol > li:last-child > a {
+    border-radius: 0 0 14px 14px;
+    border-bottom: none;
+}
+
+nav ul:first-child > li > a {
+    text-decoration: none;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 p {
@@ -384,13 +499,18 @@ p {
 img.icon, img.example {
     display: block;
     width: 80px;
-    border-radius: 8px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    margin: 10px auto
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+}
+
+img.icon {
+    border-radius: 100%;
+    border: 1px solid black;
 }
 
 img.example {
     width: 300px;
+    border-radius: 8px;
 }
 
 img.ball {

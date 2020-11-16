@@ -68,9 +68,9 @@ header.main h1 {
 }
 
 /*== Header ==*/
-nav {
+.buttons {
   position: relative;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 main {
@@ -78,7 +78,7 @@ main {
 }
 
 /*==== Section ====*/
-section {
+section, nav {
   z-index: 1;
   width: 100%;
   max-width: 1000px;
@@ -101,6 +101,7 @@ section.donors {
   padding: 5px 10px;
   margin: 8px auto;
   max-width: 900px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 section.donors h3, section.donors p {
   margin: 0;
@@ -110,6 +111,14 @@ section.donors h4 {
 }
 section.donors p.donors {
   padding-left: 10px;
+}
+
+nav {
+  border-radius: 14px;
+  padding: 0;
+  margin: 8px auto;
+  max-width: 850px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 
 main section:last-child {
@@ -226,7 +235,7 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
   box-sizing: border-box;
   margin: 10px auto;
   border-radius: 6px;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 .Output_table_data th {
   background-color: #000;
@@ -266,32 +275,36 @@ h2 {
   border-radius: 24px 24px 0 0;
   margin: 0;
   padding: 8px;
+}
+
+.gray {
   background-color: #f0f0f0;
   border-bottom: 1px solid #c3c3c3;
 }
 
-h2.green {
+.green {
   background-color: #d4ffe3;
   border-bottom: 1px solid #6ed091;
 }
 
-h2.blue {
+.blue {
   background-color: #cfeaff;
   border-bottom: 1px solid #7dc7ff;
 }
 
-h2.yellow {
+.yellow {
   background-color: #fffeca;
   border-bottom: 1px solid #e3e278;
 }
 
-h2.orange {
+.orange {
   background-color: #ffe4c6;
   border-bottom: 1px solid #edb578;
 }
 
 h3 {
   font-size: 23px;
+  text-decoration: underline;
 }
 
 h4 {
@@ -300,6 +313,10 @@ h4 {
 
 h3, h4 {
   margin: 20px 0 0px;
+}
+
+img.icon + h3 {
+  margin: 0;
 }
 
 span.highlight {
@@ -321,13 +338,93 @@ ul, ol {
   font-size: 17px;
 }
 
-li {
+section li {
   margin-bottom: 10px;
   padding-right: 20px;
 }
 
-li ol {
+section li ol {
   padding: 10px 0 0px 20px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-right: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 6px;
+  font-size: 15px;
+  color: black;
+  border-bottom: 1px solid #c3c3c3;
+}
+nav ul li a:hover {
+  background-color: #eaeaea;
+}
+nav ul li a.green:hover {
+  background-color: #c4ecd2;
+}
+nav ul li a.blue:hover {
+  background-color: #c3dcf0;
+}
+nav ul li a.yellow:hover {
+  background-color: #f4f3c1;
+}
+nav ul li a.orange:hover {
+  background-color: #f5dbbe;
+}
+nav ul li a:active {
+  background-color: #dadada;
+}
+nav ul li a.green:active {
+  background-color: #b5dac2;
+}
+nav ul li a.blue:active {
+  background-color: #b7cfe2;
+}
+nav ul li a.yellow:active {
+  background-color: #edecbb;
+}
+nav ul li a.orange:active {
+  background-color: #edd4b8;
+}
+nav ul li ol {
+  padding: 0;
+}
+nav ul li ol li > a, nav ul li ol li > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+nav ul li ol li > ol > li > a, nav ul li ol li > ol > li > a:hover {
+  text-decoration: none;
+  font-weight: normal;
+}
+nav ul li ol li > ol > li > ol > li > a, nav ul li ol li > ol > li > ol > li > a:hover {
+  font-weight: 300;
+}
+
+nav ul:first-child > li:first-child > a {
+  border-radius: 14px 14px 0 0;
+}
+
+nav ul:last-child li:last-child > ol > li:last-child > a {
+  border-radius: 0 0 14px 14px;
+  border-bottom: none;
+}
+
+nav ul:first-child > li > a {
+  text-decoration: none;
+  padding: 7px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 p {
@@ -337,13 +434,18 @@ p {
 img.icon, img.example {
   display: block;
   width: 80px;
-  border-radius: 8px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
   margin: 10px auto;
+}
+
+img.icon {
+  border-radius: 100%;
+  border: 1px solid black;
 }
 
 img.example {
   width: 300px;
+  border-radius: 8px;
 }
 
 img.ball {
