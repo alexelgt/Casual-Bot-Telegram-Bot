@@ -69,7 +69,8 @@
                     <li><a href="#user_pokemoncodes">2. /pokemoncodes</a></li>
                     <li><a href="#user_pokemonpvp">3. /pokemonpvp</a></li>
                     <li><a href="#user_elitemoves">4. /elitefast and /elitecharged</a></li>
-                    <li><a href="#user_pvpranking">5. /pvpranking</a></li>
+                    <li><a href="#user_battleleagues">5. /gbleagues and /silphleagues</a></li>
+                    <li><a href="#user_pvpranking">6. /pvpranking</a></li>
                   </ol>
                 </li>
                 <li><a href="#inline_mode">4. Inline mode</a></li>
@@ -224,6 +225,7 @@
             <img class="example" src="../images/pokemonpvp.jpg" alt="pokemonpvp">
           </li>
           <li id="user_elitemoves"><span class="highlight">/elitefast</span> and <span class="highlight">/elitecharged</span>: list of fast and charged moves that are only available using elite TM. <b>These commands are only available by private message</b>.</li>
+          <li id="user_battleleagues"><span class="highlight">/gbleagues</span> y <span class="highlight">/silphleagues</span>: information about GO Battle League and Silph leagues.</li>
           <li id="user_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank" rel="noopener">silph.gg</a>.</li>
         </ol>
 
@@ -277,7 +279,7 @@
           To access the bot's settings put the command <span class="highlight">/settings@KingCasualBot</span>.
         </p>
 
-        <h3 id="admin_enable_or_disable_bot">1.1. Enable or disable the bot</h3>
+        <h4 id="admin_enable_or_disable_bot">1.1. Enable or disable the bot</h4>
 
         <p>
           Allows you to enable or disable the bot. When disabled, the following remains active:
@@ -289,26 +291,26 @@
           <li>Welcome message</li>
         </ul>
 
-        <h3 id="admin_general_settings">1.2. General settings</h3>
-        <h4 id="admin_commands">1.2.1. Commands</h4>
+        <h4 id="admin_general_settings">1.2. General settings</h4>
+        <h5 id="admin_commands">1.2.1. Commands</h5>
 
         <p>
           To enable or disable the <a href="#user_commands">commands</a> option.
         </p>
 
-        <h4 id="admin_pvp_commands">1.2.2. PVP commands</h4>
+        <h5 id="admin_pvp_commands">1.2.2. PVP commands</h5>
 
         <p>
           To enable or disable the <a href="#user_pvp_commands">pvp commands</a> option.
         </p>
 
-        <h4 id="admin_delete_common_messages">1.2.3. Delete common messages</h4>
+        <h5 id="admin_delete_common_messages">1.2.3. Delete common messages</h5>
 
           <p>
             If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.
           </p>
 
-        <h4 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h4>
+        <h5 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h5>
 
         <p>
           With this option messages containing friend codes will be deleted. Screenshots are included (except for oddly cropped ones).
@@ -323,13 +325,13 @@
           To get the current message use the command <span class="highlight">/getfctextcasual</span>.
         </p>
 
-        <h4 id="admin_anti_spam">1.2.5. Anti Spam</h4>
+        <h5 id="admin_anti_spam">1.2.5. Anti Spam</h5>
 
         <p>
           Casual Bot will delete spam messages and ban the member who sent the message.
         </p>
 
-        <h4 id="admin_press_button_to_talk">1.2.6. Press button to talk</h4>
+        <h5 id="admin_press_button_to_talk">1.2.6. Press button to talk</h5>
 
         <p>
           With this option when a new member enters the group he/she will have to answer a question by pressing a button. <b>The message has a delay of 1 second so that in the case of having another bot with a welcome message, it's displayed first.</b>
@@ -339,7 +341,7 @@
         </p>
         <img class="example" src="../images/press_button_to_talk.jpg" alt="press button to talk">
 
-        <h3 id="admin_events">1.3. Events</h3>
+        <h4 id="admin_events">1.3. Events</h4>
 
         <p>
           If you've not activated the events, it'll ask you to activate it. After doing this (or if you already had them enabled), you can enable or disable the command <span class="highlight">/events</span>, the daily notification (at 8:50 am) with the event list or notifications when an event begins or ends.
@@ -348,7 +350,7 @@
           <i>To be able to modify these settings the group must have at least 16 members.</i>
         </p>
 
-        <h3 id="admin_news">1.4. News</h3>
+        <h4 id="admin_news">1.4. News</h4>
 
         <p>
           Allows messages sent across different news channels to be forwarded to the group.
@@ -357,13 +359,13 @@
           <i>To be able to modify these settings the group must have at least 16 members.</i>
         </p>
 
-        <h3 id="admin_timers">1.5. Timers</h3>
+        <h4 id="admin_timers">1.5. Timers</h4>
 
         <p>
           Allow some messages to be deleted after the specified time.
         </p>
 
-        <h3 id="admin_nightly_notifications">1.6. Nightly notifications</h3>
+        <h4 id="admin_nightly_notifications">1.6. Nightly notifications</h4>
 
         <p>
           It allows to configure the behavior of some messages that are sent from 1:00 to 7:59.
@@ -374,13 +376,13 @@
           ❌: don't send
         </p>
 
-        <h3 id="admin_time_zone">1.7. Time zone</h3>
+        <h4 id="admin_time_zone">1.7. Time zone</h4>
 
         <p>
           Allows you to change the group's time zone. This is used to receive notifications of events and alerts at the correct time.
         </p>
 
-        <h3 id="admin_language">1.8. Language</h3>
+        <h4 id="admin_language">1.8. Language</h4>
 
         <p>
           Allows you to change the language of the bot.

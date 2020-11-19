@@ -69,7 +69,8 @@
                     <li><a href="#usuario_pokemoncodes">2. /pokemoncodes</a></li>
                     <li><a href="#usuario_pokemonpvp">3. /pokemonpvp</a></li>
                     <li><a href="#usuario_movimientoselite">4. /elitefast y /elitecharged</a></li>
-                    <li><a href="#usuario_pvpranking">5. /pvpranking</a></li>
+                    <li><a href="#user_ligascombates">5. /ligascg and /ligassilph</a></li>
+                    <li><a href="#usuario_pvpranking">6. /pvpranking</a></li>
                   </ol>
                 </li>
                 <li><a href="#modo_inline">4. Modo inline</a></li>
@@ -224,6 +225,7 @@
             <img class="example" src="images/pokemonpvp.jpg" alt="pokemonpvp">
           </li>
           <li id="usuario_movimientoselite"><span class="highlight">/elitefast</span> y <span class="highlight">/elitecharged</span>: lista de movimientos rápidos y cargados que solo están disponibles usando MT élite. <b>Estos comandos solo están disponibles por privado</b>.</li>
+          <li id="user_ligascombates"><span class="highlight">/ligascg</span> y <span class="highlight">/ligassilph</span>: información sobre las ligas de Liga Combates GO y Silph.</li>
           <li id="usuario_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank" rel="noopener">silph.gg</a>.</li>
         </ol>
 
@@ -276,7 +278,7 @@
           Para acceder a los ajustes del bot pon el comando <span class="highlight">/settings@KingCasualBot</span>.
         </p>
 
-        <h3 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h3>
+        <h4 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h4>
 
         <p>
           Permite activar o desactivar el bot. Cuando está desactivado se mantiene activo lo siguiente:
@@ -289,26 +291,26 @@
           <li>Mensaje de bienvenida</li>
         </ul>
 
-        <h3 id="admin_ajustes_generales">1.2. Ajustes generales</h3>
-        <h4 id="admin_comandos">1.2.1. Comandos</h4>
+        <h4 id="admin_ajustes_generales">1.2. Ajustes generales</h4>
+        <h5 id="admin_comandos">1.2.1. Comandos</h5>
 
         <p>
           Para activar o desactivar la opción de <a href="#usuario_comandos">comandos</a>.
         </p>
 
-        <h4 id="admin_comandos_pvp">1.2.2. Comandos PVP</h4>
+        <h5 id="admin_comandos_pvp">1.2.2. Comandos PVP</h5>
 
         <p>
           Para activar o desactivar la opción de <a href="#usuario_comandos_pvp">comandos pvp</a>.
         </p>
 
-        <h4 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h4>
+        <h5 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h5>
 
         <p>
           Si se activa esta opción, Casual Bot borrará mensajes del estilo "alguién más se apunta", "si va más gente me apunto", "estoy por apuntarme a", etc.
         </p>
 
-        <h4 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h4>
+        <h5 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h5>
 
         <p>
           Con esta opción se borrarán los mensajes que contengan códigos de amigos. Se incluyen capturas de pantalla (salvo las que estén recortadas de forma extraña).
@@ -323,13 +325,13 @@
           Para obtener el mensaje actual usa el comando <span class="highlight">/getfctextcasual</span>.
         </p>
 
-        <h4 id="admin_anti_spam">1.2.5. Anti Spam</h4>
+        <h5 id="admin_anti_spam">1.2.5. Anti Spam</h5>
 
         <p>
           Casual Bot borrará los mensajes de spam y baneará al miembro que mandó el mensaje.
         </p>
 
-        <h4 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h4>
+        <h5 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h5>
 
         <p>
           Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón. <b>El mensaje tiene un retardo de 1 segundo para que en el caso de tener otro bot con mensaje de bienvenida, esta se muestre primero.</b>
@@ -340,7 +342,7 @@
 
         <img class="example" src="images/press_button_to_talk.jpg" alt="pulsar botón para hablar">
 
-        <h3 id="admin_eventos">1.3. Eventos</h3>
+        <h4 id="admin_eventos">1.3. Eventos</h4>
 
         <p>
           Si no has activado los eventos, te pedirá que actives lo actives. Después de hacer esto (o si ya las tenías activadas), podrás activar o desactivar el comando <span class="highlight">/eventos</span>, la notificación diaria (a las 8:50) con el listado de eventos o las notificaciones cuando empieza o termina un evento.
@@ -349,7 +351,7 @@
           <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 16 miembros.</i>
         </p>
 
-        <h3 id="admin_noticias">1.4. Noticias</h3>
+        <h4 id="admin_noticias">1.4. Noticias</h4>
 
         <p>
           Permite que se reenvien al grupo los mensajes que se mandan en diversos canales de noticias.
@@ -358,13 +360,13 @@
           <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 16 miembros.</i>
         </p>
 
-        <h3 id="admin_temporizadores">1.5. Temporizadores</h3>
+        <h4 id="admin_temporizadores">1.5. Temporizadores</h4>
 
         <p>
           Permite que se borren algunos mensajes pasado el tiempo que se indique.
         </p>
 
-        <h3 id="admin_notificaciones_nocturnas">1.6. Notificaciones nocturnas</h3>
+        <h4 id="admin_notificaciones_nocturnas">1.6. Notificaciones nocturnas</h4>
 
         <p>
           Permite configurar el comportamiento del algunos mensajes que se manden de 1:00 a 7:59.
@@ -375,13 +377,13 @@
           ❌: no enviar
         </p>
 
-        <h3 id="admin_zona_horaria">1.7. Zona horaria</h3>
+        <h4 id="admin_zona_horaria">1.7. Zona horaria</h4>
 
         <p>
           Permite cambiar la zona horaria del grupo. Esto sirve para recibir las notificaciones de los eventos y las alertas cuando corresponden.
         </p>
 
-        <h3 id="admin_idioma">1.8. Idioma</h3>
+        <h4 id="admin_idioma">1.8. Idioma</h4>
 
         <p>
           Permite cambiar el idioma del bot.
