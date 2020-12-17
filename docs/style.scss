@@ -34,6 +34,9 @@ $h2-border-color-yellow: #e3e278;
 
 $h2-color-orange: #ffe4c6;
 $h2-border-color-orange: #edb578;
+
+$h2-color-red: #ffc8c8;
+$h2-border-color-red: #ed7c7c;
 /*== Variables ==*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
@@ -345,6 +348,11 @@ h2 {
     border-bottom: 1px solid $h2-border-color-orange;
 }
 
+.red {
+    background-color: $h2-color-red;
+    border-bottom: 1px solid $h2-border-color-red;
+}
+
 h3 {
     font-size: 23px;
     text-decoration: underline;
@@ -444,6 +452,10 @@ nav ul {
             background-color: #f5dbbe;
         }
 
+        a.red:hover {
+            background-color: #f5c0bf;
+        }
+
         a:active {
             background-color: #dadada;
         }
@@ -462,6 +474,10 @@ nav ul {
 
         a.orange:active {
             background-color: #edd4b8;
+        }
+
+        a.red:active {
+            background-color: #edb9b9;
         }
 
         ol {
@@ -488,7 +504,7 @@ nav ul:first-child > li:first-child > a {
     border-radius: 14px 14px 0 0;
 }
 
-nav ul:last-child li:last-child > ol > li:last-child > a {
+nav ul:last-child li:last-child > ol > li:last-child > a, nav ul:last-child > li:last-child > a {
     border-radius: 0 0 14px 14px;
     border-bottom: none;
 }

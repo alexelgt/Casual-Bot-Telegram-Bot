@@ -113,6 +113,7 @@
                   </ol>
                 </li>
                 <li><a href="#admin_html_tags">5. HTML tags in messages</a></li>
+                <li><a href="#admin_text_substitution">6. Text substitution in messages</a></li>
               </ol>
             </li>
             <li><a class="yellow" href="#admin_premium_groups">Premium groups</a></li>
@@ -126,6 +127,8 @@
               <ol>
                 <li><a href="#faq_avoid_spam">1. How do I avoid spam?</a></li>
               </ol>
+            </li>
+            <li><a class="red" href="#usage_policy">Usage Policy</a>
             </li>
           </ul>
         </nav>
@@ -480,14 +483,6 @@
         <p>
           To check the current welcome message put <span class="highlight">/getwelcomecasual</span>.
         </p>
-        <p>
-          <b>Text substitution:</b>
-        </p>
-        <ul>
-          <li><b>New member's name:</b> <span class="highlight">{user_name}</span>.</li>
-          <li><b>New member's name and id:</b> <span class="highlight">{user_name_id}</span>.</li>
-          <li><b>Group name:</b> <span class="highlight">{chat_title}</span>.</li>
-        </ul>
 
         <h4 id="admin_img_welcome_message">4.1 Image in welcome message [PREMIUM]</h4>
 
@@ -519,6 +514,21 @@
           <li><u>Underline:</u> &lt;u&gt;text&lt;/u&gt;</li>
           <li><s>Strikethrough:</s> &lt;s&gt;text&lt;/s&gt;</li>
           <li><code>Monospace:</code> &lt;code&gt;text&lt;/code&gt;</li>
+        </ul>
+
+        <h3 id="admin_text_substitution">6. Text substitution in messages</h3>
+
+        <p>
+          Text substitution can be done in <a href="#admin_delete_friendcodes">message when deleting a friend code</a> and <a href="#admin_welcome_message">welcome message</a>.
+        </p>
+        <p>
+          <b>Tags:</b>
+        </p>
+        <ul>
+          <li><b>New member's name:</b> <span class="highlight">{user_name}</span>.</li>
+          <li><b>New member's id:</b> <span class="highlight">{user_id}</span>.</li>
+          <li><b>New member's name and id:</b> <span class="highlight">{user_name_id}</span>.</li>
+          <li><b>Group name:</b> <span class="highlight">{chat_title}</span>.</li>
         </ul>
       </div>
     </section>
@@ -718,6 +728,19 @@
         </p>
         <p>
           The second one is to prevent spamming accounts from staying in the group. <b>In real-life use cases this option is the most effective since the anti spam filter may not be triggered.</b>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="usage_policy" class="red">Usage Policy</h2>
+
+      <div>
+        <p>
+          Only users or groups who follow <a href="https://nianticlabs.com/terms/en/" target="_blank" rel="noopener">Niantic Terms of Service</a> can use the bot.
+        </p>
+        <p>
+          If these conditions are breached, the user or group could be banned from being able to use the bot (usually permanently).
         </p>
       </div>
     </section>

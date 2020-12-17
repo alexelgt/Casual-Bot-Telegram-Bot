@@ -303,6 +303,11 @@ h2 {
   border-bottom: 1px solid #edb578;
 }
 
+.red {
+  background-color: #ffc8c8;
+  border-bottom: 1px solid #ed7c7c;
+}
+
 h3 {
   font-size: 23px;
   text-decoration: underline;
@@ -390,6 +395,9 @@ nav ul li a.yellow:hover {
 nav ul li a.orange:hover {
   background-color: #f5dbbe;
 }
+nav ul li a.red:hover {
+  background-color: #f5c0bf;
+}
 nav ul li a:active {
   background-color: #dadada;
 }
@@ -404,6 +412,9 @@ nav ul li a.yellow:active {
 }
 nav ul li a.orange:active {
   background-color: #edd4b8;
+}
+nav ul li a.red:active {
+  background-color: #edb9b9;
 }
 nav ul li ol {
   padding: 0;
@@ -424,7 +435,7 @@ nav ul:first-child > li:first-child > a {
   border-radius: 14px 14px 0 0;
 }
 
-nav ul:last-child li:last-child > ol > li:last-child > a {
+nav ul:last-child li:last-child > ol > li:last-child > a, nav ul:last-child > li:last-child > a {
   border-radius: 0 0 14px 14px;
   border-bottom: none;
 }

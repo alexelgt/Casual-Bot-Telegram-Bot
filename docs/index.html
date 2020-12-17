@@ -113,6 +113,7 @@
                   </ol>
                 </li>
                 <li><a href="#admin_etiquetas_html">5. Etiquetas HTML en mensajes</a></li>
+                <li><a href="#admin_sustitucion_texto">6. Sustitución de texto en mensajes</a></li>
               </ol>
             </li>
             <li><a class="yellow" href="#admin_grupos_premium">Grupos premium</a></li>
@@ -127,12 +128,12 @@
                 <li><a href="#faq_evitar_spam">1. ¿Cómo evito el spam?</a></li>
               </ol>
             </li>
+            <li><a class="red" href="#normas_uso">Normas de uso</a>
+            </li>
           </ul>
         </nav>
       </div>
     </section>
-
-    
 
     <section>
       <h2 id="usuario_doc" class="green">Documentación para usuarios</h2>
@@ -481,14 +482,6 @@
         <p>
           Para consultar el mensaje de bienvenida actual pon <span class="highlight">/getwelcomecasual</span>.
         </p>
-        <p>
-          <b>Sustitución de texto:</b>
-        </p>
-        <ul>
-          <li><b>Nombre del nuevo miembro:</b> <span class="highlight">{user_name}</span>.</li>
-          <li><b>Nombre del nuevo miembro e id:</b> <span class="highlight">{user_name_id}</span>.</li>
-          <li><b>Nombre del grupo:</b> <span class="highlight">{chat_title}</span>.</li>
-        </ul>
 
         <h4 id="admin_img_mensaje_bienvenida">4.1 Imagen en mensaje de bienvenida [PREMIUM]</h4>
 
@@ -520,6 +513,21 @@
           <li><u>Subrayado:</u> &lt;u&gt;texto&lt;/u&gt;</li>
           <li><s>Tachado:</s> &lt;s&gt;texto&lt;/s&gt;</li>
           <li><code>Mono espaciado:</code> &lt;code&gt;texto&lt;/code&gt;</li>
+        </ul>
+
+        <h3 id="admin_sustitucion_texto">6. Sustitución de texto en mensajes</h3>
+
+        <p>
+          Se puede sustituir texto en <a href="#admin_borrar_camigos">mensaje al borrar un código de amigo</a> y <a href="#admin_mensaje_bienvenida">mensajes de bienvenida</a>.
+        </p>
+        <p>
+          <b>Etiquetas:</b>
+        </p>
+        <ul>
+          <li><b>Nombre del nuevo miembro:</b> <span class="highlight">{user_name}</span>.</li>
+          <li><b>Id del nuevo miembro:</b> <span class="highlight">{user_id}</span>.</li>
+          <li><b>Nombre del nuevo miembro e id:</b> <span class="highlight">{user_name_id}</span>.</li>
+          <li><b>Nombre del grupo:</b> <span class="highlight">{chat_title}</span>.</li>
         </ul>
       </div>
     </section>
@@ -719,6 +727,19 @@
         </p>
         <p>
           La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo. <b>En la práctica esta opción es la más efectiva ya que el filtro anti spam podría no saltar.</b>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="normas_uso" class="red">Normas de uso</h2>
+
+      <div>
+        <p>
+          Solo pueden usar el bot usuarios o grupos que cumplan las <a href="https://nianticlabs.com/terms/es/" target="_blank" rel="noopener">Condiciones de Servicio de Niantic</a>.
+        </p>
+        <p>
+          Si se incumplen dichas condiciones, se podría banear de poder usar el bot al usuario o grupo (normalmente de forma permanente).
         </p>
       </div>
     </section>
