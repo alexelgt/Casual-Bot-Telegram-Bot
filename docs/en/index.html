@@ -187,7 +187,7 @@
 
         <ol>
           <li id="user_casualdex">
-            <span class="highlight">/casualdex Pokémon</span>: info about a Pokémon.
+            <span class="highlight">/casualdex Pokémon (pve)</span>: info about a Pokémon.
             <br><br>
             The parameters in brackets are optional.
             <br><br>
@@ -558,155 +558,161 @@
           Below are some tables with additional info about the bot.
         </p>
 
-        <h3 id="admin_table_features">1. Features</h3>
+        <div class="flex-big">
+          <div>
+            <h3 id="admin_table_features">1. Features</h3>
 
-        <p>
-          <b>Legend:</b><br>
-          ✅: available<br>
-          ❌: not available<br>
-          <b>?</b>: disabled by default<br>
-          +XX👨‍👩‍👧‍👦: only groups with +XX members
-        </p>
-        <table class="Output_table_data">
-          <tr>
-            <th>Feature</th>
-            <th>Private</th>
-            <th>Groups</th>
-          </tr>
-          <tr>
-            <td>Event command</td>
-            <td>✅</td>
-            <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
-          </tr>
-          <tr>
-            <td>Daily notification (events)</td>
-            <td>❌</td>
-            <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
-          </tr>
-          <tr>
-            <td>Notification of event started/finished</td>
-            <td>❌</td>
-            <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
-          </tr>
-          <tr>
-            <td>Commands</td>
-            <td>✅</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>PVP commands</td>
-            <td>✅</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>Settings</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>News</td>
-            <td>❌</td>
-            <td><b>?</b><br>+16👨‍👩‍👧‍👦</td>
-          </tr>
-          <tr>
-            <td>Alerts</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Delete common messages</td>
-            <td>❌</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>Delete friend codes</td>
-            <td>❌</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>Anti Spam</td>
-            <td>❌</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>Press button to talk</td>
-            <td>❌</td>
-            <td><b>?</b></td>
-          </tr>
-          <tr>
-            <td>Welcome message</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-        </table>
+            <p>
+              <b>Legend:</b><br>
+              ✅: available<br>
+              ❌: not available<br>
+              <b>?</b>: disabled by default<br>
+              +XX👨‍👩‍👧‍👦: only groups with +XX members
+            </p>
+            <table>
+              <tr>
+                <th>Feature</th>
+                <th>Private</th>
+                <th>Groups</th>
+              </tr>
+              <tr>
+                <td>Event command</td>
+                <td>✅</td>
+                <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
+              </tr>
+              <tr>
+                <td>Daily notification (events)</td>
+                <td>❌</td>
+                <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
+              </tr>
+              <tr>
+                <td>Notification of event started/finished</td>
+                <td>❌</td>
+                <td><b>?</b><br>+40👨‍👩‍👧‍👦</td>
+              </tr>
+              <tr>
+                <td>Commands</td>
+                <td>✅</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>PVP commands</td>
+                <td>✅</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>Settings</td>
+                <td>❌</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>News</td>
+                <td>❌</td>
+                <td><b>?</b><br>+16👨‍👩‍👧‍👦</td>
+              </tr>
+              <tr>
+                <td>Alerts</td>
+                <td>❌</td>
+                <td>✅</td>
+              </tr>
+              <tr>
+                <td>Delete common messages</td>
+                <td>❌</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>Delete friend codes</td>
+                <td>❌</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>Anti Spam</td>
+                <td>❌</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>Press button to talk</td>
+                <td>❌</td>
+                <td><b>?</b></td>
+              </tr>
+              <tr>
+                <td>Welcome message</td>
+                <td>❌</td>
+                <td>✅</td>
+              </tr>
+            </table>
+          </div>
 
-        <h3 id="admin_table_permissions">2. Required permissions</h3>
+          <div>
+            <h3 id="admin_table_permissions">2. Required permissions</h3>
 
-        <p>
-          <b>If the group has slow mode activated, it's highly recommended that you add the bot as an admin so that time restrictions are not applied when sending messages.</b>
-        </p>
-        <table class="Output_table_data">
-          <tr>
-            <th>Feature</th>
-            <th>Permissions</th>
-          </tr>
-          <tr>
-            <td>Event command</td>
-            <td>Delete messages (recommended)</td> 
-          </tr>
-          <tr>
-            <td>Daily notification (events)</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Notification of event started/finished</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Commands</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>PVP commands</td>
-            <td>Delete messages (recommended)</td>
-          </tr>
-          <tr>
-            <td>Settings</td>
-            <td>Delete messages (recommended)</td>
-          </tr>
-          <tr>
-            <td>News</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Alerts</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Pin alerts</td>
-            <td>Pin messages</td>
-          </tr>
-          <tr>
-            <td>Delete common messages</td>
-            <td>Delete messages</td>
-          </tr>
-          <tr>
-            <td>Delete friend codes</td>
-            <td>Delete messages</td>
-          </tr>
-          <tr>
-            <td>Anti Spam</td>
-            <td>Delete messages, ban users</td>
-          </tr>
-          <tr>
-            <td>Press button to talk</td>
-            <td>Delete messages (recommended), ban users</td>
-          </tr>
-          <tr>
-            <td>Welcome message</td>
-            <td>-</td>
-          </tr>
-        </table>
+            <p>
+              <b>If the group has slow mode activated, it's highly recommended that you add the bot as an admin so that time restrictions are not applied when sending messages.</b>
+            </p>
+            <table>
+              <tr>
+                <th>Feature</th>
+                <th>Permissions</th>
+              </tr>
+              <tr>
+                <td>Event command</td>
+                <td>Delete messages (recommended)</td> 
+              </tr>
+              <tr>
+                <td>Daily notification (events)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Notification of event started/finished</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Commands</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>PVP commands</td>
+                <td>Delete messages (recommended)</td>
+              </tr>
+              <tr>
+                <td>Settings</td>
+                <td>Delete messages (recommended)</td>
+              </tr>
+              <tr>
+                <td>News</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Alerts</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Pin alerts</td>
+                <td>Pin messages</td>
+              </tr>
+              <tr>
+                <td>Delete common messages</td>
+                <td>Delete messages</td>
+              </tr>
+              <tr>
+                <td>Delete friend codes</td>
+                <td>Delete messages</td>
+              </tr>
+              <tr>
+                <td>Anti Spam</td>
+                <td>Delete messages, ban users</td>
+              </tr>
+              <tr>
+                <td>Press button to talk</td>
+                <td>Delete messages (recommended), ban users</td>
+              </tr>
+              <tr>
+                <td>Welcome message</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
 

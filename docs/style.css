@@ -44,7 +44,7 @@ a:hover {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-tr, th, tr, td, .log, .select_text_block, span.highlight {
+tr, th, tr, td, span.highlight {
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -228,7 +228,7 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
 
 /*== Button ==*/
 /*==== Tables ====*/
-.Output_table_data {
+table {
   overflow: hidden;
   border-collapse: collapse;
   width: 280px;
@@ -238,30 +238,24 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
   border-radius: 6px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
-.Output_table_data th {
+table th {
   background-color: #000;
   color: #fff;
 }
-.Output_table_data td, .Output_table_data th {
+table td, table th {
   padding: 5px;
   border-right: 1px solid #000;
   text-align: center;
 }
-.Output_table_data td:last-child, .Output_table_data th:last-child {
+table td:last-child, table th:last-child {
   border: none;
 }
-.Output_table_data tr.ex {
-  background-color: #d7ffd7;
-}
-.Output_table_data tr.blocked {
-  background-color: #ffd7d7;
-}
-.Output_table_data tr {
+table tr {
   border: 1px solid #000;
   border-left: none;
   border-right: none;
 }
-.Output_table_data tr:last-child {
+table tr:last-child {
   border-bottom: none;
 }
 
@@ -337,10 +331,6 @@ span.highlight {
   background-color: #e3e3e3;
   border-radius: 6px;
   padding: 2px;
-}
-
-span.log, .select_text_block {
-  font-family: monospace;
 }
 
 .text-center {
@@ -477,14 +467,31 @@ img.ball {
   margin-right: 4px;
 }
 
-@media (max-width: 340px) {
-  .Output_table_data {
+@media (max-width: 370px) {
+  table {
     font-size: 14px;
     width: 100%;
   }
 
   img.example {
     width: 100%;
+  }
+}
+@media (min-width: 1126px) {
+  section {
+    max-width: 90%;
+  }
+}
+@media (min-width: 900px) {
+  .flex-big {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  div.flex-big > div {
+    width: 50%;
+    box-sizing: border-box;
   }
 }
 @supports (padding-left: env(safe-area-inset-left)) {

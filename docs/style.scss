@@ -10,13 +10,9 @@ $card-color: #fff;
 $card-donors-color: #ecd0d0;
 
 $button-text-color: #fff;
-$button_structure-text-color: #000;
-$button_structure-border-color: #c4c4c4;
 
 $table-main-color: #000;
 $table-header-text-color: #fff;
-$table-green-color: #d7ffd7;
-$table-red-color: #ffd7d7;
 
 $select-text-block-color: #e3e3e3;
 
@@ -83,7 +79,7 @@ a:hover {
     -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
 
-tr, th, tr, td, .log, .select_text_block, span.highlight {
+tr, th, tr, td, span.highlight {
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text;
@@ -265,7 +261,7 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
 /*== Button ==*/
 
 /*==== Tables ====*/
-.Output_table_data {
+table {
     overflow: hidden;
     border-collapse:collapse;
     width: 280px;
@@ -290,14 +286,6 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
         border: none
     }
     
-    tr.ex {
-        background-color:$table-green-color;
-    }
-    
-    tr.blocked {
-        background-color:$table-red-color;
-    }
-    
     tr {
         border:1px solid $table-main-color;
         border-left: none;
@@ -308,7 +296,6 @@ button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
         border-bottom: none
     }
 }
-
 /*== Tables ==*/
 
 /*==== Text ====*/
@@ -378,25 +365,16 @@ img.icon + h3 {
     margin: 0;
 }
 
-// p {
-//     margin: 0 0 100px;
-// }
-
 span.highlight {
     background-color: $select-text-block-color;
     border-radius: 6px;
     padding: 2px;
 }
 
-span.log, .select_text_block{
-    font-family: monospace;
-}
-
 .text-center {
     text-align: center;
 }
 /*== Text ==*/
-
 
 ul, ol {
     font-size: 17px;
@@ -546,14 +524,33 @@ img.ball {
     margin-right: 4px;
 }
 
-@media (max-width: 340px){
-    .Output_table_data {
+@media (max-width: 370px){
+    table {
         font-size: 14px;
         width: 100%;
     }
 
     img.example {
         width: 100%;
+    }
+}
+
+@media (min-width: 1126px){
+    section {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 900px){
+    .flex-big {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    div.flex-big > div {
+        width: 50%;
+        box-sizing: border-box;
     }
 }
 
