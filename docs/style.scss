@@ -124,6 +124,10 @@ header.main {
 /*==== Main, Section, Nav ====*/
 main {
     padding: 0 8px;
+
+    section:last-child {
+        margin-bottom: 32px;
+    }
 }
 
 section, nav {
@@ -164,10 +168,6 @@ nav {
     max-width: 850px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
     
-}
-
-main section:last-child {
-    margin-bottom: 32px;
 }
 /*== Main, Section, Nav ==*/
 
@@ -353,114 +353,120 @@ section li {
     padding-right: 20px;
 }
 
-section li ol {
-    padding: 10px 0 0px 20px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
-
-    li {
-        width: 100%;
+nav {
+    ul {
+        padding: 0;
+        margin: 0;
         list-style-type: none;
-        
-        margin-bottom: 0;
-        padding-right: 0;
+        text-align: center;
 
-        a {
-            display: block;
-            padding: 6px;
-            font-size: 15px;
-            color: black;
-            border-bottom: 1px solid $h2-border-color;
-            transition: background-color .2s;
-        }
+        li {
+            width: 100%;
+            list-style-type: none;
 
-        a:hover {
-            background-color: $list-a-hover;
-        }
+            margin-bottom: 0;
+            padding-right: 0;
 
-        a.green:hover {
-            background-color: $list-a-green-hover;
-        }
-
-        a.blue:hover {
-            background-color: $list-a-blue-hover;
-        }
-
-        a.yellow:hover {
-            background-color: $list-a-yellow-hover;
-        }
-
-        a.orange:hover {
-            background-color: $list-a-orange-hover;
-        }
-
-        a.red:hover {
-            background-color: $list-a-red-hover;
-        }
-
-        a:active {
-            background-color: $list-a-active;
-        }
-
-        a.green:active {
-            background-color: $list-a-green-active;
-        }
-
-        a.blue:active {
-            background-color: $list-a-blue-active;
-        }
-
-        a.yellow:active {
-            background-color: $list-a-yellow-active;
-        }
-
-        a.orange:active {
-            background-color: $list-a-orange-active;
-        }
-
-        a.red:active {
-            background-color: $list-a-red-active;
-        }
-
-        ol {
-            padding: 0;
-
-            li > a, li > a:hover {
-                text-decoration: underline;
-                font-weight: bold;
+            a {
+                display: block;
+                padding: 6px;
+                font-size: 15px;
+                color: black;
+                border-bottom: 1px solid $h2-border-color;
+                transition: background-color .2s;
             }
 
-            li > ol > li > a, li > ol > li > a:hover {
-                text-decoration: none;
-                font-weight: normal;
+            a:hover {
+                background-color: $list-a-hover;
+            }
+    
+            a.green:hover {
+                background-color: $list-a-green-hover;
             }
 
-            li > ol > li > ol > li > a, li > ol > li > ol > li > a:hover {
-                font-weight: 300;
+            a.blue:hover {
+                background-color: $list-a-blue-hover;
+            }
+
+            a.yellow:hover {
+                background-color: $list-a-yellow-hover;
+            }
+
+            a.orange:hover {
+                background-color: $list-a-orange-hover;
+            }
+
+            a.red:hover {
+                background-color: $list-a-red-hover;
+            }
+
+            a:active {
+                background-color: $list-a-active;
+            }
+
+            a.green:active {
+                background-color: $list-a-green-active;
+            }
+
+            a.blue:active {
+                background-color: $list-a-blue-active;
+            }
+
+            a.yellow:active {
+                background-color: $list-a-yellow-active;
+            }
+
+            a.orange:active {
+                background-color: $list-a-orange-active;
+            }
+
+            a.red:active {
+                background-color: $list-a-red-active;
+            }
+
+            ol {
+                padding: 0;
+
+                li > {
+                    a, a:hover {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+
+                    ol > li > {
+                        a, a:hover {
+                            text-decoration: none;
+                            font-weight: normal;
+                        }
+
+                        ol > li > {
+                            a, a:hover {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-}
 
-nav ul:first-child > li:first-child > a {
-    border-radius: 14px 14px 0 0;
-}
+    ul:first-child > {
+        li:first-child > a {
+            border-radius: 14px 14px 0 0;
+        }
 
-nav ul:last-child li:last-child > ol > li:last-child > a, nav ul:last-child > li:last-child > a {
-    border-radius: 0 0 14px 14px;
-    border-bottom: none;
-}
+        li > a {
+            text-decoration: none;
+            padding: 7px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
 
-nav ul:first-child > li > a {
-    text-decoration: none;
-    padding: 7px;
-    font-size: 17px;
-    font-weight: bold;
+    ul:last-child li:last-child > ol > li:last-child > a, ul:last-child > li:last-child > a {
+        border-radius: 0 0 14px 14px;
+        border-bottom: none;
+    }
 }
 /*== List ==*/
 
