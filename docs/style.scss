@@ -2,6 +2,8 @@
 $background-color: #e5e5e5;
 $color-main: #000;
 $interface-color: #2196f3;
+$interface-color-hover: #369ff3;
+$interface-color-active: #47a7f3;
 
 $header-color: #5085ec;
 $header-text-color: #fff;
@@ -33,11 +35,25 @@ $h2-border-color-orange: #edb578;
 
 $h2-color-red: #ffc8c8;
 $h2-border-color-red: #ed7c7c;
+
+$list-a-hover: #eaeaea;
+$list-a-green-hover: #c4ecd2;
+$list-a-blue-hover: #c3dcf0;
+$list-a-yellow-hover: #f4f3c1;
+$list-a-orange-hover: #f5dbbe;
+$list-a-red-hover: #f5c0bf;
+
+$list-a-active: #dadada;
+$list-a-green-active: #b5dac2;
+$list-a-blue-active: #b7cfe2;
+$list-a-yellow-active: #edecbb;
+$list-a-orange-active: #edd4b8;
+$list-a-red-active: #edb9b9;
 /*== Variables ==*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
 
-/*==== Basico ====*/
+/*==== Basic ====*/
 body {
     z-index: 0;
     font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial';
@@ -84,7 +100,7 @@ tr, th, tr, td, span.highlight {
     -moz-user-select: text;
     user-select: text;
 }
-/*== Basico ==*/
+/*== Basic ==*/
 
 /*==== Header ====*/
 header.main {
@@ -105,16 +121,11 @@ header.main {
 }
 /*== Header ==*/
 
-.buttons {
-    position: relative;
-    margin: 6px 0;
-}
-
+/*==== Main, Section, Nav ====*/
 main {
     padding: 0 8px;
 }
 
-/*==== Section ====*/
 section, nav {
     z-index: 1;
     width: 100%;
@@ -158,9 +169,14 @@ nav {
 main section:last-child {
     margin-bottom: 32px;
 }
-/*== Section ==*/
+/*== Main, Section, Nav ==*/
 
 /*==== Button ====*/
+.buttons {
+    position: relative;
+    margin: 6px 0;
+}
+
 button, a.btn {
     margin: 5px 10px;
     display: inline-block;
@@ -184,83 +200,30 @@ button, a.btn {
     overflow: hidden;
     outline: none;
     cursor: pointer;
-    transition: box-shadow 0.2s;
+    transition: box-shadow .2s, background-color .2s;
 }
 
-button {
-    margin: 5px 3px 12px;
-}
-
-button::-moz-focus-inner, a.btn::-moz-focus-inner {
-    border: none;
-}
-
-/* Overlay */
-button::before,
-button::after, a.btn::before, a.btn::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: inherit;
-    opacity: 0;
-}
-
-button::before, a.btn::before {
-    transition: opacity 0.2s;
-}
-
-button::after, a.btn::after {
-    background: radial-gradient(circle at center, currentColor 1%, transparent 1%) center/10000% 10000% no-repeat;
-    transition: opacity 1s, background-size 0.5s;
-}
-
-/* Hover, Focus */
 button:hover,
 button:focus, a.btn:hover, a.btn:focus{
+    background-color: $interface-color-hover;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-button:hover::before, a.btn:hover::before {
-    opacity: 0.08;
-}
-
-button:focus::before, a.btn:focus::before {
-    opacity: 0.24;
-}
-
-button:hover:focus::before, a.btn:hover:focus::before {
-    opacity: 0.32;
-}
-
-/* Active */
 button:active, a.btn:active {
+    background-color: $interface-color-active;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-button:active::after, a.btn:active::after {
-    opacity: 0.32;
-    background-size: 100% 100%;
-    transition: background-size 0s;
-}
-
-/* Disabled */
-button:disabled, a.btn:disabled {
+button:disabled, a.btn.disabled {
     color: rgba(0, 0, 0, 0.38);
     background-color: rgba(0, 0, 0, 0.12);
     box-shadow: none;
+    text-decoration: none;
     cursor: initial;
-}
-
-button:disabled::before,
-button:disabled::after, a.btn:disabled::before, a.btn:disabled::after {
-    opacity: 0;
 }
 /*== Button ==*/
 
-/*==== Tables ====*/
+/*==== Table ====*/
 table {
     overflow: hidden;
     border-collapse:collapse;
@@ -296,7 +259,7 @@ table {
         border-bottom: none
     }
 }
-/*== Tables ==*/
+/*== Table ==*/
 
 /*==== Text ====*/
 h1, h2 {
@@ -374,8 +337,13 @@ span.highlight {
 .text-center {
     text-align: center;
 }
+
+p {
+    margin-bottom: 0
+}
 /*== Text ==*/
 
+/*==== List ====*/
 ul, ol {
     font-size: 17px;
 }
@@ -408,54 +376,55 @@ nav ul {
             font-size: 15px;
             color: black;
             border-bottom: 1px solid $h2-border-color;
+            transition: background-color .2s;
         }
 
         a:hover {
-            background-color: #eaeaea;
+            background-color: $list-a-hover;
         }
 
         a.green:hover {
-            background-color: #c4ecd2;
+            background-color: $list-a-green-hover;
         }
 
         a.blue:hover {
-            background-color: #c3dcf0;
+            background-color: $list-a-blue-hover;
         }
 
         a.yellow:hover {
-            background-color: #f4f3c1;
+            background-color: $list-a-yellow-hover;
         }
 
         a.orange:hover {
-            background-color: #f5dbbe;
+            background-color: $list-a-orange-hover;
         }
 
         a.red:hover {
-            background-color: #f5c0bf;
+            background-color: $list-a-red-hover;
         }
 
         a:active {
-            background-color: #dadada;
+            background-color: $list-a-active;
         }
 
         a.green:active {
-            background-color: #b5dac2;
+            background-color: $list-a-green-active;
         }
 
         a.blue:active {
-            background-color: #b7cfe2;
+            background-color: $list-a-blue-active;
         }
 
         a.yellow:active {
-            background-color: #edecbb;
+            background-color: $list-a-yellow-active;
         }
 
         a.orange:active {
-            background-color: #edd4b8;
+            background-color: $list-a-orange-active;
         }
 
         a.red:active {
-            background-color: #edb9b9;
+            background-color: $list-a-red-active;
         }
 
         ol {
@@ -493,11 +462,9 @@ nav ul:first-child > li > a {
     font-size: 17px;
     font-weight: bold;
 }
+/*== List ==*/
 
-p {
-    margin-bottom: 0
-}
-
+/*==== Img ====*/
 img.icon, img.example {
     display: block;
     width: 80px;
@@ -523,7 +490,9 @@ img.ball {
     top: 5px;
     margin-right: 4px;
 }
+/*== Img ==*/
 
+/*==== Media queries ====*/
 @media (max-width: 370px){
     table {
         font-size: 14px;
@@ -553,6 +522,7 @@ img.ball {
         box-sizing: border-box;
     }
 }
+/*== Media queries ==*/
 
 @supports (padding-left: env(safe-area-inset-left)) {
     main {
