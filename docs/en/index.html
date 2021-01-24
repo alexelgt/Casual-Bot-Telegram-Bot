@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang='en' xml:lang='en'>
 <head>
-    <title>Casual Bot documentation</title>
-    <meta name="title" content="Casual Bot documentation">
-    <meta name="keywords" content="Casual Bot documentation">
-    <meta name="description" content="Documentation of the most casual Telegram bot for Pokémon GO">
-    <link rel="icon" sizes="192x192" href="../icon_circle.png">
-    <link rel="apple-touch-icon-precomposed" href="../icon.png">
-    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, viewport-fit=cover" name="viewport">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="../style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Casual Bot documentation</title>
+  <meta name="title" content="Casual Bot documentation" />
+  <meta name="keywords" content="Casual Bot documentation" />
+  <meta name="description" content="Documentation of the most casual Telegram bot for Pokémon GO" />
+  <meta name="author" content="Alexelgt" />
+  <link rel="icon" sizes="192x192" href="../icon_circle.png" />
+  <link rel="apple-touch-icon-precomposed" href="../icon.png" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, viewport-fit=cover" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <script src="../sideBar.js" async></script>
 </head>
 <body>
-  <header class="main">
+  <header>
+    <div id="hamburger" onclick='triggerSideBar();'></div>
     <h1>Telegram Casual Bot</h1>
   </header>
 
@@ -311,9 +314,9 @@
 
         <h5 id="admin_delete_common_messages">1.2.3. Delete common messages</h5>
 
-          <p>
-            If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.
-          </p>
+        <p>
+          If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.
+        </p>
 
         <h5 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h5>
 
@@ -753,5 +756,13 @@
       </div>
     </section>
   </main>
+
+  <div id="sidebar-overlay" onclick='triggerSideBar();'></div>
+
+  <aside id="sidebar">
+    <h2>Bots</h2>
+    <a class="selected">Casual Bot</a>
+    <a href="http://xenophilius.alexelgt.com">Xenophilius Lovegood Bot</a>
+  </aside>
 </body>
 </html>

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang='es' xml:lang='es'>
 <head>
-    <title>Documentación Casual Bot</title>
-    <meta name="title" content="Documentación Casual Bot">
-    <meta name="keywords" content="Documentación Casual Bot">
-    <meta name="description" content="Documentación del bot más casual de Telegram para Pokémon GO">
-    <link rel="icon" sizes="192x192" href="icon_circle.png">
-    <link rel="apple-touch-icon-precomposed" href="icon.png">
-    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, viewport-fit=cover" name="viewport">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Documentación Casual Bot</title>
+  <meta name="title" content="Documentación Casual Bot" />
+  <meta name="keywords" content="Documentación Casual Bot" />
+  <meta name="description" content="Documentación del bot más casual de Telegram para Pokémon GO" />
+  <meta name="author" content="Alexelgt" />
+  <link rel="icon" sizes="192x192" href="icon_circle.png" />
+  <link rel="apple-touch-icon-precomposed" href="icon.png" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, viewport-fit=cover" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="sideBar.js" async></script>
 </head>
 <body>
-  <header class="main">
-    <h1>Bot de Telegram Casual Bot</h1>
+  <header>
+    <div id="hamburger" onclick='triggerSideBar();'></div>
+    <h1>Telegram Casual Bot</h1>
   </header>
 
   <main class="flex">
@@ -752,5 +755,13 @@
       </div>
     </section>
   </main>
+
+  <div id="sidebar-overlay" onclick='triggerSideBar();'></div>
+
+  <aside id="sidebar">
+    <h2>Bots</h2>
+    <a class="selected">Casual Bot</a>
+    <a href="http://xenophilius.alexelgt.com">Xenophilius Lovegood Bot</a>
+  </aside>
 </body>
 </html>

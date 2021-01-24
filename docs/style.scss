@@ -49,6 +49,14 @@ $list-a-blue-active: #b7cfe2;
 $list-a-yellow-active: #edecbb;
 $list-a-orange-active: #edd4b8;
 $list-a-red-active: #edb9b9;
+
+$sidebar-overlay-color: #000;
+$sidebar-color: #fff;
+$sidebar-text-color: #000;
+$sidebar-color-hover: #f5f5f5;
+$sidebar-color-active: #e2e2e2;
+$sidebar-text-color-selected: #7b1efb;
+$sidebar-color-selected: #ece1fd;
 /*== Variables ==*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
@@ -103,7 +111,7 @@ tr, th, tr, td, span.highlight {
 /*== Basic ==*/
 
 /*==== Header ====*/
-header.main {
+header {
     z-index: 2;
     background-color: $header-color;
     width: 100%;
@@ -173,7 +181,6 @@ nav {
 
 /*==== Button ====*/
 .buttons {
-    position: relative;
     margin: 6px 0;
 }
 
@@ -498,10 +505,100 @@ img.ball {
 }
 /*== Img ==*/
 
+/*==== Sidebar ====*/
+#hamburger {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/hamburger-icon.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#sidebar-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s;
+}
+
+#sidebar-overlay.active {
+    z-index: 3;
+    opacity: 0.5;
+    background: $sidebar-overlay-color;
+}
+
+#sidebar {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    padding: 3px 10px;
+    z-index: 4;
+    position: fixed;
+    background: $sidebar-color;
+    color: $color-main;
+    width: 200px;
+    height: 100%;
+    top: 0px;
+    left: -200px;
+    font-weight: bold;
+    transition: left .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    h2 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 7px 0 20px
+    }
+    a {
+        color: $sidebar-text-color;
+        text-decoration: none;
+        position: relative;
+        display:inline-block;
+        margin: 5px 0;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 8px 10px;
+        font-size: 13px
+    }
+
+    a:hover {
+        background-color: $sidebar-color-hover;
+    }
+
+    a:hover:active {
+        background-color: $sidebar-color-active;
+    }
+
+    a.selected, a.selected:hover:active {
+        color: $sidebar-text-color-selected;
+        background-color: $sidebar-color-selected;
+    }
+}
+
+#sidebar.out {
+    left: 0px;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+/*== Sidebar ==*/
+
 /*==== Media queries ====*/
+@media (max-width: 319px){
+    header h1 {
+        font-size: 15px;
+    }
+}
 @media (max-width: 370px){
     table {
-        font-size: 14px;
+        font-size: 13px;
         width: 100%;
     }
 
