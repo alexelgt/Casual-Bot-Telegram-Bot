@@ -5,7 +5,11 @@ function triggerSideBar() {
     if (sidebar.classList.contains("out")) {
         sidebar.classList.remove("out");
         overlay.classList.remove("active");
+        overlay.classList.add("semiactive");
         document.body.style.overflow = "visible";
+        setTimeout(function(){
+            overlay.classList.remove("semiactive");
+        },200);
     }
     else {
         sidebar.classList.add("out");

@@ -441,6 +441,12 @@ img.ball {
   background: #000;
 }
 
+#sidebar-overlay.semiactive {
+  z-index: 3;
+  opacity: 0;
+  background: #000;
+}
+
 #sidebar {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
