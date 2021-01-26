@@ -315,7 +315,7 @@ nav ul li a {
   font-size: 15px;
   color: black;
   border-bottom: 1px solid #c3c3c3;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
 nav ul li a:hover {
   background-color: #eaeaea;
@@ -439,6 +439,7 @@ img.ball {
   z-index: 3;
   opacity: 0.5;
   background: #000;
+  cursor: pointer;
 }
 
 #sidebar-overlay.semiactive {

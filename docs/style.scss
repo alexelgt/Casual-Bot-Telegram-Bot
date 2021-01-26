@@ -147,7 +147,7 @@ section, nav {
     box-sizing: border-box;
     margin: 8px 0;
     border-radius: 24px;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 section div {
@@ -161,7 +161,7 @@ section.donors {
     padding: 5px 10px;
     margin: 8px auto;
     max-width: 900px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
 
     h3, p {margin: 0;}
     h4 {margin: 5px 0;}
@@ -174,7 +174,7 @@ nav {
     padding: 0;
     margin: 8px auto;
     max-width: 850px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
     
 }
 /*== Main, Section, Nav ==*/
@@ -199,7 +199,7 @@ button, a.btn {
     text-transform: uppercase;
     color: $button-text-color;
     background-color: $interface-color;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
     font-family: "Roboto";
     font-size: 13px;
     font-weight: 500;
@@ -213,17 +213,17 @@ button, a.btn {
 button:hover,
 button:focus, a.btn:hover, a.btn:focus{
     background-color: $interface-color-hover;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
 }
 
 button:active, a.btn:active {
     background-color: $interface-color-active;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
 }
 
 button:disabled, a.btn.disabled {
-    color: rgba(0, 0, 0, 0.38);
-    background-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, .38);
+    background-color: rgba(0, 0, 0, .12);
     box-shadow: none;
     text-decoration: none;
     cursor: initial;
@@ -239,7 +239,7 @@ table {
     box-sizing: border-box;
     margin: 10px auto;
     border-radius: 6px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
 
     th {
         background-color: $table-main-color;
@@ -380,7 +380,7 @@ nav {
                 font-size: 15px;
                 color: black;
                 border-bottom: 1px solid $h2-border-color;
-                transition: background-color .2s;
+                transition: background-color .3s;
             }
 
             a:hover {
@@ -481,7 +481,7 @@ nav {
 img.icon, img.example {
     display: block;
     width: 80px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
     margin: 10px auto;
 }
 
@@ -532,8 +532,9 @@ img.ball {
 
 #sidebar-overlay.active {
     z-index: 3;
-    opacity: 0.5;
+    opacity: .5;
     background: $sidebar-overlay-color;
+    cursor: pointer;
 }
 
 #sidebar-overlay.semiactive {
@@ -592,7 +593,7 @@ img.ball {
 
 #sidebar.out {
     left: 0px;
-    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, .4);
 }
 /*== Sidebar ==*/
 
