@@ -11,7 +11,7 @@ function triggerSideBar() {
             overlay.classList.remove("semiactive");
         },200);
     }
-    else {
+    else if (!overlay.classList.contains("semiactive")) {
         sidebar.classList.add("out");
         overlay.classList.add("active");
         document.body.style.overflow = "hidden";
