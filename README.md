@@ -3,7 +3,7 @@
 ![Raspberry](https://img.shields.io/badge/Raspberry\%20Pi-3\%20Model\%20B+-lightgrey)
 ![Python version](https://img.shields.io/badge/Python-v3.7-blue)
 ![MariaDB version](https://img.shields.io/badge/MariaDB-v15.1-blue)
-![python-telegram-bot version](https://img.shields.io/badge/python\%20telegram\%20bot-v12.2-blue)
+![python-telegram-bot version](https://img.shields.io/badge/python\%20telegram\%20bot-v13.3-blue)
 
 Casual Bot is a project I started to learn Python and SQL. It runs on a Raspberry Pi 3 Model B+.
 
@@ -11,7 +11,7 @@ It's a Telegram Bot which users can interact with by sending messages.
 
 The bot has had a lot of features added since its initial release. Some of them were suggested by people who use the bot.
 
-Right now the bot is used by more than 200 groups.
+Right now the bot is used by more than 400 groups.
 
 ## **Index**
 * [Event list](#event-list)
@@ -26,7 +26,7 @@ Right now the bot is used by more than 200 groups.
 * [Alerts](#alerts)
 
 # **Event list**
-Send an event list by typing the command /events (disabled by default in groups and only available in those with +16 members).
+Send an event list by typing the command /events (disabled by default in groups and only available in those with +40 members).
 
 Daily notification is sent with the event list at 8:50 and also when an event begins or ends.
 
@@ -38,10 +38,17 @@ The bot handles the events for multiple time zones. Each time zone has its own c
 
 ## **Channels available**
 
-* **Europe/Madrid** *(+700 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
-* **Portugal** *(+900 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
+* **Europe/Madrid** *(+3200 subscribers)***:** [@pokemongoeventos](https://t.me/pokemongoeventos)
+* **Portugal** *(+1500 subscribers)***:** [@pokemongoeventosPT](https://t.me/pokemongoeventosPT)
 * **Central European Time:** [@pokemongoeventsCET](https://t.me/pokemongoeventsCET)
+* **Western European Time:** [@pokemongoeventsWET](https://t.me/pokemongoeventsWET)
 * **Atlantic/Canary:** [@pokemongoeventosCanarias](https://t.me/pokemongoeventosCanarias)
+* **America/Mexico_City:** [@pokemongoeventosMexicoCity](https://t.me/pokemongoeventosMexicoCity)
+* **America/Chihuahua:** [@pokemongoeventosChihuahua](https://t.me/pokemongoeventosChihuahua)
+* **America/Santiago:** [@pokemongoeventosSantiago](https://t.me/pokemongoeventosSantiago)
+* **America/Lima:** [@pokemongoeventosLima](https://t.me/pokemongoeventosLima)
+* **America/Buenos_Aires:** [@pokemongoeventosBuenosAires](https://t.me/pokemongoeventosBuenosAires)
+* **America/Sao_Paulo:** [@pokemongoeventosSaoPaulo](https://t.me/pokemongoeventosSaoPaulo)
 
 ## **How do events work?**
 Since the events is the most used function of the bot I'd like to explain it in more depth.
