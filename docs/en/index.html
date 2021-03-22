@@ -47,16 +47,16 @@
           <img class="ball" src="../images/HonorBall.png" alt="Honor Ball"><h4>Honor Ball</h4>
           <p class="donors">Zeldabalca and Tina Arroyo</p>
 
-          <img class="ball" src="../images/SuperBall.png" alt="Super Ball"><h4>Super Ball</h4>
+          <img class="ball" src="../images/UltraBall.png" alt="Ultra Ball"><h4>Ultra Ball</h4>
           <p class="donors">SurbitonTolworthPoGo</p>
 
           <!-- <img class="ball" src="../images/MasterBall.png" alt="Master Ball"><h4>Master Ball</h4>
-          <li class="donors">Holo</li>
-
-          <img class="ball" src="../images/UltraBall.png" alt="Ultra Ball"><h4>Ultra Ball</h4>
           <p class="donors">Holo</p>
 
-          <h4>Unknown</h4>
+          <img class="ball" src="../images/SuperBall.png" alt="Super Ball"><h4>Super Ball</h4>
+          <p class="donors">Holo</p>
+
+          <h4>Desconocido</h4>
           <p class="donors">Holo</p> -->
         </section>
 
@@ -66,7 +66,12 @@
               <ol>
                 <li><a href="#user_events">1. Events</a></li>
                 <li><a href="#user_commands">2. Commands</a></li>
-                <li><a href="#user_pvp_pve_commands">3. PVP/PVE commands</a>
+                <li><a href="#user_bots_commands">3. Bots commands</a>
+                  <ol>
+                    <li><a href="#user_detectivepikachubot_commands">1. 🐱 @detectivepikachubot</a></li>
+                  </ol>
+                </li>
+                <li><a href="#user_pvp_pve_commands">4. PVP/PVE commands</a>
                   <ol>
                     <li><a href="#user_casualdex">1. /casualdex</a></li>
                     <li><a href="#user_raidcounters">2. /raidcounters</a></li>
@@ -77,7 +82,7 @@
                     <li><a href="#user_pvpranking">7. /pvpranking</a></li>
                   </ol>
                 </li>
-                <li><a href="#inline_mode">4. Inline mode</a></li>
+                <li><a href="#inline_mode">5. Inline mode</a></li>
               </ol>
             </li>
             <li><a class="blue" href="#admin_doc">Documentation for admins</a>
@@ -88,11 +93,12 @@
                     <li><a href="#admin_general_settings">2. General settings</a>
                       <ol>
                         <li><a href="#admin_commands">1. Commands</a></li>
-                        <li><a href="#admin_pvp_pve_commands">2. PVP/PVE commands</a></li>
-                        <li><a href="#admin_delete_common_messages">3. Delete common messages</a></li>
-                        <li><a href="#admin_delete_friendcodes">4. Delete friend codes</a></li>
-                        <li><a href="#admin_anti_spam">5. Anti Spam</a></li>
-                        <li><a href="#admin_press_button_to_talk">6. Press button to talk</a></li>
+                        <li><a href="#admin_bots_commands">2. Bots commands</a></li>
+                        <li><a href="#admin_pvp_pve_commands">3. PVP/PVE commands</a></li>
+                        <li><a href="#admin_delete_common_messages">4. Delete common messages</a></li>
+                        <li><a href="#admin_delete_friendcodes">5. Delete friend codes</a></li>
+                        <li><a href="#admin_anti_spam">6. Anti Spam</a></li>
+                        <li><a href="#admin_press_button_to_talk">7. Press button to talk</a></li>
                       </ol>
                     </li>
                     <li><a href="#admin_events">3. Events</a></li>
@@ -165,6 +171,7 @@
           <li>America/Lima: <a href="https://t.me/pokemongoeventosLima" target="_blank" rel="noopener">@pokemongoeventosLima</a> | <a href="https://twitter.com/PoGOEventosLima" target="_blank" rel="noopener">Twitter</a></li>
           <li>America/Buenos_Aires: <a href="https://t.me/pokemongoeventosBuenosAires" target="_blank" rel="noopener">@pokemongoeventosBuenosAires</a> | <a href="https://twitter.com/PoGOEventosAR" target="_blank" rel="noopener">Twitter</a></li>
           <li>America/Sao_Paulo: <a href="https://t.me/pokemongoeventosSaoPaulo" target="_blank" rel="noopener">@pokemongoeventosSaoPaulo</a> | <a href="https://twitter.com/PoGOEventosSP" target="_blank" rel="noopener">Twitter</a></li>
+          <li>America/New_York: <a href="https://t.me/pokemongoeventsNewYork" target="_blank" rel="noopener">@pokemongoeventsNewYork</a></li>
         </ul>
         <p>
           Event channels are available at <a href="https://discord.gg/kEVFTvh" target="_blank" rel="noopener">Discord</a>.
@@ -179,18 +186,28 @@
           <li><b><span class="highlight">info eggs / raids / research tasks / shiny / team rocket</span> <a href="https://t.me/KingCasualBot?start=cmd-infoeggs" target="_blank" rel="noopener">[Link eggs]</a> | <a href="https://t.me/KingCasualBot?start=cmd-inforaids" target="_blank" rel="noopener">[Link raids]</a> | <a href="https://t.me/KingCasualBot?start=cmd-infortasks" target="_blank" rel="noopener">[Link research tasks]</a> | <a href="https://t.me/KingCasualBot?start=cmd-infoshinypokemon" target="_blank" rel="noopener">[Link shiny]</a> | <a href="https://t.me/KingCasualBot?start=cmd-infoteamgorocket" target="_blank" rel="noopener">[Link Team GO Rocket]</a>:</b> info about eggs, raids, research tasks, shiny or Team GO Rocket.<br>Example: <span class="highlight">info eggs</span>.</li>
           <li><b><span class="highlight">i want to cry to niantic</span> <a href="https://t.me/KingCasualBot?start=cmd-crytoniantic" target="_blank" rel="noopener">[Link]</a>:</b> instructions on how to complain to Niantic if you've lost a premium pass or similar.</li>
           <li><b><span class="highlight">when is the legendary hour</span>:</b> shows when legendary hours usually occur.</li>
-          <li><b><span class="highlight">link to Pikachu map</span> <a href="https://t.me/KingCasualBot?start=cmd-pikachumap" target="_blank" rel="noopener">[Link]</a>:</b> sends a link to the community map of the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>.</li>
-          <li><b><span class="highlight">link to raid map</span>:</b> sends a link to the community map of the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a> centered on your group area showing the heat map and active announces or raids (if you log in with Telegram).<br><br>If you've chat and raids splitted you can use the command <span class="highlight">/setraidid followed by the id of the raid group</span> so that the link to works properly.</li>
-          <li><b><span class="highlight">how do i register with Pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-registerpikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions for registering with the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>.</li>
-          <li><b><span class="highlight">how to create a raid</span> <a href="https://t.me/KingCasualBot?start=cmd-createraid" target="_blank" rel="noopener">[Link]</a>:</b> instructions for creating an announce or raid with the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>.</li>
-          <li><b><span class="highlight">instructions to invite with pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-invitepikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions to invite to a raid with the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>.</li>
-          <li><b><span class="highlight">find trainer with pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-findtrainerpikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions to find a trainer with the bot <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>.</li>
         </ol>
         <p>
           The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.
         </p>
 
-        <h3 id="user_pvp_pve_commands">3. PVP/PVE commands</h3>
+        <h3 id="user_bots_commands">3. Bots commands</h3>
+
+        <h4 id="user_detectivepikachubot_commands">3.1. 🐱 <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a></h4>
+
+        <ol>
+          <li><b><span class="highlight">link to Pikachu map</span> <a href="https://t.me/KingCasualBot?start=cmd-pikachumap" target="_blank" rel="noopener">[Link]</a>:</b> sends a link to the community map.</li>
+          <li><b><span class="highlight">link to raid map</span>:</b> sends a link to the community map centered on your group area showing the heat map and active announces or raids (if you log in with Telegram).<br><br>If you've chat and raids splitted you can use the command <span class="highlight">/setraidid followed by the id of the raid group</span> so that the link works properly.</li>
+          <li><b><span class="highlight">how do i register with Pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-registerpikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions for registering.</li>
+          <li><b><span class="highlight">how to create a raid</span> <a href="https://t.me/KingCasualBot?start=cmd-createraid" target="_blank" rel="noopener">[Link]</a>:</b> instructions for creating an announce or raid.</li>
+          <li><b><span class="highlight">instructions to invite with pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-invitepikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions to invite to a raid.</li>
+          <li><b><span class="highlight">find trainer with pikachu</span> <a href="https://t.me/KingCasualBot?start=cmd-findtrainerpikachu" target="_blank" rel="noopener">[Link]</a>:</b> instructions to find a trainer.</li>
+        </ol>
+        <p>
+          The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.
+        </p>
+
+        <h3 id="user_pvp_pve_commands">4. PVP/PVE commands</h3>
 
         <ol>
           <li id="user_casualdex">
@@ -206,6 +223,13 @@
           </li>
           <li id="user_raidcounters">
             <span class="highlight">/raidcounters Pokémon</span>: best counters for a raid Pokémon.
+            <br><br>
+            The parameters in brackets are optional.
+            <br><br>
+            <ul>
+              <li><b>shadows:</b> include shadow Pokémon.</li>
+            </ul>
+            Brackets do not have to be included.
             <img class="example" src="../images/raidcounters.jpg" alt="raidcounters">
           </li>
           <li id="user_pokemoncodes">
@@ -243,7 +267,7 @@
           <li id="user_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank" rel="noopener">silph.gg</a>.</li>
         </ol>
 
-        <h3 id="inline_mode">4. Inline mode</h3>
+        <h3 id="inline_mode">5. Inline mode</h3>
 
         <p>
           Telegram offers a mode called inline which allows bots to be able to send certain messages from any chat if a conversation has been started with them.
@@ -312,19 +336,25 @@
           To enable or disable the <a href="#user_commands">commands</a> option.
         </p>
 
-        <h5 id="admin_pvp_pve_commands">1.2.2. PVP/PVE commands</h5>
+        <h5 id="admin_bots_commands">1.2.2. Bots commands</h5>
+
+        <p>
+          To individually enable or disable the <a href="#user_bots_commands">bots commands</a>.
+        </p>
+
+        <h5 id="admin_pvp_pve_commands">1.2.3. PVP/PVE commands</h5>
 
         <p>
           To enable or disable the <a href="#user_pvp_pve_commands">PVP/PVE commands</a> option.
         </p>
 
-        <h5 id="admin_delete_common_messages">1.2.3. Delete common messages</h5>
+        <h5 id="admin_delete_common_messages">1.2.4. Delete common messages</h5>
 
         <p>
           If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.
         </p>
 
-        <h5 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h5>
+        <h5 id="admin_delete_friendcodes">1.2.5. Delete friend codes</h5>
 
         <p>
           With this option messages containing friend codes will be deleted. Screenshots are included (except for oddly cropped ones).
@@ -339,13 +369,13 @@
           To get the current message use the command <span class="highlight">/getfctextcasual</span>.
         </p>
 
-        <h5 id="admin_anti_spam">1.2.5. Anti Spam</h5>
+        <h5 id="admin_anti_spam">1.2.6. Anti Spam</h5>
 
         <p>
           Casual Bot will delete spam messages and ban the member who sent the message.
         </p>
 
-        <h5 id="admin_press_button_to_talk">1.2.6. Press button to talk</h5>
+        <h5 id="admin_press_button_to_talk">1.2.7. Press button to talk</h5>
 
         <p>
           With this option when a new member enters the group he/she will have to answer a question by pressing a button. <b>The message has a delay of 1 second so that in the case of having another bot with a welcome message, it's displayed first.</b>
