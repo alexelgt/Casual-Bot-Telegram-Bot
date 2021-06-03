@@ -75,11 +75,13 @@
                   <ol>
                     <li><a href="#user_casualdex">1. /casualdex</a></li>
                     <li><a href="#user_raidcounters">2. /raidcounters</a></li>
-                    <li><a href="#user_pokemoncodes">3. /pokemoncodes</a></li>
-                    <li><a href="#user_pokemonpvp">4. /pokemonpvp</a></li>
-                    <li><a href="#user_elitemoves">5. /elitefast and /elitecharged</a></li>
-                    <li><a href="#user_battleleagues">6. /gbleagues and /silphleagues</a></li>
-                    <li><a href="#user_pvpranking">7. /pvpranking</a></li>
+                    <li><a href="#user_breakpoints">3. /breakpoints</a></li>
+                    <li><a href="#user_pokemoncodes">4. /pokemoncodes</a></li>
+                    <li><a href="#user_pokemonpvp">5. /pokemonpvp</a></li>
+                    <li><a href="#user_moveinfo">6. /moveinfo</a></li>
+                    <li><a href="#user_elitemoves">7. /elitefast and /elitecharged</a></li>
+                    <li><a href="#user_battleleagues">8. /gbleagues and /silphleagues</a></li>
+                    <li><a href="#user_silphranking">9. /silphranking</a></li>
                   </ol>
                 </li>
                 <li><a href="#inline_mode">5. Inline mode</a></li>
@@ -222,15 +224,33 @@
             <img class="example" src="../images/casualdex.jpg" alt="casualdex">
           </li>
           <li id="user_raidcounters">
-            <span class="highlight">/raidcounters Pokémon</span>: best counters for a raid Pokémon.
+            <span class="highlight">/raidcounters Pokémon (shadows) (text)</span>: best counters for a raid Pokémon.
             <br><br>
             The parameters in brackets are optional.
             <br><br>
             <ul>
               <li><b>shadows:</b> include shadow Pokémon.</li>
+              <li><b>text:</b> returns the text version.</li>
             </ul>
             Brackets do not have to be included.
             <img class="example" src="../images/raidcounters.jpg" alt="raidcounters">
+          </li>
+          <li id="user_breakpoints">
+            <span class="highlight">/breakpoints Pokémon(+move) (IVa) (level) (friendship level) (weather) (mega bonus) (raid tier)</span>: breakpoints calculator.
+            <br><br>
+            The parameters in brackets are optional.
+            <br><br>
+            <ul>
+              <li><b>move:</b> Pokémon move.</li>
+              <li><b>IVa:</b> Attack IV.<br>Format: iv# (where # is a number between 0 and 15).</li>
+              <li><b>level:</b> level to be taken into account in the calculations.<br>Format: level# (where # is a number between 1 and 51).</li>
+              <li><b>friendship level:</b> number of hearts you have with the Pokémon.<br>Format: *# (where # is a number between 1 and 4).</li>
+              <li><b>weather:</b> take into account bonus for weather boosted.</li>
+              <li><b>mega bonus:</b> take into account mega boost.<br>Format: megab# (where # is a number between 1 and 2).</li>
+              <li><b>raid tier:</b> tier raid to show details of. If omitted, tier 5 and Mega are displayed.<br>Format: tier? (where ? is 1, 3, 5 or mega).</li>
+            </ul>
+            Brackets do not have to be included.
+            <img class="example" src="../images/breakpoints.jpg" alt="breakpoints">
           </li>
           <li id="user_pokemoncodes">
             <span class="highlight">/pokemoncodes Pokémon [league (basic) (min IV) (friendship)]</span>: codes to filter a Pokémon.
@@ -262,9 +282,17 @@
             Brackets do not have to be included.
             <img class="example" src="../images/pokemonpvp.jpg" alt="pokemonpvp">
           </li>
+          <li id="user_moveinfo">
+            <span class="highlight">/moveinfo move</span>: detailed info of a move.
+            <br><br>
+            <ul>
+              <li><b>move:</b> Pokémon move.</li>
+            </ul>
+            <img class="example" src="../images/moveinfo.jpg" alt="moveinfo">
+          </li>
           <li id="user_elitemoves"><span class="highlight">/elitefast</span> and <span class="highlight">/elitecharged</span>: list of fast and charged moves that are only available using elite TM. <b>These commands are only available by private message</b>.</li>
-          <li id="user_battleleagues"><span class="highlight">/gbleagues</span> y <span class="highlight">/silphleagues</span>: information about GO Battle League and Silph leagues.</li>
-          <li id="user_pvpranking"><span class="highlight">/pvpranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank" rel="noopener">silph.gg</a>.</li>
+          <li id="user_battleleagues"><span class="highlight">/gbleagues</span> and <span class="highlight">/silphleagues</span>: information about GO Battle League and Silph leagues.</li>
+          <li id="user_silphranking"><span class="highlight">/silphranking</span>: ranking mejores Pokémon de la copa actual de <a href="https://silph.gg/" target="_blank" rel="noopener">silph.gg</a>.</li>
         </ol>
 
         <h3 id="inline_mode">5. Inline mode</h3>
@@ -276,7 +304,7 @@
           Once you've started a conversation with the bot, in order to be able to use this mode write in a chat <span class="highlight">@KingCasualBot</span> followed by the command and its parameters.
         </p>
         <p>
-          In the case of the Casual Bot the commands <span class="highlight">cmden</span>, <span class="highlight">casualdexen</span>, <span class="highlight">raidcountersen</span> and <span class="highlight">pkmnpvpen</span> are available for use with this mode.
+          In the case of the Casual Bot the commands <span class="highlight">cmden</span>, <span class="highlight">casualdexen</span>, <span class="highlight">raidcountersen</span>, <span class="highlight">breakpointsen</span>, <span class="highlight">pkmnpvpen</span> and <span class="highlight">moveinfoen</span> are available for use with this mode.
         </p>
         <p>
           <b><span class="highlight">cmden</span></b>
@@ -290,12 +318,12 @@
           <span class="highlight">@KingCasualBot cmden how to create a raid</span>
         </p>
         <p>
-          <b><span class="highlight">casualdexen</span>, <span class="highlight">raidcountersen</span> and <span class="highlight">pkmnpvpen</span></b>
+          <b><span class="highlight">casualdexen</span>, <span class="highlight">raidcountersen</span>, <span class="highlight">breakpointsen</span> and <span class="highlight">pkmnpvpen</span></b>
           <br>
           The commands are slightly different from the PVP/PVE commands in order to support multiple languages.
         </p>
         <p>
-          The parameters of these 2 commands are the same as in their normal version with the addition that if you want to indicate an alternative form it's done by putting <span class="highlight">?form</span>.
+          The parameters of these commands are the same as in their normal version with the addition that if you want to indicate an alternative form it's done by putting <span class="highlight">?form</span>.
         </p>
         <p>
           <b>Example:</b>
