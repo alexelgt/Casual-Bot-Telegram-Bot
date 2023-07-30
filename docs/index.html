@@ -195,6 +195,17 @@
                   <li>
                     <a href="#admin_sustitucion_texto">6. Sustitución de texto en mensajes</a>
                   </li>
+                  <li>
+                    <a href="#admin_temas">7. Temas</a>
+                    <ol>
+                      <li>
+                        <a href="#admin_tema_reenvios">1. Establecer tema para reenvío (eventos y noticias)</a>
+                      </li>
+                      <li>
+                        <a href="#admin_tema_codigos_amigos">2. Establecer tema para códigos de amigos</a>
+                      </li>
+                    </ol>
+                  </li>
                 </ol>
               </li>
               <li>
@@ -1031,6 +1042,40 @@
               .
             </li>
           </ul>
+
+          <h3 id="admin_temas">7. Temas</h3>
+
+          <p>Telegram permite configurar un grupo en temas separando las conversaciones en distintas secciones.</p>
+          <p>Las respuestas a mensajes mandados por los miembros de un grupo se mandan al mismo tema desde el que el miembro ha mandado el mensaje.</p>
+          <p><b>Para que un bot pueda mandar mensajes a un tema cerrado tiene que ser administrador con el permiso "Gestionar temas".</b></p>
+
+          <h4 id="admin_tema_reenvios">7.1 Establecer tema para reenvío (eventos y noticias)</h4>
+
+          <p>
+            Los mensajes que reenvía el bot desde canales (eventos y noticias) no tienen un tema de origen y por lo tanto se tiene que decidir a qué tema reenviar estos mensajes. Por defecto se mandan al tema general.
+          </p>
+          <p>
+            Para establecer un tema distinto al que reenviar los mensajes, pon el siguiente comando en el tema que quieras que se use:
+            <span class="highlight">/setfwtopiccasual</span>
+          </p>
+          <p>
+            Para borrar el tema para reenvíos pon en cualquier tema
+            <span class="highlight">/setfwtopiccasual -</span>
+            .
+          </p>
+
+          <h4 id="admin_tema_codigos_amigos">7.2 Establecer tema para códigos de amigos</h4>
+
+          <p>Si tienes activado el <a href="#admin_borrar_camigos">borrar códigos de amigos</a>, se puede establecer un tema en el que no se borren este tipo de mensajes.</p>
+          <p>
+            Para establecer un tema para códigos de amigos, pon el siguiente comando en el tema que quieras que se use:
+            <span class="highlight">/setfctopiccasual</span>
+          </p>
+          <p>
+            Para borrar el tema para códigos de amigos pon en cualquier tema
+            <span class="highlight">/setfctopiccasual -</span>
+            .
+          </p>
         </div>
       </section>
 
@@ -1233,6 +1278,10 @@
                 <tr>
                   <td>Mensaje de bienvenida</td>
                   <td>-</td>
+                </tr>
+                <tr>
+                  <td>Tema cerrado</td>
+                  <td>Gestionar temas</td>
                 </tr>
               </table>
             </div>

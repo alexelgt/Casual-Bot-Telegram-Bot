@@ -187,6 +187,17 @@
                   <li>
                     <a href="#admin_text_substitution">6. Text substitution in messages</a>
                   </li>
+                  <li>
+                    <a href="#admin_topics">7. Topics</a>
+                    <ol>
+                      <li>
+                        <a href="#admin_forwarding_topic">1. Set forwarding topic (events and news)</a>
+                      </li>
+                      <li>
+                        <a href="#admin_friendcodes_topic">2. Set friend codes topic</a>
+                      </li>
+                    </ol>
+                  </li>
                 </ol>
               </li>
               <li>
@@ -1014,6 +1025,41 @@
               .
             </li>
           </ul>
+
+          <h3 id="admin_topics">7. Topics</h3>
+
+          <p>Telegram allows you to configure a group in topics separating the conversations in different sections.</p>
+          <p>Replies to messages sent by members of a group are sent to the same topic from which the member sent the message.</p>
+          <p><b>For a bot to be able to send messages to a closed topic, it must be an admin with the "Manage topics" permission.</b></p>
+
+          <h4 id="admin_forwarding_topic">7.1 Set forwarding topic (events and news)</h4>
+
+          <p>
+            The messages forwarded by the bot from channels (events and news) do not have a origin topic and therefore you have to decide which topic to forward these messages to. By default they are sent to the general
+            topic.
+          </p>
+          <p>
+            To set a different topic to forward messages to, put the following command in the topic you want to use:
+            <span class="highlight">/setfwtopiccasual</span>
+          </p>
+          <p>
+            To delete the the forwarding topic put in any topic
+            <span class="highlight">/setfwtopiccasual -</span>
+            .
+          </p>
+
+          <h4 id="admin_friendcodes_topic">7.2 Set friend codes topic</h4>
+
+          <p>If you have activated the <a href="#admin_delete_friendcodes">delete friend codes</a>, a topic can be set in which these types of messages are not deleted.</p>
+          <p>
+            To set a topic for friend codes, put the following command in the topic you want to use:
+            <span class="highlight">/setfctopiccasual</span>
+          </p>
+          <p>
+            To delete the the friend codes topic put in any topic
+            <span class="highlight">/setfctopiccasual -</span>
+            .
+          </p>
         </div>
       </section>
 
@@ -1218,6 +1264,10 @@
                 <tr>
                   <td>Welcome message</td>
                   <td>-</td>
+                </tr>
+                <tr>
+                  <td>Topic closed</td>
+                  <td>Manage topics</td>
                 </tr>
               </table>
             </div>
