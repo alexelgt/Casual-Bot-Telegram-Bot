@@ -109,7 +109,6 @@
                       <li><a href="#user_battleleagues">7. /gbleagues</a></li>
                     </ol>
                   </li>
-                  <li><a href="#inline_mode">5. Inline mode</a></li>
                 </ol>
               </li>
               <li>
@@ -532,64 +531,6 @@
               : information about GO Battle League.
             </li>
           </ol>
-
-          <h3 id="inline_mode">5. Inline mode</h3>
-
-          <p>Telegram offers a mode called inline which allows bots to be able to send certain messages from any chat if a conversation has been started with them.</p>
-          <p>
-            Once you've started a conversation with the bot, in order to be able to use this mode write in a chat
-            <span class="highlight">@KingCasualBot</span>
-            followed by the command and its parameters.
-          </p>
-          <p>
-            In the case of the Casual Bot the commands
-            <span class="highlight">cmden</span>
-            ,
-            <span class="highlight">casualdexen</span>
-            ,
-            <span class="highlight">raidcountersen</span>
-            ,
-            <span class="highlight">pkmnpvpen</span>
-            and
-            <span class="highlight">moveinfoen</span>
-            are available for use with this mode.
-          </p>
-          <p>
-            <b><span class="highlight">cmden</span></b>
-            <br />
-            If you put after one of the phrases of the
-            <a href="#usuario_comandos">commands</a>
-            it allows you to send it.
-          </p>
-          <p>
-            <b>Example:</b>
-          </p>
-          <p>
-            <span class="highlight">@KingCasualBot cmden how to create a raid</span>
-          </p>
-          <p>
-            <b>
-              <span class="highlight">casualdexen</span>
-              ,
-              <span class="highlight">raidcountersen</span>
-              and
-              <span class="highlight">pkmnpvpen</span>
-            </b>
-            <br />
-            The commands are slightly different from the PVP/PVE commands in order to support multiple languages.
-          </p>
-          <p>
-            The parameters of these commands are the same as in their normal version with the addition that if you want to indicate an alternative form it's done by putting
-            <span class="highlight">?form</span>
-            .
-          </p>
-          <p>
-            <b>Example:</b>
-          </p>
-          <p>
-            <span class="highlight">@KingCasualBot pkmnpvpen Giratina ?origin</span>
-          </p>
-          <img class="example" src="../images/pokemonpvp_inlinemode.gif" alt="pokemonpvp inline mode" />
         </div>
       </section>
 
@@ -695,7 +636,7 @@
 
           <p>Allows messages sent across different news channels to be forwarded to the group.</p>
           <p>
-            <i>To be able to modify these settings the group must have at least 16 members.</i>
+            <i>To be able to modify these settings the group must have at least 11 members.</i>
           </p>
 
           <h4 id="admin_timers">1.5. Timers</h4>
@@ -1007,6 +948,7 @@
             </b>
             you can make the groups of which you are the creator become premium for a certain time.
           </p>
+          <p><b>NOTE: banned or restricted groups will not benefit from the advantages of premium groups.</b></p>
           <h4>Advantages of premium groups:</h4>
           <ul>
             <li>Extra priority when receiving events and news.</li>
@@ -1037,7 +979,7 @@
                 <b>?</b>
                 : disabled by default
                 <br />
-                +XX👨‍👩‍👧‍👦: only groups with +XX members
+                +XX👨‍👩‍👧‍👦: only groups with at least XX members
               </p>
               <table>
                 <tr>
@@ -1047,7 +989,7 @@
                 </tr>
                 <tr>
                   <td>Event command</td>
-                  <td>✅</td>
+                  <td>❌</td>
                   <td>
                     <b>?</b>
                     <br />
@@ -1073,6 +1015,24 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>Max Battles</td>
+                  <td>❌</td>
+                  <td>
+                    <b>?</b>
+                    <br />
+                    +15👨‍👩‍👧‍👦
+                  </td>
+                </tr>
+                <tr>
+                  <td>Casual GO</td>
+                  <td>❌</td>
+                  <td>
+                    <b>?</b>
+                    <br />
+                    +15👨‍👩‍👧‍👦
+                  </td>
+                </tr>
+                <tr>
                   <td>Commands</td>
                   <td>✅</td>
                   <td><b>?</b></td>
@@ -1093,7 +1053,7 @@
                   <td>
                     <b>?</b>
                     <br />
-                    +16👨‍👩‍👧‍👦
+                    +11👨‍👩‍👧‍👦
                   </td>
                 </tr>
                 <tr>
@@ -1133,7 +1093,7 @@
               <h3 id="admin_table_permissions">2. Required permissions</h3>
 
               <p>
-                <b>If the group has slow mode activated, it's highly recommended that you add the bot as an admin so that time restrictions are not applied when sending messages.</b>
+                <b>⚠️ If the group has slow mode activated, it's highly recommended that you add the bot as an admin so that time restrictions are not applied when sending messages.</b>
               </p>
               <table>
                 <tr>
@@ -1151,6 +1111,14 @@
                 <tr>
                   <td>Notification of event started/finished</td>
                   <td>-</td>
+                </tr>
+                <tr>
+                  <td>Max Battles</td>
+                  <td>Delete messages (recommended)</td>
+                </tr>
+                <tr>
+                  <td>Casual GO</td>
+                  <td>Delete messages (recommended)</td>
                 </tr>
                 <tr>
                   <td>Commands</td>
@@ -1220,10 +1188,7 @@
             </li>
           </ul>
           <p>The first one is used to ban accounts that are already in the group and send a message that the bot considers as spam.</p>
-          <p>
-            The second one is to prevent spamming accounts from staying in the group.
-            <b>In real-life use cases this option is the most effective since the anti spam filter may not be triggered.</b>
-          </p>
+          <p>The second one is to prevent spamming accounts from staying in the group.</p>
         </div>
       </section>
 

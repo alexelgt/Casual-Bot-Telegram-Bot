@@ -103,7 +103,6 @@
                       <li><a href="#user_ligascombates">7. /ligascg</a></li>
                     </ol>
                   </li>
-                  <li><a href="#modo_inline">5. Modo inline</a></li>
                 </ol>
               </li>
               <li>
@@ -540,63 +539,6 @@
               : información sobre las ligas de Liga Combates GO.
             </li>
           </ol>
-
-          <h3 id="modo_inline">5. Modo inline</h3>
-          <p>Telegram ofrece un modo llamado inline el cual permite a los bots poder mandar ciertos mensajes desde cualquier chat si se ha iniciado conversación con estos.</p>
-          <p>
-            Una vez has iniciado conversación con el bot, para poder usar este modo escribe en un chat
-            <span class="highlight">@KingCasualBot</span>
-            seguido del comando y sus parámetros.
-          </p>
-          <p>
-            En el caso del Casual Bot los comandos
-            <span class="highlight">cmdes</span>
-            ,
-            <span class="highlight">casualdexes</span>
-            ,
-            <span class="highlight">raidcounterses</span>
-            ,
-            <span class="highlight">pkmnpvpes</span>
-            y
-            <span class="highlight">moveinfoes</span>
-            están disponibles para usarse con este modo.
-          </p>
-          <p>
-            <b><span class="highlight">cmdes</span></b>
-            <br />
-            Si pones después una de las frases de los
-            <a href="#usuario_comandos">comandos</a>
-            te permite mandarlo.
-          </p>
-          <p>
-            <b>Ejemplo:</b>
-          </p>
-          <p>
-            <span class="highlight">@KingCasualBot cmdes cómo crear una raid</span>
-          </p>
-          <p>
-            <b>
-              <span class="highlight">casualdexes</span>
-              ,
-              <span class="highlight">raidcounterses</span>
-              y
-              <span class="highlight">pkmnpvpes</span>
-            </b>
-            <br />
-            Los comandos son ligeramente distintos a los comandos de PVP/PVE para poder soportar diversos idiomas.
-          </p>
-          <p>
-            Los parámetros de estos comandos son iguales que en su versión normal con el añadido de que para indicar una forma alternativa se hace poniendo
-            <span class="highlight">?forma</span>
-            .
-          </p>
-          <p>
-            <b>Ejemplo:</b>
-          </p>
-          <p>
-            <span class="highlight">@KingCasualBot pkmnpvpes Giratina ?origen</span>
-          </p>
-          <img class="example" src="images/pokemonpvp_inlinemode.gif" alt="pokemonpvp modo inline" />
         </div>
       </section>
 
@@ -704,7 +646,7 @@
 
           <p>Permite que se reenvien al grupo los mensajes que se mandan en diversos canales de noticias.</p>
           <p>
-            <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 16 miembros.</i>
+            <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 11 miembros.</i>
           </p>
 
           <h4 id="admin_temporizadores">1.5. Temporizadores</h4>
@@ -1013,6 +955,7 @@
             </b>
             puedes hacer que los grupos de los que eres creador pasen a ser premium durante un tiempo determinado.
           </p>
+          <p><b>NOTA: grupos baneados o restringidos no se beneficiarán de las ventajas para grupos premium.</b></p>
           <h4>Ventajas de los grupos premium:</h4>
           <ul>
             <li>Prioridad extra a la hora de recibir los eventos y noticias.</li>
@@ -1043,7 +986,7 @@
                 <b>?</b>
                 : desactivado por defecto
                 <br />
-                +XX👨‍👩‍👧‍👦: solo grupos con +XX miembros
+                +XX👨‍👩‍👧‍👦: solo grupos con al menos XX miembros
               </p>
               <table>
                 <tr>
@@ -1053,7 +996,7 @@
                 </tr>
                 <tr>
                   <td>Comando eventos</td>
-                  <td>✅</td>
+                  <td>❌</td>
                   <td>
                     <b>?</b>
                     <br />
@@ -1079,6 +1022,24 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>Combates Max</td>
+                  <td>❌</td>
+                  <td>
+                    <b>?</b>
+                    <br />
+                    +15👨‍👩‍👧‍👦
+                  </td>
+                </tr>
+                <tr>
+                  <td>Casual GO</td>
+                  <td>❌</td>
+                  <td>
+                    <b>?</b>
+                    <br />
+                    +15👨‍👩‍👧‍👦
+                  </td>
+                </tr>
+                <tr>
                   <td>Comandos</td>
                   <td>✅</td>
                   <td><b>?</b></td>
@@ -1099,7 +1060,7 @@
                   <td>
                     <b>?</b>
                     <br />
-                    +16👨‍👩‍👧‍👦
+                    +11👨‍👩‍👧‍👦
                   </td>
                 </tr>
                 <tr>
@@ -1139,7 +1100,7 @@
               <h3 id="admin_tabla_permisos">2. Permisos necesarios</h3>
 
               <p>
-                <b>Si el grupo tiene el modo lento activado es muy recomendable que se añada al bot como administrador para que no se le apliquen las restricciones de tiempo al mandar mensajes.</b>
+                <b>⚠️ Si el grupo tiene el modo lento activado es muy recomendable que se añada al bot como administrador para que no se le apliquen las restricciones de tiempo al mandar mensajes.</b>
               </p>
               <table>
                 <tr>
@@ -1157,6 +1118,14 @@
                 <tr>
                   <td>Notificación evento empezado/terminado</td>
                   <td>-</td>
+                </tr>
+                <tr>
+                  <td>Combates Max</td>
+                  <td>Eliminar mensajes (recomendado)</td>
+                </tr>
+                <tr>
+                  <td>Casual GO</td>
+                  <td>Eliminar mensajes (recomendado)</td>
                 </tr>
                 <tr>
                   <td>Comandos</td>
@@ -1226,10 +1195,7 @@
             </li>
           </ul>
           <p>La primera sirve para banear las cuentas que ya estén en el grupo y manden un mensaje que el bot considere como spam.</p>
-          <p>
-            La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo.
-            <b>En la práctica esta opción es la más efectiva ya que el filtro anti spam podría no saltar.</b>
-          </p>
+          <p>La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo.</p>
         </div>
       </section>
 
