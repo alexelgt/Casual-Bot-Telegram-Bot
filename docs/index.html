@@ -86,6 +86,7 @@
                     <a href="#usuario_combates">2. Combates Pokémon</a>
                     <ol>
                       <li><a href="#usuario_combates_organizar">1. ¿Cómo crear un aviso de Combates Max?</a></li>
+                      <li><a href="#usuario_combates_comandos">2. Comandos organizador (o admin)</a></li>
                     </ol>
                   </li>
                   <li><a href="#usuario_comandos">3. Comandos</a></li>
@@ -351,7 +352,7 @@
             <b>Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 200 miembros y requiere que el nodo de la captura de pantalla haya sido añadido al bot por un administrador.</b>
           </p>
 
-          <img class="example" src="images/maxbattle_telegram_image.gif" alt="Maxbattle ejemplo ubicación Telegram" />
+          <img class="example" src="images/maxbattle_telegram_image.gif" alt="Maxbattle ejemplo captura de pantalla" />
 
           <ol>
             <li>
@@ -360,6 +361,41 @@
               <span class="highlight">maxbattle HH:MM</span>
             </li>
           </ol>
+
+          <h4 id="usuario_combates_comandos">2.2 Comandos organizador (o admin)</h4>
+
+          <h5 id="usuario_combates_cambiar_pokemon">2.2.1. Cambiar Pokémon</h5>
+
+          <p>Para cambiar el Pokémon responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/pokemon Nombre Pokémon</span>.</p>
+
+          <h5 id="usuario_combates_cambiar_hora">2.2.2. Cambiar hora o fecha</h5>
+
+          <p>Para cambiar la hora responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/time HH:MM</span>.</p>
+
+          <p>Para cambiar la hora a un día posterior responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/time DD/HH:MM</span>.</p>
+
+          <p>Donde DD tiene que ser un día posterior al actual.</p>
+
+          <h5 id="usuario_combates_cambiar_nombre">2.2.3. Cambiar nombre del nodo</h5>
+
+          <p>Para cambiar el nombre del nodo responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/powerspot Nombre nodo</span>.</p>
+
+          <p>
+            <b>NOTA: si el nombre del nodo se corresponde con el de un nodo que haya sido añadido al bot por un administrador se actualiza también la ubicación.</b>
+            <b>Si hay coincidencia con más de un nodo o no se encuentra el nodo solo se cambia el nombre.</b>
+          </p>
+
+          <h5 id="usuario_combates_cambiar_ubicacion">2.2.4. Cambiar ubicación</h5>
+
+          <p>Para cambiar la ubicación responde a un mensaje de Combate Pokémon con una ubicación de Telegram.</p>
+
+          <p>De forma alternativa se puede responder a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/locationcasual enlace_campfire</span>.</p>
+
+          <h5 id="usuario_combates_nota">2.2.5. Añadir una nota</h5>
+
+          <img class="example" src="images/maxbattle_note.jpeg" alt="Maxbattle ejemplo nota" />
+
+          <p>Para añadir una nota al final de una lista responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/notecasual Texto nota</span>.</p>
 
           <h3 id="usuario_comandos">3. Comandos</h3>
           <p>Casual Bot responderá a diversas frases como por ejemplo:</p>

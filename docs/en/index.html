@@ -92,6 +92,7 @@
                     <a href="#user_battles">2. Pokémon Battles</a>
                     <ol>
                       <li><a href="#user_battles_organize">1. How to create a Max Battle list?</a></li>
+                      <li><a href="#user_battles_commands">2. Organizer commands (or admin)</a></li>
                     </ol>
                   </li>
                   <li><a href="#user_commands">3. Commands</a></li>
@@ -343,7 +344,7 @@
             <b>In order to create a list in this way, the group must have at least 200 members and requires that the power spot in the screenshot has been added to the bot by an admin.</b>
           </p>
 
-          <img class="example" src="../images/maxbattle_telegram_image.gif" alt="Maxbattle ejemplo ubicación Telegram" />
+          <img class="example" src="../images/maxbattle_telegram_image.gif" alt="Maxbattle screenshot example" />
 
           <ol>
             <li>
@@ -352,6 +353,41 @@
               <span class="highlight">maxbattle HH:MM</span>
             </li>
           </ol>
+
+          <h4 id="user_battles_commands">2.2 Organizer commands (or admin)</h4>
+
+          <h5 id="usuario_combates_change_pokemon">2.2.1. Change Pokémon</h5>
+
+          <p>To change the Pokémon reply to a Pokémon Battle message using the following command: <span class="highlight">/pokemon Pokémon name</span>.</p>
+
+          <h5 id="usuario_combates_change_time">2.2.2. Change time or date</h5>
+
+          <p>To change the time reply to a Pokémon Battle message using the following command: <span class="highlight">/time HH:MM</span>.</p>
+
+          <p>To change the time to a later day reply to a Pokémon Battle message using the following command: <span class="highlight">/time DD/HH:MM</span>.</p>
+
+          <p>Where DD has to be a day later than the current day.</p>
+
+          <h5 id="usuario_combates_change_name">2.2.3. Change Power Spot name</h5>
+
+          <p>To change the name of the Power Spot reply to a Pokémon Battle message using the following command: <span class="highlight">/powerspot Power Spot name</span>.</p>
+
+          <p>
+            <b>NOTE: If the Power Spot name corresponds to a Power Spot that has been added to the bot by an admin, the location is also updated.</b>
+            <b>If there is a match with more than one Power Spot or the Power Spot is not found only the name is changed.</b>
+          </p>
+
+          <h5 id="usuario_combates_change_location">2.2.4. Change location</h5>
+
+          <p>To change the location of the Power Spot reply to a Pokémon Battle message with a Telegram location.</p>
+
+          <p>Alternatively, you can reply to a Pokémon Battle message using the following command: <span class="highlight">/locationcasual campfire_link</span>.</p>
+
+          <h5 id="usuario_combates_note">2.2.5. Add a note</h5>
+
+          <img class="example" src="../images/maxbattle_note.jpeg" alt="Maxbattle note example" />
+
+          <p>To add a note to the end of a list reply to a Pokémon Battle message using the following command: <span class="highlight">/notecasual Note text</span>.</p>
 
           <h3 id="user_commands">3. Commands</h3>
 
