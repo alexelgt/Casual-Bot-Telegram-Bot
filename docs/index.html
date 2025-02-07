@@ -82,9 +82,15 @@
                 <a class="green" href="#usuario_doc">Documentación para usuarios</a>
                 <ol>
                   <li><a href="#usuario_eventos">1. Eventos</a></li>
-                  <li><a href="#usuario_comandos">2. Comandos</a></li>
                   <li>
-                    <a href="#usuario_comandos_bots">3. Comandos bots</a>
+                    <a href="#usuario_combates">2. Combates Pokémon</a>
+                    <ol>
+                      <li><a href="#usuario_combates_organizar">1. ¿Cómo crear un aviso de Combates Max?</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#usuario_comandos">3. Comandos</a></li>
+                  <li>
+                    <a href="#usuario_comandos_bots">4. Comandos bots</a>
                     <ol>
                       <li>
                         <a href="#usuario_comandos_detectivepikachubot">1. 🐱 @detectivepikachubot</a>
@@ -92,7 +98,7 @@
                     </ol>
                   </li>
                   <li>
-                    <a href="#usuario_comandos_pvp_pve">4. Comandos PVP/PVE</a>
+                    <a href="#usuario_comandos_pvp_pve">5. Comandos PVP/PVE</a>
                     <ol>
                       <li><a href="#usuario_casualdex">1. /casualdex</a></li>
                       <li><a href="#usuario_raidcounters">2. /raidcounters</a></li>
@@ -100,7 +106,7 @@
                       <li><a href="#usuario_pokemonpvp">4. /pokemonpvp</a></li>
                       <li><a href="#usuario_moveinfo">5. /moveinfo</a></li>
                       <li><a href="#usuario_movimientoselite">6. /elitefast y /elitecharged</a></li>
-                      <li><a href="#user_ligascombates">7. /ligascg</a></li>
+                      <li><a href="#usuario_ligascombates">7. /ligascg</a></li>
                     </ol>
                   </li>
                 </ol>
@@ -148,9 +154,26 @@
                       <li><a href="#admin_idioma">8. Idioma</a></li>
                     </ol>
                   </li>
-                  <li><a href="#admin_botones">2. Botones</a></li>
                   <li>
-                    <a href="#admin_alertas">3. Alertas</a>
+                    <a href="#admin_combates">2. Combates Pokémon</a>
+                    <ol>
+                      <li>
+                        <a href="#admin_alertas_anclar">1. Anclar una alerta</a>
+                      </li>
+                      <li>
+                        <a href="#admin_alertas_obtener">2. Obtener una alerta</a>
+                      </li>
+                      <li>
+                        <a href="#admin_alertas_borrar">3. Eliminar una alerta</a>
+                      </li>
+                      <li>
+                        <a href="#admin_img_alertas">4. Imagen en alertas [PREMIUM]</a>
+                      </li>
+                    </ol>
+                  </li>
+                  <li><a href="#admin_botones">3. Botones</a></li>
+                  <li>
+                    <a href="#admin_alertas">4. Alertas</a>
                     <ol>
                       <li>
                         <a href="#admin_alertas_anclar">1. Anclar una alerta</a>
@@ -167,7 +190,7 @@
                     </ol>
                   </li>
                   <li>
-                    <a href="#admin_mensaje_bienvenida">4. Mensaje de bienvenida</a>
+                    <a href="#admin_mensaje_bienvenida">5. Mensaje de bienvenida</a>
                     <ol>
                       <li>
                         <a href="#admin_img_mensaje_bienvenida">1. Imagen en mensaje de bienvenida [PREMIUM]</a>
@@ -175,13 +198,13 @@
                     </ol>
                   </li>
                   <li>
-                    <a href="#admin_etiquetas_html">5. Etiquetas HTML en mensajes</a>
+                    <a href="#admin_etiquetas_html">6. Etiquetas HTML en mensajes</a>
                   </li>
                   <li>
-                    <a href="#admin_sustitucion_texto">6. Sustitución de texto en mensajes</a>
+                    <a href="#admin_sustitucion_texto">7. Sustitución de texto en mensajes</a>
                   </li>
                   <li>
-                    <a href="#admin_temas">7. Temas</a>
+                    <a href="#admin_temas">8. Temas</a>
                     <ol>
                       <li>
                         <a href="#admin_tema_reenvios">1. Establecer tema para reenvío (eventos y noticias)</a>
@@ -240,20 +263,14 @@
             <li>
               Europe/Madrid:
               <a href="https://t.me/pokemongoeventos" target="_blank" rel="noopener">@pokemongoeventos</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventos" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               Portugal:
               <a href="https://t.me/pokemongoeventosPT" target="_blank" rel="noopener">@pokemongoeventosPT</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosPT" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               Central European Time:
               <a href="https://t.me/pokemongoeventsCET" target="_blank" rel="noopener">@pokemongoeventsCET</a>
-              |
-              <a rel="me" href="https://mstdn.social/@pokemongoeventsCET" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               Western European Time:
@@ -266,32 +283,18 @@
             <li>
               America/Mexico_City:
               <a href="https://t.me/pokemongoeventosMexicoCity" target="_blank" rel="noopener">@pokemongoeventosMexicoCity</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosCDMX" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               America/Santiago:
               <a href="https://t.me/pokemongoeventosSantiago" target="_blank" rel="noopener">@pokemongoeventosSantiago</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosCL" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               America/Lima:
               <a href="https://t.me/pokemongoeventosLima" target="_blank" rel="noopener">@pokemongoeventosLima</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosLima" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               America/Buenos_Aires:
               <a href="https://t.me/pokemongoeventosBuenosAires" target="_blank" rel="noopener">@pokemongoeventosBuenosAires</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosAR" target="_blank" rel="noopener">Mastodon</a>
-            </li>
-            <li>
-              America/Sao_Paulo:
-              <a href="https://t.me/pokemongoeventosSaoPaulo" target="_blank" rel="noopener">@pokemongoeventosSaoPaulo</a>
-              |
-              <a rel="me" href="https://mstdn.social/@PoGOEventosSP" target="_blank" rel="noopener">Mastodon</a>
             </li>
             <li>
               America/New_York:
@@ -299,7 +302,52 @@
             </li>
           </ul>
 
-          <h3 id="usuario_comandos">2. Comandos</h3>
+          <h3 id="usuario_combates">2. Combates Pokémon</h3>
+
+          <p>Esta funcionalidad permite organizar combates Pokémon como Combates Max.</p>
+
+          <h4 id="usuario_combates_organizar">2.1 ¿Cómo crear un aviso de Combates Max?</h4>
+
+          <h5 id="usuario_combates_organizar_ubicacion">2.1.1. Ubicación Telegram</h5>
+
+          <img class="example" src="images/maxbattle_telegram_location.jpeg" alt="Maxbattle ejemplo ubicación Telegram" />
+
+          <ol>
+            <li>Manda la ubicación del nodo desde el menú compartir de Telegram</li>
+            <li>
+              Responde al mensaje con el comando:
+
+              <span class="highlight">/maxbattle Nombre Pokémon HH:MM Nombre nodo</span>
+            </li>
+          </ol>
+
+          <h5 id="usuario_combates_organizar_link">2.1.2. Enlace Campfire</h5>
+
+          <ol>
+            <li>
+              Usa el comando:
+
+              <span class="highlight">/maxbattle enlace_campfire HH:MM Nombre nodo</span>
+            </li>
+          </ol>
+
+          <h5 id="usuario_combates_organizar_imagen">2.1.3. Captura de pantalla</h5>
+
+          <p>
+            <b>Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 200 miembros y requiere que el nodo de la captura de pantalla haya sido añadido al bot por un administrador.</b>
+          </p>
+
+          <img class="example" src="images/maxbattle_telegram_image.gif" alt="Maxbattle ejemplo ubicación Telegram" />
+
+          <ol>
+            <li>
+              Manda una imagen acompañada del siguiente texto:
+
+              <span class="highlight">maxbattle HH:MM</span>
+            </li>
+          </ol>
+
+          <h3 id="usuario_comandos">3. Comandos</h3>
           <p>Casual Bot responderá a diversas frases como por ejemplo:</p>
           <ol>
             <li>
@@ -320,28 +368,13 @@
               <span class="highlight">info huevos</span>
               .
             </li>
-            <li>
-              <b>
-                <span class="highlight">quiero llorar a Niantic</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-crytoniantic" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              instrucciones de cómo reclamar a Niantic si has perdido un pase premium o similar.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">cuándo es la hora legendaria</span>
-                :
-              </b>
-              indica cuándo suelen ser las horas legendarias.
-            </li>
           </ol>
           <p>Los comandos que tienen enlace los puedes poner en un mensaje para que si alguien lo pulsa, le mande la información por privado.</p>
 
-          <h3 id="usuario_comandos_bots">3. Comandos bots</h3>
+          <h3 id="usuario_comandos_bots">4. Comandos bots</h3>
 
           <h4 id="usuario_comandos_detectivepikachubot">
-            3.1. 🐱
+            4.1. 🐱
             <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>
           </h4>
 
@@ -401,7 +434,7 @@
           </ol>
           <p>Los comandos que tienen enlace los puedes poner en un mensaje para que si alguien lo pulsa, le mande la información por privado.</p>
 
-          <h3 id="usuario_comandos_pvp_pve">4. Comandos PVP/PVE</h3>
+          <h3 id="usuario_comandos_pvp_pve">5. Comandos PVP/PVE</h3>
           <ol>
             <li id="usuario_casualdex">
               <span class="highlight">/casualdex Pokémon (pve)</span>
@@ -534,7 +567,7 @@
               <b>Estos comandos solo están disponibles por privado</b>
               .
             </li>
-            <li id="user_ligascombates">
+            <li id="usuario_ligascombates">
               <span class="highlight">/ligascg</span>
               : información sobre las ligas de Liga Combates GO.
             </li>
@@ -634,7 +667,7 @@
           <h4 id="admin_eventos">1.3. Eventos</h4>
 
           <p>
-            Si no has activado los eventos, te pedirá que actives lo actives. Después de hacer esto (o si ya las tenías activadas), podrás activar o desactivar el comando
+            Si no has activado los eventos, te pedirá que lo actives. Después de hacer esto (o si ya lo tenías activado), podrás activar o desactivar el comando
             <span class="highlight">/eventos</span>
             , la notificación diaria (a las 8:50) con el listado de eventos o las notificaciones cuando empieza o termina un evento.
           </p>
@@ -672,7 +705,15 @@
 
           <p>Permite cambiar el idioma del bot.</p>
 
-          <h3 id="admin_botones">2. Botones</h3>
+          <h3 id="admin_combates">2. Combates Pokémon</h3>
+
+          <p>Si se activa, permite organizar combates Pokémon como Combates Max. Ve a <a href="#usuario_combates">Combates Pokémon (usuario)</a> para más información.</p>
+
+          <p>
+            <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 15 miembros.</i>
+          </p>
+
+          <h3 id="admin_botones">3. Botones</h3>
 
           <p>
             Se pueden incluir botones en las
@@ -709,7 +750,7 @@
             </span>
           </p>
 
-          <h3 id="admin_alertas">3. Alertas</h3>
+          <h3 id="admin_alertas">4. Alertas</h3>
 
           <p>
             Se pueden mandar mensajes de forma periódica. Hay un límite de
@@ -732,7 +773,7 @@
           <p>3: frecuencia en horas con la que se repite la alerta</p>
           <p>10-18: período de tiempo en el que se manda la alerta</p>
 
-          <h4 id="admin_alertas_anclar">3.1. Anclar una alerta</h4>
+          <h4 id="admin_alertas_anclar">4.1. Anclar una alerta</h4>
 
           <p>
             Si quieres que Casual Bot ancle la alerta que manda puedes usar los parámetros
@@ -747,7 +788,7 @@
             .
           </p>
 
-          <h4 id="admin_alertas_obtener">3.2. Obtener una alerta</h4>
+          <h4 id="admin_alertas_obtener">4.2. Obtener una alerta</h4>
 
           <p>
             Si tienes una alerta y quieres editarla puedes obtener el contenido de la alerta (lo que pusiste con el comando
@@ -763,7 +804,7 @@
             .
           </p>
 
-          <h4 id="admin_alertas_borrar">3.3. Eliminar una alerta</h4>
+          <h4 id="admin_alertas_borrar">4.3. Eliminar una alerta</h4>
 
           <p>
             Para eliminar una alerta escribe el comando
@@ -773,7 +814,7 @@
             .
           </p>
 
-          <h4 id="admin_img_alertas">3.4 Imagen en alertas [PREMIUM]</h4>
+          <h4 id="admin_img_alertas">4.4 Imagen en alertas [PREMIUM]</h4>
 
           <p>Instrucciones para añadir una imagen en una alerta:</p>
           <ol>
@@ -793,7 +834,7 @@
 
           <p>En ambos casos # se refiere al número de la alerta.</p>
 
-          <h3 id="admin_mensaje_bienvenida">4. Mensaje de bienvenida</h3>
+          <h3 id="admin_mensaje_bienvenida">5. Mensaje de bienvenida</h3>
 
           <p>
             Para añadir un mensaje de bienvenida usa el comando
@@ -816,7 +857,7 @@
             .
           </p>
 
-          <h4 id="admin_img_mensaje_bienvenida">4.1 Imagen en mensaje de bienvenida [PREMIUM]</h4>
+          <h4 id="admin_img_mensaje_bienvenida">5.1 Imagen en mensaje de bienvenida [PREMIUM]</h4>
 
           <p>Instrucciones para añadir una imagen de bienvenida:</p>
           <ol>
@@ -834,7 +875,7 @@
             </li>
           </ol>
 
-          <h3 id="admin_etiquetas_html">5. Etiquetas HTML en mensajes</h3>
+          <h3 id="admin_etiquetas_html">6. Etiquetas HTML en mensajes</h3>
 
           <p>
             Se pueden añadir etiquetas HTML en
@@ -873,7 +914,7 @@
             </li>
           </ul>
 
-          <h3 id="admin_sustitucion_texto">6. Sustitución de texto en mensajes</h3>
+          <h3 id="admin_sustitucion_texto">7. Sustitución de texto en mensajes</h3>
 
           <p>
             Se puede sustituir texto en
@@ -908,13 +949,13 @@
             </li>
           </ul>
 
-          <h3 id="admin_temas">7. Temas</h3>
+          <h3 id="admin_temas">8. Temas</h3>
 
           <p>Telegram permite configurar un grupo en temas separando las conversaciones en distintas secciones.</p>
           <p>Las respuestas a mensajes mandados por los miembros de un grupo se mandan al mismo tema desde el que el miembro ha mandado el mensaje.</p>
           <p><b>Para que un bot pueda mandar mensajes a un tema cerrado tiene que ser administrador con el permiso "Gestionar temas".</b></p>
 
-          <h4 id="admin_tema_reenvios">7.1 Establecer tema para reenvío (eventos y noticias)</h4>
+          <h4 id="admin_tema_reenvios">8.1 Establecer tema para reenvío (eventos y noticias)</h4>
 
           <p>
             Los mensajes que reenvía el bot desde canales (eventos y noticias) no tienen un tema de origen y por lo tanto se tiene que decidir a qué tema reenviar estos mensajes. Por defecto se mandan al tema general.
@@ -929,7 +970,7 @@
             .
           </p>
 
-          <h4 id="admin_tema_codigos_amigos">7.2 Establecer tema para códigos de amigos</h4>
+          <h4 id="admin_tema_codigos_amigos">8.2 Establecer tema para códigos de amigos</h4>
 
           <p>Si tienes activado el <a href="#admin_borrar_camigos">borrar códigos de amigos</a>, se puede establecer un tema en el que no se borren este tipo de mensajes.</p>
           <p>
@@ -1022,7 +1063,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Combates Max</td>
+                  <td>Combates Pokémon</td>
                   <td>❌</td>
                   <td>
                     <b>?</b>
@@ -1120,7 +1161,7 @@
                   <td>-</td>
                 </tr>
                 <tr>
-                  <td>Combates Max</td>
+                  <td>Combates Pokémon</td>
                   <td>Eliminar mensajes (recomendado)</td>
                 </tr>
                 <tr>
