@@ -158,20 +158,9 @@
                   </li>
                   <li>
                     <a href="#admin_combates">2. Combates Pokémon</a>
-                    <!-- <ol>
-                      <li>
-                        <a href="#admin_alertas_anclar">1. Anclar una alerta</a>
-                      </li>
-                      <li>
-                        <a href="#admin_alertas_obtener">2. Obtener una alerta</a>
-                      </li>
-                      <li>
-                        <a href="#admin_alertas_borrar">3. Eliminar una alerta</a>
-                      </li>
-                      <li>
-                        <a href="#admin_img_alertas">4. Imagen en alertas [PREMIUM]</a>
-                      </li>
-                    </ol> -->
+                    <ol>
+                      <li><a href="#admin_combates_add_nodo">1. Añadir un nodo</a></li>
+                    </ol>
                   </li>
                   <li><a href="#admin_botones">3. Botones</a></li>
                   <li>
@@ -308,7 +297,7 @@
 
           <h5 id="usuario_combates_organizar_ubicacion">2.1.1. Ubicación Telegram</h5>
 
-          <img class="example" src="images/maxbattle_telegram_location.jpeg" alt="Maxbattle ejemplo ubicación Telegram" />
+          <img class="example" src="images/maxbattle_telegram_location.jpeg" alt="Combate Pokémon ejemplo ubicación Telegram" />
 
           <ol>
             <li>Manda la ubicación del nodo desde el menú compartir de Telegram</li>
@@ -326,7 +315,10 @@
           <h5 id="usuario_combates_organizar_noubicacion">2.1.3. Solo comando</h5>
 
           <p>
-            <b>Para los nodos que hayan sido añadidos al bot por un administrador se puede crear un aviso sin necesidad de mandar una ubicación o usar un enlace de Campfire.</b>
+            <b>
+              Para los nodos que hayan sido <a href="#admin_combates_add_nodo">añadidos al bot</a>
+              por un administrador se puede crear un aviso sin necesidad de mandar una ubicación o usar un enlace de Campfire.
+            </b>
           </p>
 
           <p>Si el nodo ha sido añadido usa el comando: <span class="highlight">/maxbattle Nombre Pokémon HH:MM Nombre nodo</span></p>
@@ -334,13 +326,13 @@
           <h5 id="usuario_combates_organizar_imagen">2.1.4. Captura de pantalla</h5>
 
           <p>
-            <b
-              >Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 200 miembros o ser <a href="#admin_grupos_premium">premium</a> y requiere que el nodo de la captura de pantalla haya
-              sido añadido al bot por un administrador.</b
-            >
+            <b>
+              Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 200 miembros o ser
+              <a href="#admin_grupos_premium">premium</a> y requiere que el nodo de la captura de pantalla haya sido <a href="#admin_combates_add_nodo">añadido al bot</a> por un administrador.
+            </b>
           </p>
 
-          <img class="example" src="images/maxbattle_telegram_image.gif" alt="Maxbattle ejemplo captura de pantalla" />
+          <img class="example" src="images/maxbattle_telegram_image.gif" alt="Combate Max ejemplo captura de pantalla" />
 
           <p>Manda una imagen acompañada del siguiente texto: <span class="highlight">maxbattle HH:MM</span></p>
 
@@ -379,7 +371,7 @@
 
           <h5 id="usuario_combates_nota">2.2.5. Añadir una nota</h5>
 
-          <img class="example" src="images/maxbattle_note.jpeg" alt="Maxbattle ejemplo nota" />
+          <img class="example" src="images/maxbattle_note.jpeg" alt="Combate Pokémon ejemplo nota" />
 
           <p>Para añadir una nota al final de una lista responde a un mensaje de Combate Pokémon usando el siguiente comando: <span class="highlight">/notecasual Texto nota</span>.</p>
 
@@ -645,11 +637,7 @@
         <div>
           <h3 id="admin_ajustes">1. Ajustes</h3>
 
-          <p>
-            Para acceder a los ajustes del bot pon el comando
-            <span class="highlight">/settings@KingCasualBot</span>
-            .
-          </p>
+          <p>Para acceder a los ajustes del bot pon el comando <span class="highlight">/settings@KingCasualBot</span>.</p>
 
           <h4 id="admin_activar_o_desactivar_bot">1.1. Activar o desactivar el bot</h4>
 
@@ -789,9 +777,44 @@
 
           <p>Si se activa, permite organizar combates Pokémon como Combates Max. Ve a <a href="#usuario_combates">Combates Pokémon (usuario)</a> para más información.</p>
 
+          <p>En grupos normales se pueden organizar hasta 5 Combates Pokémon de forma simultánea. En grupos <a href="#admin_grupos_premium">premium</a> este límite aumenta a 10.</p>
+
+          <p><i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 15 miembros.</i></p>
+
+          <p>Para acceder a los ajustes de Combates Pokémon pon el comando <span class="highlight">/settings@KingCasualBot</span> y pulsa en "💥 Combates Pokémon".</p>
+
+          <p>En este menú se pueden cambiar los siguientes ajustes:</p>
+
+          <ul>
+            <li><b>Activar Combates Max:</b> permite organizar Combates Max</li>
+            <li><b>Entrenadores extra Dinamax:</b> en Combates Max contra Pokémon Dinamax aumenta el límite de entrenadores de 20 a 40</li>
+            <li><b>Reflotar automático:</b> para hacer que todos los mensaje de Combate Pokémon aparezcan los últimos en el grupo cada 5 minutos cuando queda menos de 30 minutos para la hora de quedada</li>
+          </ul>
+
+          <hr />
+
+          <h4 id="admin_combates_add_nodo">2.1. Añadir un nodo</h4>
+
           <p>
-            <i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 15 miembros.</i>
+            Se pueden añadir nodos al bot para poder crear Combates Pokémon <a href="#usuario_combates_organizar_noubicacion">solo con comando</a> o Combates Max usando
+            <a href="#usuario_combates_organizar_imagen">capturas de pantalla</a>*.
           </p>
+
+          <p>*Para poder crear organizar una lista usando captura de pantalla, el grupo tiene que tener al menos 200 miembros o ser <a href="#admin_grupos_premium">premium</a>.</p>
+
+          <p>Para añadir un nodo usa el siguiente comando: <span class="highlight">/addpowerspot enlace_campfire Nombre nodo</span>.</p>
+
+          <p>Si se tienen 2 o más nodos con el mismo nombre, se pueden distinguir poniendo el siguiente comando: <span class="highlight">/addpowerspot enlace_campfire Nombre nodo -info Texto para diferenciar</span>.</p>
+
+          <p>Ejemplo para 3 nodos con nombre común "Supermercados Pepito":</p>
+
+          <p><span class="highlight">/addpowerspot enlace_campfire1 Supermercados Pepito -info Calle Tal</span></p>
+          <p><span class="highlight">/addpowerspot enlace_campfire2 Supermercados Pepito -info Plaza Redonda</span></p>
+          <p><span class="highlight">/addpowerspot enlace_campfire3 Supermercados Pepito</span></p>
+
+          <p>Si se organiza un Combate Max para estos nodos se preguntará para elegir cuál es el correcto:</p>
+
+          <img class="example" src="images/pokemonbattle_multiple_poi_example.jpeg" alt="Combate Pokémon ejemplo múltiples POI" />
 
           <hr class="main" />
 
