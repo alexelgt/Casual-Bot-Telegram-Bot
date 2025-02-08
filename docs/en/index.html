@@ -93,6 +93,7 @@
                     <ol>
                       <li><a href="#user_battles_organize">1. How to create a Max Battle list?</a></li>
                       <li><a href="#user_battles_commands">2. Organizer commands (or admin)</a></li>
+                      <li><a href="#user_battles_commands_admin">3 Admin commands</a></li>
                     </ol>
                   </li>
                   <li><a href="#user_commands">3. Commands</a></li>
@@ -161,7 +162,7 @@
                   </li>
                   <li>
                     <a href="#admin_battles">2. Pokémon Battles</a>
-                    <ol>
+                    <!-- <ol>
                       <li><a href="#admin_alerts_pin">1. Pin an alert</a></li>
                       <li><a href="#admin_alert_get">2. Get an alert</a></li>
                       <li>
@@ -170,7 +171,7 @@
                       <li>
                         <a href="#admin_img_alerts">4. Image in alerts [PREMIUM]</a>
                       </li>
-                    </ol>
+                    </ol> -->
                   </li>
                   <li><a href="#admin_buttons">3. Buttons</a></li>
                   <li>
@@ -295,6 +296,8 @@
             </li>
           </ul>
 
+          <hr class="main" />
+
           <h3 id="user_battles">2. Pokémon Battles</h3>
 
           <p>This feature allows you to organize Pokémon battles such as Max Battles.</p>
@@ -329,14 +332,21 @@
           <h5 id="user_battles_organize_screenshot">2.1.4. Screenshot</h5>
 
           <p>
-            <b>In order to create a list in this way, the group must have at least 200 members and requires that the power spot in the screenshot has been added to the bot by an admin.</b>
+            <b
+              >In order to create a list in this way, the group must have at least 200 members or be <a href="#admin_premium_groups">premium</a> and requires that the power spot in the screenshot has been added to the
+              bot by an admin.</b
+            >
           </p>
 
           <img class="example" src="../images/maxbattle_telegram_image.gif" alt="Maxbattle screenshot example" />
 
           <p>Send an image accompanied by the following text: <span class="highlight">maxbattle HH:MM</span></p>
 
+          <hr />
+
           <h4 id="user_battles_commands">2.2 Organizer commands (or admin)</h4>
+
+          <p>Commands only for the organizer or group admins that can be used to modify or update a Pokémon Battle message.</p>
 
           <h5 id="usuario_combates_change_pokemon">2.2.1. Change Pokémon</h5>
 
@@ -371,6 +381,30 @@
 
           <p>To add a note to the end of a list reply to a Pokémon Battle message using the following command: <span class="highlight">/notecasual Note text</span>.</p>
 
+          <h5 id="usuario_combates_refloat">2.2.6. Refloat a message</h5>
+
+          <p>To make a Pokémon Battle message appear last in the group reply to the message using the following command: <span class="highlight">/refloat</span>.</p>
+
+          <h5 id="usuario_combates_delete">2.2.7. Delete a message</h5>
+
+          <p>To delete a Pokémon Battle message reply to the message using the following command: <span class="highlight">/delete</span>.</p>
+
+          <h5 id="usuario_combates_close">2.2.8. Close a message</h5>
+
+          <p>To end a Pokémon Battle message reply to the message using the following command: <span class="highlight">/close</span>.</p>
+
+          <hr />
+
+          <h4 id="user_battles_commands_admin">2.3 Admin commands</h4>
+
+          <p>Commands only for group admins that can be used to modify or update a Pokémon Battle message.</p>
+
+          <h5 id="usuario_combates_cambiar_pokemon">2.3.1. Refloat all messages</h5>
+
+          <p>To make all Pokémon Battle messages appear last in the group use the following command: <span class="highlight">/refloatallcasual</span>.</p>
+
+          <hr class="main" />
+
           <h3 id="user_commands">3. Commands</h3>
 
           <p>Casual Bot will answer to some phrases such as:</p>
@@ -395,6 +429,8 @@
             </li>
           </ol>
           <p>The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.</p>
+
+          <hr class="main" />
 
           <h3 id="user_bots_commands">4. Bots commands</h3>
 
@@ -458,6 +494,8 @@
             </li>
           </ol>
           <p>The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.</p>
+
+          <hr class="main" />
 
           <h3 id="user_pvp_pve_commands">5. PVP/PVE commands</h3>
 
@@ -617,6 +655,8 @@
             <li>Welcome message</li>
           </ul>
 
+          <hr />
+
           <h4 id="admin_general_settings">1.2. General settings</h4>
           <h5 id="admin_commands">1.2.1. Commands</h5>
 
@@ -682,6 +722,8 @@
           </p>
           <img class="example" src="../images/press_button_to_talk.jpg" alt="press button to talk" />
 
+          <hr />
+
           <h4 id="admin_events">1.3. Events</h4>
 
           <p>
@@ -693,6 +735,8 @@
             <i>To be able to modify these settings the group must have at least 11 members.</i>
           </p>
 
+          <hr />
+
           <h4 id="admin_news">1.4. News</h4>
 
           <p>Allows messages sent across different news channels to be forwarded to the group.</p>
@@ -700,9 +744,13 @@
             <i>To be able to modify these settings the group must have at least 11 members.</i>
           </p>
 
+          <hr />
+
           <h4 id="admin_timers">1.5. Timers</h4>
 
           <p>Allow some messages to be deleted after the specified time.</p>
+
+          <hr />
 
           <h4 id="admin_nightly_notifications">1.6. Nightly notifications</h4>
 
@@ -715,13 +763,19 @@
             ❌: don't send
           </p>
 
+          <hr />
+
           <h4 id="admin_time_zone">1.7. Time zone</h4>
 
           <p>Allows you to change the group's time zone. This is used to receive notifications of events and alerts at the correct time.</p>
 
+          <hr />
+
           <h4 id="admin_language">1.8. Language</h4>
 
           <p>Allows you to change the language of the bot.</p>
+
+          <hr class="main" />
 
           <h3 id="admin_battles">2. Pokémon Battles</h3>
 
@@ -730,6 +784,8 @@
           <p>
             <i>To be able to modify these settings the group must have at least 15 members.</i>
           </p>
+
+          <hr class="main" />
 
           <h3 id="admin_buttons">3. Buttons</h3>
 
@@ -768,6 +824,8 @@
             </span>
           </p>
 
+          <hr class="main" />
+
           <h3 id="admin_alerts">4. Alerts</h3>
 
           <p>
@@ -791,6 +849,8 @@
           <p>3: frequency in hours with which the alert is repeated</p>
           <p>10-18: time period in which the alert is sent</p>
 
+          <hr />
+
           <h4 id="admin_alerts_pin">4.1. Pin an alert</h4>
 
           <p>
@@ -805,6 +865,8 @@
             <span class="highlight">/alertcasual 1 2019/10/14-12 3 10-18 pinnotify Alert text</span>
             .
           </p>
+
+          <hr />
 
           <h4 id="admin_alert_get">4.2. Get an alert</h4>
 
@@ -822,6 +884,8 @@
             .
           </p>
 
+          <hr />
+
           <h4 id="admin_alerts_detele">4.3. Delete an alert</h4>
 
           <p>
@@ -832,7 +896,9 @@
             .
           </p>
 
-          <h4 id="admin_img_alerts">4.4 Image in alerts [PREMIUM]</h4>
+          <hr />
+
+          <h4 id="admin_img_alerts">4.4 Image in alerts <a href="#admin_premium_groups">[PREMIUM]</a></h4>
 
           <p>Instructions for adding an image to an alert:</p>
           <ol>
@@ -851,6 +917,8 @@
           </ol>
 
           <p>In both cases # refers to the alert number.</p>
+
+          <hr class="main" />
 
           <h3 id="admin_welcome_message">5. Welcome message</h3>
 
@@ -875,7 +943,9 @@
             .
           </p>
 
-          <h4 id="admin_img_welcome_message">5.1 Image in welcome message [PREMIUM]</h4>
+          <hr />
+
+          <h4 id="admin_img_welcome_message">5.1 Image in welcome message <a href="#admin_premium_groups">[PREMIUM]</a></h4>
 
           <p>Instructions for adding a welcome image:</p>
           <ol>
@@ -892,6 +962,8 @@
               <span class="highlight">/welcomeimagecasual -</span>
             </li>
           </ol>
+
+          <hr class="main" />
 
           <h3 id="admin_html_tags">6. HTML tags in messages</h3>
 
@@ -932,6 +1004,8 @@
             </li>
           </ul>
 
+          <hr class="main" />
+
           <h3 id="admin_text_substitution">7. Text substitution in messages</h3>
 
           <p>
@@ -967,11 +1041,15 @@
             </li>
           </ul>
 
+          <hr class="main" />
+
           <h3 id="admin_topics">8. Topics</h3>
 
           <p>Telegram allows you to configure a group in topics separating the conversations in different sections.</p>
           <p>Replies to messages sent by members of a group are sent to the same topic from which the member sent the message.</p>
           <p><b>For a bot to be able to send messages to a closed topic, it must be an admin with the "Manage topics" permission.</b></p>
+
+          <hr />
 
           <h4 id="admin_forwarding_topic">8.1 Set forwarding topic (events and news)</h4>
 
@@ -988,6 +1066,8 @@
             <span class="highlight">/setfwtopiccasual -</span>
             .
           </p>
+
+          <hr />
 
           <h4 id="admin_friendcodes_topic">8.2 Set friend codes topic</h4>
 
@@ -1024,6 +1104,7 @@
             <li>Be able to activate events and news in groups with few members.</li>
             <li>25 alerts can be configured instead of 10.</li>
             <li>An image can be set in the welcome message.</li>
+            <li>Organize Max Battles with <a href="#user_battles_organize_screenshot">screenshot</a> if the group has less than 200 members.</li>
           </ul>
         </div>
       </section>

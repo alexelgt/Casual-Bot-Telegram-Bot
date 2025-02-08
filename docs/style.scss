@@ -63,580 +63,620 @@ $sidebar-color-selected: #ece1fd;
 
 /*==== Basic ====*/
 body {
-    z-index: 0;
-    font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    width: 100%;
-    min-height: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    // -webkit-touch-callout: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: $color-main;
+  z-index: 0;
+  font-family: "Roboto", "Helvetica Neue, Helvetica, Arial";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  // -webkit-touch-callout: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: $color-main;
 }
 
 .flex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 a {
-    color: $interface-color;
-    text-decoration: none;
+  color: $interface-color;
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-tr, th, tr, td, span.highlight {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text;
+tr,
+th,
+tr,
+td,
+span.highlight {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
 }
 /*== Basic ==*/
 
 /*==== Header ====*/
 header {
-    z-index: 2;
-    background-color: $header-color;
-    width: 100%;
-    height: 45px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  z-index: 2;
+  background-color: $header-color;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
-    h1 {
-        font-size: 20px;
-        text-align: center;
-        margin: 0;
-        line-height: 45px;
-        color: $header-text-color
-    }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 45px;
+    color: $header-text-color;
+  }
 }
 /*== Header ==*/
 
 /*==== Main, Section, Nav ====*/
 main {
-    padding: 0 8px;
+  padding: 0 8px;
 
-    section:last-child {
-        margin-bottom: 32px;
-    }
+  section:last-child {
+    margin-bottom: 32px;
+  }
 }
 
-section, nav {
-    z-index: 1;
-    width: 100%;
-    max-width: 1000px;
-    padding-bottom: 12px;
-    background-color: $card-color;
-    box-sizing: border-box;
-    margin: 8px 0;
-    border-radius: 24px;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+section,
+nav {
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 12px;
+  background-color: $card-color;
+  box-sizing: border-box;
+  margin: 8px 0;
+  border-radius: 24px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 section div {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 
 section.donors {
-    border-radius: 14px;
-    font-size: 15px;
-    background-color: $card-donors-color;
-    padding: 5px 10px;
-    margin: 8px auto;
-    max-width: 900px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
+  border-radius: 14px;
+  font-size: 15px;
+  background-color: $card-donors-color;
+  padding: 5px 10px;
+  margin: 8px auto;
+  max-width: 900px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 
-    h3, p {margin: 0;}
-    h4 {margin: 5px 0;}
+  h3,
+  p {
+    margin: 0;
+  }
+  h4 {
+    margin: 5px 0;
+  }
 
-    p.donors {padding-left: 10px;}
+  p.donors {
+    padding-left: 10px;
+  }
 }
 
 nav {
-    border-radius: 14px;
-    padding: 0;
-    margin: 8px auto;
-    max-width: 850px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
-    
+  border-radius: 14px;
+  padding: 0;
+  margin: 8px auto;
+  max-width: 850px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 }
 /*== Main, Section, Nav ==*/
 
 /*==== Button ====*/
 .buttons {
-    margin: 6px 0;
+  margin: 6px 0;
 }
 
-button, a.btn {
-    margin: 5px 10px;
-    display: inline-block;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    padding: 0 10px;
-    min-width: 64px;
-    min-height: 36px;
-    vertical-align: middle;
-    text-align: center;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
-    color: $button-text-color;
-    background-color: $interface-color;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
-    font-family: "Roboto";
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 36px;
-    overflow: hidden;
-    outline: none;
-    cursor: pointer;
-    transition: box-shadow .2s, background-color .2s;
+button,
+a.btn {
+  margin: 5px 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 10px;
+  min-width: 64px;
+  min-height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: $button-text-color;
+  background-color: $interface-color;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background-color 0.2s;
 }
 
 button:hover,
-button:focus, a.btn:hover, a.btn:focus{
-    background-color: $interface-color-hover;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+button:focus,
+a.btn:hover,
+a.btn:focus {
+  background-color: $interface-color-hover;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-button:active, a.btn:active {
-    background-color: $interface-color-active;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+button:active,
+a.btn:active {
+  background-color: $interface-color-active;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-button:disabled, a.btn.disabled {
-    color: rgba(0, 0, 0, .38);
-    background-color: rgba(0, 0, 0, .12);
-    box-shadow: none;
-    text-decoration: none;
-    cursor: initial;
+button:disabled,
+a.btn.disabled {
+  color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  text-decoration: none;
+  cursor: initial;
 }
 /*== Button ==*/
 
 /*==== Table ====*/
 table {
-    overflow: hidden;
-    border-collapse:collapse;
-    width: 280px;
-    background-color: $card-color;
-    box-sizing: border-box;
-    margin: 10px auto;
-    border-radius: 6px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 280px;
+  background-color: $card-color;
+  box-sizing: border-box;
+  margin: 10px auto;
+  border-radius: 6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
 
-    th {
-        background-color: $table-main-color;
-        color: $table-header-text-color;
-    }
+  th {
+    background-color: $table-main-color;
+    color: $table-header-text-color;
+  }
 
-    td, th {
-        padding:5px;
-        border-right:1px solid $table-main-color;
-        text-align: center;
-    }
-    
-    td:last-child, th:last-child {
-        border: none
-    }
-    
-    tr {
-        border:1px solid $table-main-color;
-        border-left: none;
-        border-right: none;
-    }
+  td,
+  th {
+    padding: 5px;
+    border-right: 1px solid $table-main-color;
+    text-align: center;
+  }
 
-    tr:last-child {
-        border-bottom: none
-    }
+  td:last-child,
+  th:last-child {
+    border: none;
+  }
+
+  tr {
+    border: 1px solid $table-main-color;
+    border-left: none;
+    border-right: none;
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
 }
 /*== Table ==*/
 
 /*==== Text ====*/
-h1, h2 {
-    font-size: 26px;
+h1,
+h2 {
+  font-size: 26px;
 }
 
 h2 {
-    text-align: center;
-    border-radius: 24px 24px 0 0;
-    margin: 0;
-    padding: 8px;
+  text-align: center;
+  border-radius: 24px 24px 0 0;
+  margin: 0;
+  padding: 8px;
 }
 
 .gray {
-    background-color: $h2-color;
-    border-bottom: 1px solid $h2-border-color;
+  background-color: $h2-color;
+  border-bottom: 1px solid $h2-border-color;
 }
 
 .green {
-    background-color: $h2-color-green;
-    border-bottom: 1px solid $h2-border-color-green;
+  background-color: $h2-color-green;
+  border-bottom: 1px solid $h2-border-color-green;
 }
 
 .blue {
-    background-color: $h2-color-blue;
-    border-bottom: 1px solid $h2-border-color-blue;
+  background-color: $h2-color-blue;
+  border-bottom: 1px solid $h2-border-color-blue;
 }
 
 .yellow {
-    background-color: $h2-color-yellow;
-    border-bottom: 1px solid $h2-border-color-yellow;
+  background-color: $h2-color-yellow;
+  border-bottom: 1px solid $h2-border-color-yellow;
 }
 
 .orange {
-    background-color: $h2-color-orange;
-    border-bottom: 1px solid $h2-border-color-orange;
+  background-color: $h2-color-orange;
+  border-bottom: 1px solid $h2-border-color-orange;
 }
 
 .red {
-    background-color: $h2-color-red;
-    border-bottom: 1px solid $h2-border-color-red;
+  background-color: $h2-color-red;
+  border-bottom: 1px solid $h2-border-color-red;
 }
 
 h3 {
-    font-size: 23px;
-    text-decoration: underline;
+  font-size: 23px;
+  text-decoration: underline;
 }
 
-h4, h5 {
-    font-size: 20px;
+h4,
+h5 {
+  font-size: 20px;
 }
 
 h5 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 h5::before {
-    content: "• ";
+  content: "• ";
 }
 
-h3, h4, h5 {
-    margin: 20px 0 0px;
+h3,
+h4,
+h5 {
+  margin: 20px 0 0px;
 }
 
 img.icon + h3 {
-    margin: 0;
+  margin: 0;
 }
 
 span.highlight {
-    background-color: $select-text-block-color;
-    border-radius: 6px;
-    padding: 2px;
+  background-color: $select-text-block-color;
+  border-radius: 6px;
+  padding: 2px;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    margin-bottom: 0
+  margin-bottom: 0;
+}
+
+hr {
+  &.main {
+    background-color: $color-main;
+  }
+
+  border: none;
+  height: 1px;
+  background-color: #dadada;
+  margin: 10px 0;
 }
 /*== Text ==*/
 
 /*==== List ====*/
-ul, ol {
-    font-size: 17px;
+ul,
+ol {
+  font-size: 17px;
 }
 
 section li {
-    margin-bottom: 10px;
-    padding-right: 20px;
+  margin-bottom: 10px;
+  padding-right: 20px;
 }
 
 nav {
-    ul {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      width: 100%;
+      list-style-type: none;
+
+      margin-bottom: 0;
+      padding-right: 0;
+
+      a {
+        display: block;
+        padding: 6px;
+        font-size: 15px;
+        color: black;
+        border-bottom: 1px solid $h2-border-color;
+        transition: background-color 0.3s;
+      }
+
+      a:hover {
+        background-color: $list-a-hover;
+      }
+
+      a.green:hover {
+        background-color: $list-a-green-hover;
+      }
+
+      a.blue:hover {
+        background-color: $list-a-blue-hover;
+      }
+
+      a.yellow:hover {
+        background-color: $list-a-yellow-hover;
+      }
+
+      a.orange:hover {
+        background-color: $list-a-orange-hover;
+      }
+
+      a.red:hover {
+        background-color: $list-a-red-hover;
+      }
+
+      a:active {
+        background-color: $list-a-active;
+      }
+
+      a.green:active {
+        background-color: $list-a-green-active;
+      }
+
+      a.blue:active {
+        background-color: $list-a-blue-active;
+      }
+
+      a.yellow:active {
+        background-color: $list-a-yellow-active;
+      }
+
+      a.orange:active {
+        background-color: $list-a-orange-active;
+      }
+
+      a.red:active {
+        background-color: $list-a-red-active;
+      }
+
+      ol {
         padding: 0;
-        margin: 0;
-        list-style-type: none;
-        text-align: center;
 
-        li {
-            width: 100%;
-            list-style-type: none;
-
-            margin-bottom: 0;
-            padding-right: 0;
-
-            a {
-                display: block;
-                padding: 6px;
-                font-size: 15px;
-                color: black;
-                border-bottom: 1px solid $h2-border-color;
-                transition: background-color .3s;
-            }
-
-            a:hover {
-                background-color: $list-a-hover;
-            }
-    
-            a.green:hover {
-                background-color: $list-a-green-hover;
-            }
-
-            a.blue:hover {
-                background-color: $list-a-blue-hover;
-            }
-
-            a.yellow:hover {
-                background-color: $list-a-yellow-hover;
-            }
-
-            a.orange:hover {
-                background-color: $list-a-orange-hover;
-            }
-
-            a.red:hover {
-                background-color: $list-a-red-hover;
-            }
-
-            a:active {
-                background-color: $list-a-active;
-            }
-
-            a.green:active {
-                background-color: $list-a-green-active;
-            }
-
-            a.blue:active {
-                background-color: $list-a-blue-active;
-            }
-
-            a.yellow:active {
-                background-color: $list-a-yellow-active;
-            }
-
-            a.orange:active {
-                background-color: $list-a-orange-active;
-            }
-
-            a.red:active {
-                background-color: $list-a-red-active;
-            }
-
-            ol {
-                padding: 0;
-
-                li > {
-                    a, a:hover {
-                        text-decoration: underline;
-                        font-weight: bold;
-                    }
-
-                    ol > li > {
-                        a, a:hover {
-                            text-decoration: none;
-                            font-weight: normal;
-                        }
-
-                        ol > li > {
-                            a, a:hover {
-                                font-weight: 300;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    ul:first-child > {
-        li:first-child > a {
-            border-radius: 14px 14px 0 0;
-        }
-
-        li > a {
-            text-decoration: none;
-            padding: 7px;
-            font-size: 17px;
+        li > {
+          a,
+          a:hover {
+            text-decoration: underline;
             font-weight: bold;
+          }
+
+          ol > li > {
+            a,
+            a:hover {
+              text-decoration: none;
+              font-weight: normal;
+            }
+
+            ol > li > {
+              a,
+              a:hover {
+                font-weight: 300;
+              }
+            }
+          }
         }
+      }
+    }
+  }
+
+  ul:first-child > {
+    li:first-child > a {
+      border-radius: 14px 14px 0 0;
     }
 
-    ul:last-child li:last-child > ol > li:last-child > a, ul:last-child > li:last-child > a {
-        border-radius: 0 0 14px 14px;
-        border-bottom: none;
+    li > a {
+      text-decoration: none;
+      padding: 7px;
+      font-size: 17px;
+      font-weight: bold;
     }
+  }
+
+  ul:last-child li:last-child > ol > li:last-child > a,
+  ul:last-child > li:last-child > a {
+    border-radius: 0 0 14px 14px;
+    border-bottom: none;
+  }
 }
 /*== List ==*/
 
 /*==== Img ====*/
-img.icon, img.example {
-    display: block;
-    width: 80px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .7);
-    margin: 10px auto;
+img.icon,
+img.example {
+  display: block;
+  width: 80px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  margin: 10px auto;
 }
 
 img.icon {
-    border-radius: 100%;
-    border: 1px solid black;
+  border-radius: 100%;
+  border: 1px solid black;
 }
 
 img.example {
-    width: 300px;
-    border-radius: 8px;
+  width: 300px;
+  border-radius: 8px;
 }
 
 img.ball {
-    display: block;
-    position: relative;
-    float: left;
-    width: 24px;
-    top: 5px;
-    margin-right: 4px;
+  display: block;
+  position: relative;
+  float: left;
+  width: 24px;
+  top: 5px;
+  margin-right: 4px;
 }
 /*== Img ==*/
 
 /*==== Sidebar ====*/
 #hamburger {
-    position: absolute;
-    top: 7px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background-image: url("images/hamburger-icon.png");
-    background-size: 100% 100%;
-    cursor: pointer;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("images/hamburger-icon.png");
+  background-size: 100% 100%;
+  cursor: pointer;
 }
 
 #sidebar-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity .3s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
 }
 
 #sidebar-overlay.active {
-    z-index: 3;
-    opacity: .5;
-    background: $sidebar-overlay-color;
-    cursor: pointer;
+  z-index: 3;
+  opacity: 0.5;
+  background: $sidebar-overlay-color;
+  cursor: pointer;
 }
 
 #sidebar-overlay.semiactive {
-    z-index: 3;
-    opacity: 0;
-    background: $sidebar-overlay-color;
+  z-index: 3;
+  opacity: 0;
+  background: $sidebar-overlay-color;
 }
 
 #sidebar {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  padding: 3px 10px;
+  z-index: 4;
+  position: fixed;
+  background: $sidebar-color;
+  color: $color-main;
+  width: 200px;
+  height: 100%;
+  top: 0px;
+  left: -200px;
+  font-weight: bold;
+  transition: left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  h2 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 7px 0 20px;
+  }
+  a {
+    color: $sidebar-text-color;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    width: 100%;
     box-sizing: border-box;
-    padding: 3px 10px;
-    z-index: 4;
-    position: fixed;
-    background: $sidebar-color;
-    color: $color-main;
-    width: 200px;
-    height: 100%;
-    top: 0px;
-    left: -200px;
-    font-weight: bold;
-    transition: left .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
 
-    h2 {
-        font-size: 20px;
-        padding: 0px;
-        margin: 7px 0 20px
-    }
-    a {
-        color: $sidebar-text-color;
-        text-decoration: none;
-        position: relative;
-        display:inline-block;
-        margin: 5px 0;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 6px;
-        padding: 8px 10px;
-        font-size: 13px
-    }
+  a:hover {
+    background-color: $sidebar-color-hover;
+  }
 
-    a:hover {
-        background-color: $sidebar-color-hover;
-    }
+  a:hover:active {
+    background-color: $sidebar-color-active;
+  }
 
-    a:hover:active {
-        background-color: $sidebar-color-active;
-    }
-
-    a.selected, a.selected:hover:active {
-        color: $sidebar-text-color-selected;
-        background-color: $sidebar-color-selected;
-    }
+  a.selected,
+  a.selected:hover:active {
+    color: $sidebar-text-color-selected;
+    background-color: $sidebar-color-selected;
+  }
 }
 
 #sidebar.out {
-    left: 0px;
-    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, .4);
+  left: 0px;
+  box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
 }
 /*== Sidebar ==*/
 
 /*==== Media queries ====*/
-@media (max-width: 319px){
-    header h1 {
-        font-size: 15px;
-    }
+@media (max-width: 319px) {
+  header h1 {
+    font-size: 15px;
+  }
 }
-@media (max-width: 370px){
-    table {
-        font-size: 13px;
-        width: 100%;
-    }
+@media (max-width: 370px) {
+  table {
+    font-size: 13px;
+    width: 100%;
+  }
 
-    img.example {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1126px){
-    section {
-        max-width: 90%;
-    }
+  img.example {
+    width: 100%;
+  }
 }
 
-@media (min-width: 900px){
-    .flex-big {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
+@media (min-width: 1126px) {
+  section {
+    max-width: 90%;
+  }
+}
 
-    div.flex-big > div {
-        width: 50%;
-        box-sizing: border-box;
-    }
+@media (min-width: 900px) {
+  .flex-big {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  div.flex-big > div {
+    width: 50%;
+    box-sizing: border-box;
+  }
 }
 /*== Media queries ==*/
 
 @supports (padding-left: env(safe-area-inset-left)) {
-    main {
-        padding-left: calc(8px + env(safe-area-inset-left));
-        padding-right: calc(8px + env(safe-area-inset-right));
-    }
+  main {
+    padding-left: calc(8px + env(safe-area-inset-left));
+    padding-right: calc(8px + env(safe-area-inset-right));
+  }
 }
