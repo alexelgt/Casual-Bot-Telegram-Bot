@@ -36,12 +36,16 @@ $h2-border-color-orange: #edb578;
 $h2-color-red: #ffc8c8;
 $h2-border-color-red: #ed7c7c;
 
+$h2-color-purple: #e6d6e6;
+$h2-border-color-purple: #800080;
+
 $list-a-hover: #eaeaea;
 $list-a-green-hover: #c4ecd2;
 $list-a-blue-hover: #c3dcf0;
 $list-a-yellow-hover: #f4f3c1;
 $list-a-orange-hover: #f5dbbe;
 $list-a-red-hover: #f5c0bf;
+$list-a-purple-hover: #d8bfd8;
 
 $list-a-active: #dadada;
 $list-a-green-active: #b5dac2;
@@ -49,6 +53,7 @@ $list-a-blue-active: #b7cfe2;
 $list-a-yellow-active: #edecbb;
 $list-a-orange-active: #edd4b8;
 $list-a-red-active: #edb9b9;
+$list-a-purple-active: #cfb1cf;
 
 $sidebar-overlay-color: #000;
 $sidebar-color: #fff;
@@ -329,6 +334,11 @@ h2 {
   border-bottom: 1px solid $h2-border-color-red;
 }
 
+.purple {
+  background-color: $h2-color-purple;
+  border-bottom: 1px solid $h2-border-color-purple;
+}
+
 h3 {
   font-size: 23px;
   text-decoration: underline;
@@ -441,6 +451,10 @@ nav {
         background-color: $list-a-red-hover;
       }
 
+      a.purple:hover {
+        background-color: $list-a-purple-hover;
+      }
+
       a:active {
         background-color: $list-a-active;
       }
@@ -463,6 +477,10 @@ nav {
 
       a.red:active {
         background-color: $list-a-red-active;
+      }
+
+      a.purple:active {
+        background-color: $list-a-purple-active;
       }
 
       ol {

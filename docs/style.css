@@ -261,6 +261,11 @@ h2 {
   border-bottom: 1px solid #ed7c7c;
 }
 
+.purple {
+  background-color: #e6d6e6;
+  border-bottom: 1px solid #800080;
+}
+
 h3 {
   font-size: 23px;
   text-decoration: underline;
@@ -363,6 +368,9 @@ nav ul li a.orange:hover {
 nav ul li a.red:hover {
   background-color: #f5c0bf;
 }
+nav ul li a.purple:hover {
+  background-color: #d8bfd8;
+}
 nav ul li a:active {
   background-color: #dadada;
 }
@@ -380,6 +388,9 @@ nav ul li a.orange:active {
 }
 nav ul li a.red:active {
   background-color: #edb9b9;
+}
+nav ul li a.purple:active {
+  background-color: #cfb1cf;
 }
 nav ul li ol {
   padding: 0;
