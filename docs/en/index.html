@@ -91,7 +91,7 @@
                   <li>
                     <a href="#user_battles">2. Pokémon Battles</a>
                     <ol>
-                      <li><a href="#user_battles_organize">1. How to create a Max Battle list?</a></li>
+                      <li><a href="#user_battles_organize">1. How to create a Pokémon Battle list?</a></li>
                       <li><a href="#user_battles_commands">2. Organizer commands (or admin)</a></li>
                       <li><a href="#user_battles_commands_admin">3 Admin commands</a></li>
                     </ol>
@@ -163,9 +163,9 @@
                   <li>
                     <a href="#admin_battles">2. Pokémon Battles</a>
                     <ol>
-                      <li><a href="#admin_battles_add_power_spot">1. Add a Power Spot</a></li>
-                      <li><a href="#admin_battles_power_spots_list">2. Power Spots list</a></li>
-                      <li><a href="#admin_battles_delete_power_spot">3. Delete Power Spot</a></li>
+                      <li><a href="#admin_battles_add_poi">1. Add a Power Spot or Gym</a></li>
+                      <li><a href="#admin_battles_pois_list">2. Power Spots or Gyms list</a></li>
+                      <li><a href="#admin_battles_delete_poi">3. Delete Power Spot or Gym</a></li>
                     </ol>
                   </li>
                   <li><a href="#admin_buttons">3. Buttons</a></li>
@@ -290,13 +290,15 @@
 
           <h3 id="user_battles">2. Pokémon Battles</h3>
 
-          <p>This feature allows you to organize Pokémon battles such as Max Battles.</p>
+          <p>This feature allows you to organize Pokémon battles such as Max Battles or Raids.</p>
 
-          <h4 id="user_battles_organize">2.1 How to create a Max Battle list?</h4>
+          <h4 id="user_battles_organize">2.1 How to create a Pokémon Battle list?</h4>
 
           <h5 id="user_battles_organize_location">2.1.1. Telegram location</h5>
 
-          <img class="example" src="../images/maxbattle_telegram_location.jpeg" alt="Pokémon Battle Telegram location example" />
+          <p><b><u>Max Battle</u></b></p>
+
+          <img class="example" src="../images/maxbattle_telegram_location.jpeg" alt="Max Battle Telegram location example" />
 
           <ol>
             <li>Send the power spot location from the Telegram share menu</li>
@@ -307,30 +309,65 @@
             </li>
           </ol>
 
+          <p><b><u>Raid</u></b></p>
+
+          <img class="example" src="../images/raidbattle_telegram_location.jpeg" alt="Raid Telegram location example" />
+
+          <ol>
+            <li>Send the gym location from the Telegram share menu</li>
+            <li>
+              Reply to the message with the command:
+
+              <span class="highlight">/raidbattle Pokémon name HH:MM Gym name</span>
+            </li>
+          </ol>
+
           <h5 id="user_battles_organize_link">2.1.2. Campfire link</h5>
 
+          <p><b><u>Max Battle</u></b></p>
+
           <p>Use the command: <span class="highlight">/maxbattle campfire_link HH:MM Power Spot name</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <p>Use the command: <span class="highlight">/maxbattle campfire_link Pokémon name HH:MM Gym name</span></p>
 
           <h5 id="user_battles_organize_nolocation">2.1.3. Only command</h5>
 
           <p>
-            <b>For power spots that <a href="#admin_battles_add_power_spot">have been added</a> to the bot by an admin, a list can be created without the need to send a location or use a Campfire link.</b>
+            <b>For power spots that <a href="#admin_battles_add_poi">have been added</a> to the bot by an admin, a list can be created without the need to send a location or use a Campfire link.</b>
           </p>
 
+          <p><b><u>Max Battle</u></b></p>
+
           <p>If the power spot has been added use the command: <span class="highlight">/maxbattle Pokémon name HH:MM Power Spot name</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <p>If the gym has been added use the command: <span class="highlight">/raidbattle Pokémon name HH:MM Gym name</span></p>
+
+          <p><b>NOTE: if the option <a href="#admin_battles">Allow gym without location</a> is enabled, Raids can be organized even if the gym has not been added to the bot.</b></p>
 
           <h5 id="user_battles_organize_screenshot">2.1.4. Screenshot</h5>
 
           <p>
             <b>
               In order to create a list in this way, the group must have at least 200 members or be
-              <a href="#admin_premium_groups">premium</a> and requires that the power spot in the screenshot <a href="#admin_battles_add_power_spot">has been added</a> to the bot by an admin.
+              <a href="#admin_premium_groups">premium</a> and requires that the power spot in the screenshot <a href="#admin_battles_add_poi">has been added</a> to the bot by an admin.
             </b>
           </p>
+
+          <p><b><u>Max Battle</u></b></p>
 
           <img class="example" src="../images/maxbattle_telegram_image.gif" alt="Max Battle screenshot example" />
 
           <p>Send an image accompanied by the following text: <span class="highlight">maxbattle HH:MM</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <img class="example" src="../images/raidbattle_telegram_image.gif" alt="Raid screenshot example" />
+
+          <p>Send an image accompanied by the following text: <span class="highlight">raidbattle HH:MM</span></p>
 
           <hr />
 
@@ -356,7 +393,7 @@
 
           <p>
             <b>
-              NOTE: If the Power Spot name corresponds to a Power Spot that <a href="#admin_battles_add_power_spot">has been added</a>
+              NOTE: If the Power Spot name corresponds to a Power Spot that <a href="#admin_battles_add_poi">has been added</a>
               to the bot by an admin, the location is also updated. If there is a match with more than one Power Spot or the Power Spot is not found only the name is changed.
             </b>
           </p>
@@ -767,9 +804,9 @@
 
           <h3 id="admin_battles">2. Pokémon Battles</h3>
 
-          <p>If enabled, Max Battles can be organized. Go to <a href="#user_battles">Pokémon Battles (user)</a> for more info.</p>
+          <p>If enabled, Max Battles or Raids can be organized. Go to <a href="#user_battles">Pokémon Battles (user)</a> for more info.</p>
 
-          <p>In normal groups up to 5 Pokémon Battles can be organized simultaneously. In <a href="#admin_premium_groups">premium</a> groups this limit increases to 10.</p>
+          <p>In normal groups up to 7 Pokémon Battles can be organized simultaneously. In <a href="#admin_premium_groups">premium</a> groups this limit increases to 12.</p>
 
           <p><i>To be able to modify these settings the group must have at least 15 members.</i></p>
 
@@ -779,26 +816,33 @@
 
           <ul>
             <li><b>Enable Max Battles:</b> allows you to organize Max Battles</li>
-            <li><b>Dynamax extra trainers:</b> in Max Battles against Dynamax Pokémon increases the limit of trainers from 20 to 40</li>
+            <li><b>Enable Raid Battles:</b> allows you to organize Raids</li>
+            <li><b>Image recognition:</b> allows you to organize Pokémon Battles using screenshots. The group has to have at least 50 members or be <a href="#admin_premium_groups">premium</a>. Go to <a href="#user_battles_organize_screenshot">screenshots</a> for more info.</li>
             <li><b>Automatic refloat:</b> to make all Pokémon Battle messages appear last in the group every 5 minutes when there are less than 30 minutes left before the meeting time</li>
+            <li><b>Dynamax extra trainers:</b> in Max Battles against Dynamax Pokémon increases the limit of trainers from 20 to 40</li>
+            <li><b>Allow gym without location:</b> allows you to organize Raids without indicating a location</li>
           </ul>
 
           <hr />
 
-          <h4 id="admin_battles_add_power_spot">2.1. Add a Power Spot</h4>
+          <h4 id="admin_battles_add_poi">2.1. Add a Power Spot or Gym</h4>
 
           <p>
-            Power Spots can be added to the bot in order to create Pokémon Battles by <a href="#user_battles_organize_nolocation">only command</a> or Max Battles using
-            <a href="#user_battles_organize_screenshot">screenshots</a>*.
+            Power Spots or Gyms can be added to the bot in order to create Pokémon Battles by <a href="#user_battles_organize_nolocation">only command</a> or using
+            <a href="#user_battles_organize_screenshot">screenshots</a>.
           </p>
 
-          <p>*In order to create and organize a list using screenshots, the group must have at least 200 members or be <a href="#admin_premium_groups">premium</a>.</p>
+          <p><b>Add a Power Spot</b></p>
 
           <p>To add a Power Spot use the following command <span class="highlight">/addpowerspot campfire_link Power Spot name</span>.</p>
 
-          <p>
-            If you have 2 or more Power Spots with the same name, you can distinguish between them by using the following command:
-            <span class="highlight">/addpowerspot campfire_link Power Spot name -info Text to differentiate</span>.
+          <p><b>Add a Gym</b></p>
+
+          <p>To add a gym use the following command <span class="highlight">/addgym campfire_link Gym name</span>.</p>
+
+          <p><b>Add Power Spots or Gyms with the same name</b></p>
+
+          <p>If you have 2 or more Power Spots with the same name, you can distinguish between them by using the following command: <span class="highlight">/addpowerspot campfire_link Power Spot name -info Text to differentiate</span>.
           </p>
 
           <p>Example for 3 Power Spots with common name "Pepito Supermarkets":</p>
@@ -811,21 +855,25 @@
 
           <img class="example" src="../images/pokemonbattle_multiple_poi_example.jpeg" alt="Pokémon Battle example multiple POI" />
 
+          <p>Equivalently, if you have 2 or more Gyms with the same name, you can distinguish between them by using the following command: <span class="highlight">/addgym campfire_link Power Spot name -info Text to differentiate</span>.</p>
+
           <hr />
 
-          <h4 id="admin_battles_power_spots_list">2.2. Power Spots list</h4>
+          <h4 id="admin_battles_pois_list">2.2. Power Spots or Gyms list</h4>
 
           <img class="example" src="../images/maxbattle_power_spots_list.jpeg" alt="Max Battle example Power Spots list" />
 
           <p>To obtain a list of previously added Power Spots use the following command: <span class="highlight">/listpowerspots</span>.</p>
 
-          <p>The number next to each Power Spot is an identifier that can be used to delete it.</p>
+          <p>To obtain a list of previously added Gyms use the following command: <span class="highlight">/listgyms</span>.</p>
+
+          <p>The number next to each Power Spot or Gym is an identifier that can be used to delete it.</p>
 
           <hr />
 
-          <h4 id="admin_battles_delete_power_spot">2.3. Delete Power Spot</h4>
+          <h4 id="admin_battles_delete_poi">2.3. Delete Power Spot or Gym</h4>
 
-          <p>To delete a node it is necessary to know its identifier (see previous section). Once you know its identifier, use the following command: <span class="highlight">/deletepowerspot power_spot_id</span>.</p>
+          <p>To delete a Power Spot or Gym it is necessary to know its identifier (see previous section). Once you know its identifier, use the following command: <span class="highlight">/deletepowerspot power_spot_id</span> to delete a Power Spot or <span class="highlight">/deletegym gym_id</span> to delete a Gym.</p>
 
           <hr class="main" />
 
@@ -1146,7 +1194,7 @@
             <li>Be able to activate events and news in groups with few members.</li>
             <li>25 alerts can be configured instead of 10.</li>
             <li>An image can be set in the welcome message.</li>
-            <li>Organize Max Battles with <a href="#user_battles_organize_screenshot">screenshot</a> if the group has less than 200 members.</li>
+            <li>Organize Pokémon Battles with <a href="#user_battles_organize_screenshot">screenshot</a> if the group has less than 50 members.</li>
           </ul>
         </div>
       </section>

@@ -85,7 +85,7 @@
                   <li>
                     <a href="#usuario_combates">2. Combates Pokémon</a>
                     <ol>
-                      <li><a href="#usuario_combates_organizar">1. ¿Cómo crear un aviso de Combate Max?</a></li>
+                      <li><a href="#usuario_combates_organizar">1. ¿Cómo crear un aviso de Combate Pokémon?</a></li>
                       <li><a href="#usuario_combates_comandos">2. Comandos organizador (o admin)</a></li>
                       <li><a href="#usuario_combates_comandos_admin">3 Comandos admin</a></li>
                     </ol>
@@ -159,9 +159,9 @@
                   <li>
                     <a href="#admin_combates">2. Combates Pokémon</a>
                     <ol>
-                      <li><a href="#admin_combates_add_nodo">1. Añadir un nodo</a></li>
-                      <li><a href="#admin_combates_lista_nodos">2. Lista nodos</a></li>
-                      <li><a href="#admin_combates_borrar_nodo">3. Borrar nodo</a></li>
+                      <li><a href="#admin_combates_add_poi">1. Añadir un nodo o gimnasio</a></li>
+                      <li><a href="#admin_combates_lista_pois">2. Lista nodos o gimnasios</a></li>
+                      <li><a href="#admin_combates_borrar_poi">3. Borrar nodo o gimnasio</a></li>
                     </ol>
                   </li>
                   <li><a href="#admin_botones">3. Botones</a></li>
@@ -294,13 +294,15 @@
 
           <h3 id="usuario_combates">2. Combates Pokémon</h3>
 
-          <p>Esta funcionalidad permite organizar combates Pokémon como Combates Max.</p>
+          <p>Esta funcionalidad permite organizar combates Pokémon como Combates Max o Raids.</p>
 
-          <h4 id="usuario_combates_organizar">2.1 ¿Cómo crear un aviso de Combate Max?</h4>
+          <h4 id="usuario_combates_organizar">2.1 ¿Cómo crear un aviso de Combate Pokémon?</h4>
 
           <h5 id="usuario_combates_organizar_ubicacion">2.1.1. Ubicación Telegram</h5>
 
-          <img class="example" src="images/maxbattle_telegram_location.jpeg" alt="Combate Pokémon ejemplo ubicación Telegram" />
+          <p><b><u>Combate Max</u></b></p>
+
+          <img class="example" src="images/maxbattle_telegram_location.jpeg" alt="Combate Max ejemplo ubicación Telegram" />
 
           <ol>
             <li>Manda la ubicación del nodo desde el menú compartir de Telegram</li>
@@ -311,33 +313,68 @@
             </li>
           </ol>
 
+          <p><b><u>Raid</u></b></p>
+
+          <img class="example" src="images/raidbattle_telegram_location.jpeg" alt="Raid ejemplo ubicación Telegram" />
+
+          <ol>
+            <li>Manda la ubicación del gimnasio desde el menú compartir de Telegram</li>
+            <li>
+              Responde al mensaje con el comando:
+
+              <span class="highlight">/raidbattle Nombre Pokémon HH:MM Nombre gimnasio</span>
+            </li>
+          </ol>
+
           <h5 id="usuario_combates_organizar_link">2.1.2. Enlace Campfire</h5>
 
+          <p><b><u>Combate Max</u></b></p>
+
           <p>Usa el comando: <span class="highlight">/maxbattle enlace_campfire HH:MM Nombre nodo</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <p>Usa el comando: <span class="highlight">/raidbattle enlace_campfire Nombre Pokémon HH:MM Nombre gimnasio</span></p>
 
           <h5 id="usuario_combates_organizar_noubicacion">2.1.3. Solo comando</h5>
 
           <p>
             <b>
-              Para los nodos que hayan sido <a href="#admin_combates_add_nodo">añadidos al bot</a>
+              Para los nodos o gimnasios que hayan sido <a href="#admin_combates_add_poi">añadidos al bot</a>
               por un administrador se puede crear un aviso sin necesidad de mandar una ubicación o usar un enlace de Campfire.
             </b>
           </p>
 
+          <p><b><u>Combate Max</u></b></p>
+
           <p>Si el nodo ha sido añadido usa el comando: <span class="highlight">/maxbattle Nombre Pokémon HH:MM Nombre nodo</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <p>Si el gimnasio ha sido añadido usa el comando: <span class="highlight">/raidbattle Nombre Pokémon HH:MM Nombre gimnasio</span></p>
+
+          <p><b>NOTA: si se activa la opción <a href="#admin_combates">Permitir gimnasios sin ubicación</a> se puede organizar Raids incluso si el gimnasio no se ha añadido al bot.</b></p>
 
           <h5 id="usuario_combates_organizar_imagen">2.1.4. Captura de pantalla</h5>
 
           <p>
             <b>
-              Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 200 miembros o ser
-              <a href="#admin_grupos_premium">premium</a> y requiere que el nodo de la captura de pantalla haya sido <a href="#admin_combates_add_nodo">añadido al bot</a> por un administrador.
+              Para poder crear organizar una lista de esta forma el grupo tiene que tener al menos 50 miembros o ser
+              <a href="#admin_grupos_premium">premium</a> y requiere que el nodo o gimnasio de la captura de pantalla haya sido <a href="#admin_combates_add_poi">añadido al bot</a> por un administrador.
             </b>
           </p>
+
+          <p><b><u>Combate Max</u></b></p>
 
           <img class="example" src="images/maxbattle_telegram_image.gif" alt="Combate Max ejemplo captura de pantalla" />
 
           <p>Manda una imagen acompañada del siguiente texto: <span class="highlight">maxbattle HH:MM</span></p>
+
+          <p><b><u>Raid</u></b></p>
+
+          <img class="example" src="images/raidbattle_telegram_image.gif" alt="Raid ejemplo captura de pantalla" />
+
+          <p>Manda una imagen acompañada del siguiente texto: <span class="highlight">raidbattle HH:MM</span></p>
 
           <hr />
 
@@ -363,8 +400,8 @@
 
           <p>
             <b>
-              NOTA: si el nombre del nodo se corresponde con el de un nodo que <a href="#admin_combates_add_nodo">haya sido añadido</a>
-              al bot por un administrador se actualiza también la ubicación. Si hay coincidencia con más de un nodo o no se encuentra el nodo solo se cambia el nombre.
+              NOTA: si el nombre del nodo o gimnasio se corresponde con el de uno que <a href="#admin_combates_add_poi">haya sido añadido</a>
+              al bot por un administrador se actualiza también la ubicación. Si hay coincidencia con más de un nodo o gimnasio o no se encuentra, solo se cambia el nombre.
             </b>
           </p>
 
@@ -780,9 +817,9 @@
 
           <h3 id="admin_combates">2. Combates Pokémon</h3>
 
-          <p>Si se activa, permite organizar combates Pokémon como Combates Max. Ve a <a href="#usuario_combates">Combates Pokémon (usuario)</a> para más información.</p>
+          <p>Si se activa, permite organizar combates Pokémon como Combates Max o Raids. Ve a <a href="#usuario_combates">Combates Pokémon (usuario)</a> para más información.</p>
 
-          <p>En grupos normales se pueden organizar hasta 5 Combates Pokémon de forma simultánea. En grupos <a href="#admin_grupos_premium">premium</a> este límite aumenta a 10.</p>
+          <p>En grupos normales se pueden organizar hasta 7 Combates Pokémon de forma simultánea. En grupos <a href="#admin_grupos_premium">premium</a> este límite aumenta a 12.</p>
 
           <p><i>Para poder modificar estos ajustes el grupo tiene que tener por lo menos 15 miembros.</i></p>
 
@@ -792,22 +829,31 @@
 
           <ul>
             <li><b>Activar Combates Max:</b> permite organizar Combates Max</li>
-            <li><b>Entrenadores extra Dinamax:</b> en Combates Max contra Pokémon Dinamax aumenta el límite de entrenadores de 20 a 40</li>
+            <li><b>Activar Combates Raid:</b> permite organizar Raids</li>
+            <li><b>Reconocimiento de imágenes:</b> permite organizar Combates Pokémon usando capturas de pantalla. El grupo tiene que tener al menos 50 miembros o ser <a href="#admin_grupos_premium">premium</a>. Ve a <a href="#usuario_combates_organizar_imagen">capturas de pantalla</a> para más información.</li>
             <li><b>Reflotar automático:</b> para hacer que todos los mensajes de Combate Pokémon aparezcan los últimos en el grupo cada 5 minutos cuando queda menos de 30 minutos para la hora de quedada</li>
+            <li><b>Entrenadores extra Dinamax:</b> en Combates Max contra Pokémon Dinamax aumenta el límite de entrenadores de 20 a 40</li>
+            <li><b>Permitir gimnasio sin ubicación:</b> permite organizar Raids sin indicar una ubicación</li>
           </ul>
 
           <hr />
 
-          <h4 id="admin_combates_add_nodo">2.1. Añadir un nodo</h4>
+          <h4 id="admin_combates_add_poi">2.1. Añadir un nodo o gimnasio</h4>
 
           <p>
-            Se pueden añadir nodos al bot para poder crear Combates Pokémon <a href="#usuario_combates_organizar_noubicacion">solo con comando</a> o Combates Max usando
-            <a href="#usuario_combates_organizar_imagen">capturas de pantalla</a>*.
+            Se pueden añadir nodos o gimnasios al bot para poder crear Combates Pokémon <a href="#usuario_combates_organizar_noubicacion">solo con comando</a> o usando
+            <a href="#usuario_combates_organizar_imagen">capturas de pantalla</a>.
           </p>
 
-          <p>*Para poder crear organizar una lista usando captura de pantalla, el grupo tiene que tener al menos 200 miembros o ser <a href="#admin_grupos_premium">premium</a>.</p>
+          <p><b>Añadir un nodo</b></p>
 
           <p>Para añadir un nodo usa el siguiente comando: <span class="highlight">/addpowerspot enlace_campfire Nombre nodo</span>.</p>
+
+          <p><b>Añadir un gimnasio</b></p>
+
+          <p>Para añadir un gimnasio usa el siguiente comando: <span class="highlight">/addgym enlace_campfire Nombre gimnasio</span>.</p>
+
+          <p><b>Añadir nodos o gimnasios con mismo nombre</b></p>
 
           <p>Si se tienen 2 o más nodos con el mismo nombre, se pueden distinguir poniendo el siguiente comando: <span class="highlight">/addpowerspot enlace_campfire Nombre nodo -info Texto para diferenciar</span>.</p>
 
@@ -821,21 +867,25 @@
 
           <img class="example" src="images/pokemonbattle_multiple_poi_example.jpeg" alt="Combate Pokémon ejemplo múltiples POI" />
 
+          <p>De forma equivalente, si se tienen 2 o más gimnasios con el mismo nombre, se pueden distinguir poniendo el siguiente comando: <span class="highlight">/addgym enlace_campfire Nombre gimnasio -info Texto para diferenciar</span>.</p>
+
           <hr />
 
-          <h4 id="admin_combates_lista_nodos">2.2. Lista nodos</h4>
+          <h4 id="admin_combates_lista_pois">2.2. Lista nodos o gimnasios</h4>
 
           <img class="example" src="images/maxbattle_power_spots_list.jpeg" alt="Combate Max ejemplo lista nodos" />
 
           <p>Para obtener una lista con los nodos añadidos previamente usa el siguiente comando: <span class="highlight">/listpowerspots</span>.</p>
 
-          <p>El número que aparece junto a cada nodo es un identificador que se puede usar para borrarlo.</p>
+          <p>Para obtener una lista con los gimnasios añadidos previamente usa el siguiente comando: <span class="highlight">/listgyms</span>.</p>
+
+          <p>El número que aparece junto a cada nodo o gimnasio es un identificador que se puede usar para borrarlo.</p>
 
           <hr />
 
-          <h4 id="admin_combates_borrar_nodo">2.3. Borrar nodo</h4>
+          <h4 id="admin_combates_borrar_poi">2.3. Borrar nodo o gimnasio</h4>
 
-          <p>Para borrar un nodo es necesario conocer su identificador (ver sección anterior). Una vez se sepas su identificador, usa el siguiente comando: <span class="highlight">/deletepowerspot id_nodo</span>.</p>
+          <p>Para borrar un nodo o gimnasio es necesario conocer su identificador (ver sección anterior). Una vez se sepas su identificador, usa el siguiente comando: <span class="highlight">/deletepowerspot id_nodo</span> para borrar un nodo o <span class="highlight">/deletegym id_gimnasio</span> para borrar un gimnasio.</p>
 
           <hr class="main" />
 
@@ -1153,7 +1203,7 @@
             <li>Poder activar eventos y noticias en grupos con pocos miembros.</li>
             <li>Se pueden configurar 25 alertas en vez de 10.</li>
             <li>Se puede establecer una imagen en el mensaje de bienvenida.</li>
-            <li>Organizar Combates Max con <a href="#usuario_combates_organizar_imagen">captura de pantalla</a> si el grupo tiene menos de 200 miembros.</li>
+            <li>Organizar Combates Pokémon con <a href="#usuario_combates_organizar_imagen">captura de pantalla</a> si el grupo tiene menos de 50 miembros.</li>
           </ul>
         </div>
       </section>
