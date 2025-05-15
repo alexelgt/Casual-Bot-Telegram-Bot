@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#5085ec" />
     <link href="../style.css" rel="stylesheet" type="text/css" />
-    <script src="../sideBar.js" async></script>
+    <!-- <script src="../sideBar.js" async></script> -->
   </head>
   <body>
     <header>
@@ -157,6 +157,7 @@
                       <li><a href="#admin_battles_add_poi">1. Add a Power Spot or Gym</a></li>
                       <li><a href="#admin_battles_pois_list">2. Power Spots or Gyms list</a></li>
                       <li><a href="#admin_battles_delete_poi">3. Delete Power Spot or Gym</a></li>
+                      <li><a href="#admin_poi_import_export">4. Import / export Power Spots or Gyms</a></li>
                     </ol>
                   </li>
                   <li><a href="#admin_buttons">3. Buttons</a></li>
@@ -830,6 +831,47 @@
 
           <p>To delete a Power Spot or Gym it is necessary to know its identifier (see previous section). Once you know its identifier, use the following command: <span class="highlight">/deletepowerspot power_spot_id</span> to delete a Power Spot or <span class="highlight">/deletegym gym_id</span> to delete a Gym.</p>
 
+          <hr />
+
+          <h4 id="admin_poi_import_export">2.4. Import / export Power Spots or Gyms</h4>
+
+          <p>Para poder importar o exportar nodos es necesario tener activada la opción <a href="#admin_combates">Activar Combates Max</a>.</p>
+
+          <p>Para poder importar o exportar gimnasios es necesario tener activada la opción <a href="#admin_combates">Activar Combates Raid</a>.</p>
+
+          <h5 id="admin_poi_import_pikachu">2.4.1. Import gyms Detective Pikachu</h5>
+
+          <p>To import gyms from <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a> you first need to get a CSV file from Google Sheet. To do this follow these steps:</p>
+
+          <ol>
+            <li>Go to the sheet with the gyms</li>
+            <li>Press "File"</li>
+            <li>Press "Download"</li>
+            <li>Press "Comma Separated Values (.csv)"</li>
+          </ol>
+
+          <img class="example" src="../images/import_gyms_pikachu_download_csv.jpg" alt="Import gyms Pikachu. Download CSV" />
+
+          <p>Once you have that CSV file, send the file including as description <span class="highlight">importgymspikachu</span>.</p>
+
+          <img class="example" src="../images/import_gyms_pikachu_import_csv.jpeg" alt="Import gyms Pikachu. Import CSV" />
+
+          <h5 id="admin_poi_export">2.4.2. Export Power Spots or Gyms</h5>
+
+          <p>To export the Power Spots of a group use the command <span class="highlight">/exportpowerspots</span>.</p>
+
+          <p>To export the gyms of a group use the following command <span class="highlight">/exportgyms</span>.</p>
+
+          <p>The message with the CSV is first attempted to be sent privately and if it cannot be sent, it is sent to the group.</p>
+
+          <h5 id="admin_poi_import">2.4.3. Import Power Spots or Gyms</h5>
+
+          <p>To import a CSV file with the same format as an export, send the file to the group including the description <span class="highlight">importpowerspots</span> (to import Power Spots) o <span class="highlight">importgyms</span> (to import Gyms).</p>
+
+          <img class="example" src="../images/export_pois.jpg" alt="Importar gimnasios Pikachu. Importar CSV" />
+
+          <p>The import file only needs to include rows with modifications or new Power Spots or gyms. If any unmodified rows are included, they should be identified as duplicates.</p>
+
           <hr class="main" />
 
           <h3 id="admin_buttons">3. Buttons</h3>
@@ -1384,6 +1426,19 @@
           </ul>
           <p>The first one is used to ban accounts that are already in the group and send a message that the bot considers as spam.</p>
           <p>The second one is to prevent spamming accounts from staying in the group.</p>
+
+          <h3 id="faq_global_remote_raids_group">2. How to set up a global remote raid group?</h3>
+
+          <ol>
+            <li>
+              In the <a href="#user_battles">Pokémon Battles</a> settings enable the options:
+              <ul>
+                <li>Enable Raid Battles</li>
+                <li>Allow gym without location</li>
+              </ul>
+            </li>
+            <li>In the <a href="#admin_time_zone">Time zone</a> settings set UTC as time zone</li>
+          </ol>
         </div>
       </section>
 

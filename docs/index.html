@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#5085ec" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="sideBar.js" async></script>
+    <!-- <script src="sideBar.js" async></script> -->
   </head>
   <body>
     <header>
@@ -153,6 +153,7 @@
                       <li><a href="#admin_combates_add_poi">1. Añadir un nodo o gimnasio</a></li>
                       <li><a href="#admin_combates_lista_pois">2. Lista nodos o gimnasios</a></li>
                       <li><a href="#admin_combates_borrar_poi">3. Borrar nodo o gimnasio</a></li>
+                      <li><a href="#admin_poi_importar_exportar">4. Importar / exportar nodos o gimnasios</a></li>
                     </ol>
                   </li>
                   <li><a href="#admin_botones">3. Botones</a></li>
@@ -842,6 +843,47 @@
 
           <p>Para borrar un nodo o gimnasio es necesario conocer su identificador (ver sección anterior). Una vez se sepas su identificador, usa el siguiente comando: <span class="highlight">/deletepowerspot id_nodo</span> para borrar un nodo o <span class="highlight">/deletegym id_gimnasio</span> para borrar un gimnasio.</p>
 
+          <hr />
+
+          <h4 id="admin_poi_importar_exportar">2.4. Importar / exportar nodos o gimnasios</h4>
+
+          <p>Para poder importar o exportar nodos es necesario tener activada la opción <a href="#admin_combates">Activar Combates Max</a>.</p>
+
+          <p>Para poder importar o exportar gimnasios es necesario tener activada la opción <a href="#admin_combates">Activar Combates Raid</a>.</p>
+
+          <h5 id="admin_poi_importar_pikachu">2.4.1. Importar gimnasios Detective Pikachu</h5>
+
+          <p>Para importar gimnasios de <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a> primero hay que obtener un archivo CSV de Google Sheet. Para ello sigue estos pasos:</p>
+
+          <ol>
+            <li>Ve a la hoja con los gimnasios</li>
+            <li>Pulsa "Archivo"</li>
+            <li>Pulsa "Descargar"</li>
+            <li>Pulsa "Valores separados por comas (.csv)"</li>
+          </ol>
+
+          <img class="example" src="images/import_gyms_pikachu_download_csv.jpg" alt="Importar gimnasios Pikachu. Descargar CSV" />
+
+          <p>Una vez se tiene ese archivo CSV, envía el archivo incluyendo como descripción <span class="highlight">importgymspikachu</span>.</p>
+
+          <img class="example" src="images/import_gyms_pikachu_import_csv.jpeg" alt="Importar gimnasios Pikachu. Importar CSV" />
+
+          <h5 id="admin_poi_exportar">2.4.2. Exportar nodos o gimnasios</h5>
+
+          <p>Para exportar los nodos de un grupo pon el comando <span class="highlight">/exportpowerspots</span>.</p>
+
+          <p>Para exportar los gimnasios de un grupo pon el comando <span class="highlight">/exportgyms</span>.</p>
+
+          <p>El mensaje con el CSV primero se intenta mandar por privado y si no se puede se manda al grupo.</p>
+
+          <h5 id="admin_poi_importar">2.4.3. Importar nodos o gimnasios</h5>
+
+          <p>Para importar un archivo CSV con el mismo formato de una exportación, envía al grupo el archivo incluyendo como descripción <span class="highlight">importpowerspots</span> (para importar nodos) o <span class="highlight">importgyms</span> (para importar gimnasios).</p>
+
+          <img class="example" src="images/export_pois.jpg" alt="Importar gimnasios" />
+
+          <p>El archivo de importación solo necesita tener las filas con modificaciones o con los nuevos  nodos o gimnasios. Si se incluyen filas sin modificar se deberían identificar como duplicados.</p>
+
           <hr class="main" />
 
           <h3 id="admin_botones">3. Botones</h3>
@@ -1393,6 +1435,19 @@
           </ul>
           <p>La primera sirve para banear las cuentas que ya estén en el grupo y manden un mensaje que el bot considere como spam.</p>
           <p>La segunda sirve para evitar que las cuentas que mandan spam se queden en el grupo.</p>
+
+          <h3 id="faq_grupo_global_raids_remotas">2. ¿Cómo configurar un grupo global de raids remotas?</h3>
+
+          <ol>
+            <li>
+              En los ajustes de <a href="#admin_combates">Combates Pokémon</a> activa las opciones:
+              <ul>
+                <li>Activar Combates Raid</li>
+                <li>Permitir gimnasio sin ubicación</li>
+              </ul>
+            </li>
+            <li>En los ajustes de <a href="#admin_zona_horaria">Zona horaria</a> establece UTC como zona horaria</li>
+          </ol>
         </div>
       </section>
 
