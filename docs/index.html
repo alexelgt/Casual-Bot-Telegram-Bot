@@ -87,18 +87,12 @@
                     <ol>
                       <li><a href="#usuario_combates_organizar">1. ¿Cómo crear un aviso de Combate Pokémon?</a></li>
                       <li><a href="#usuario_combates_comandos">2. Comandos organizador (o admin)</a></li>
-                      <li><a href="#usuario_combates_comandos_admin">3 Comandos admin</a></li>
+                      <li><a href="#usuario_combates_comandos_admin">3. Comandos admin</a></li>
+                      <li><a href="#usuario_combates_hora_relativa">4. Indicar hora Combate Pokémon de forma relativa</a></li>
                     </ol>
                   </li>
-                  <li><a href="#usuario_comandos">3. Comandos</a></li>
-                  <li>
-                    <a href="#usuario_comandos_bots">4. Comandos bots</a>
-                    <ol>
-                      <li>
-                        <a href="#usuario_comandos_detectivepikachubot">1. 🐱 @detectivepikachubot</a>
-                      </li>
-                    </ol>
-                  </li>
+                  <li><a href="#usuario_registro_perfil">3. Registro y perfil</a></li>
+                  <li><a href="#usuario_comandos">4. Comandos</a></li>
                   <li>
                     <a href="#usuario_comandos_pvp_pve">5. Comandos PVP/PVE</a>
                     <ol>
@@ -127,20 +121,17 @@
                         <ol>
                           <li><a href="#admin_comandos">1. Comandos</a></li>
                           <li>
-                            <a href="#admin_comandos_bots">2. Comandos bots</a>
+                            <a href="#admin_comandos_pvp_pve">2. Comandos PVP/PVE</a>
                           </li>
                           <li>
-                            <a href="#admin_comandos_pvp_pve">3. Comandos PVP/PVE</a>
+                            <a href="#admin_borrar_mensajes_comunes">3. Borrar mensajes comunes</a>
                           </li>
                           <li>
-                            <a href="#admin_borrar_mensajes_comunes">4. Borrar mensajes comunes</a>
+                            <a href="#admin_borrar_camigos">4. Borrar códigos de amigos</a>
                           </li>
+                          <li><a href="#admin_anti_spam">5. Anti Spam</a></li>
                           <li>
-                            <a href="#admin_borrar_camigos">5. Borrar códigos de amigos</a>
-                          </li>
-                          <li><a href="#admin_anti_spam">6. Anti Spam</a></li>
-                          <li>
-                            <a href="#admin_pulsar_boton_hablar">7. Pulsar botón para hablar</a>
+                            <a href="#admin_pulsar_boton_hablar">6. Pulsar botón para hablar</a>
                           </li>
                         </ol>
                       </li>
@@ -441,13 +432,44 @@
 
           <p>Comandos solo para admins del grupo que se pueden usar para modificar o actualizar un mensaje de Combate Pokémon.</p>
 
-          <h5 id="usuario_combates_cambiar_pokemon">2.3.1. Reflotar todos los mensajes</h5>
+          <h5 id="usuario_combates_reflotar_todos">2.3.1. Reflotar todos los mensajes</h5>
 
           <p>Para hacer que todos los mensajes de Combate Pokémon aparezcan los últimos en el grupo usa el siguiente comando: <span class="highlight">/refloatallcasual</span>.</p>
 
+          <hr />
+
+          <h4 id="usuario_combates_hora_relativa">2.4 Indicar hora Combate Pokémon de forma relativa</h4>
+
+          <p>En los comandos para organizar un Combate Pokémon donde se indica la hora con <span class="highlight">HH:MM</span> también se puede usar el formato <span class="highlight">+MMm</span>. Con este formato la hora de la lista será MM minutos después de la hora actual.</p>
+
+          <p>Ejemplos:</p>
+
+          <p><span class="highlight">/maxbattle enlace_campfire +60m Nombre nodo</span></p>
+          <p><span class="highlight">/maxbattle Machamp +30m Nombre nodo</span></p>
+          <p><span class="highlight">/time +20m</span></p>
+          <p>Captura de pantalla de raid junto con <span class="highlight">raidbattle +15m</span></p>
+
           <hr class="main" />
 
-          <h3 id="usuario_comandos">3. Comandos</h3>
+          <h3 id="usuario_registro_perfil">3. Registro y perfil</h3>
+
+          <p>Puedes registrarte y añadir tu código de amigo para mejorar la experiencia al usar la función <a href="#usuario_combates">Combates Pokémon</a>.</p>
+
+          <p><b>Registro</b></p>
+
+          <p>Por mensaje privado a <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a>, usa el comando <span class="highlight">/register</span> para más información.</p>
+
+          <p><b>Código de amigo</b></p>
+
+          <p>Una vez registrado, por mensaje privado a <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a>, usa el comando <span class="highlight">/friendcode</span> para más información.</p>
+
+          <p><b>Perfil</b></p>
+
+          <p>Para consultar los datos de Pokémon GO proporcionados durante el registro, escribe por mensaje privado a <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a> y usa el comando <span class="highlight">/profile</span>.</p>
+
+          <hr class="main" />
+
+          <h3 id="usuario_comandos">4. Comandos</h3>
           <p>Casual Bot responderá a diversas frases como por ejemplo:</p>
           <ol>
             <li>
@@ -467,71 +489,6 @@
               Ejemplo:
               <span class="highlight">info huevos</span>
               .
-            </li>
-          </ol>
-          <p>Los comandos que tienen enlace los puedes poner en un mensaje para que si alguien lo pulsa, le mande la información por privado.</p>
-
-          <hr class="main" />
-
-          <h3 id="usuario_comandos_bots">4. Comandos bots</h3>
-
-          <h4 id="usuario_comandos_detectivepikachubot">
-            4.1. 🐱
-            <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>
-          </h4>
-
-          <ol>
-            <li>
-              <b>
-                <span class="highlight">enlace al mapa de Pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-pikachumap" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              manda un enlace al mapa de comunidades.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">enlace al mapa de raids</span>
-                :
-              </b>
-              manda un enlace al mapa de comunidades centrado en la zona de tu grupo mostrando el mapa de calor y los anuncios o raids activas (si inicias sesión con Telegram).
-              <br />
-              <br />
-              Si tienes charla y raids separados puedes usar el comando
-              <span class="highlight">/setraidid seguido del id del grupo de raids</span>
-              para que el enlace funcione correctamente.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">cómo me registro con Pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-registerpikachu" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              instrucciones para registrarse.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">cómo crear una raid</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-createraid" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              instrucciones para crear un anuncio o raid.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">instrucciones invitar pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-invitepikachu" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              instrucciones para invitar a una raid.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">buscar entrenador pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-findtrainerpikachu" target="_blank" rel="noopener">[Enlace]</a>
-                :
-              </b>
-              instrucciones para buscar entrenadores.
             </li>
           </ol>
           <p>Los comandos que tienen enlace los puedes poner en un mensaje para que si alguien lo pulsa, le mande la información por privado.</p>
@@ -709,15 +666,7 @@
             .
           </p>
 
-          <h5 id="admin_comandos_bots">1.2.2. Comandos bots</h5>
-
-          <p>
-            Para activar o desactivar, de forma individual, los
-            <a href="#usuario_comandos_bots">comandos bots</a>
-            .
-          </p>
-
-          <h5 id="admin_comandos_pvp_pve">1.2.3. Comandos PVP/PVE</h5>
+          <h5 id="admin_comandos_pvp_pve">1.2.2. Comandos PVP/PVE</h5>
 
           <p>
             Para activar o desactivar la opción de
@@ -725,11 +674,11 @@
             .
           </p>
 
-          <h5 id="admin_borrar_mensajes_comunes">1.2.4. Borrar mensajes comunes</h5>
+          <h5 id="admin_borrar_mensajes_comunes">1.2.3. Borrar mensajes comunes</h5>
 
           <p>Si se activa esta opción, Casual Bot borrará mensajes del estilo "alguién más se apunta", "si va más gente me apunto", "estoy por apuntarme a", etc.</p>
 
-          <h5 id="admin_borrar_camigos">1.2.5. Borrar códigos de amigo</h5>
+          <h5 id="admin_borrar_camigos">1.2.4. Borrar códigos de amigo</h5>
 
           <p>Con esta opción se borrarán los mensajes que contengan códigos de amigos. Se incluyen capturas de pantalla (salvo las que estén recortadas de forma extraña).</p>
           <p>
@@ -748,11 +697,11 @@
             .
           </p>
 
-          <h5 id="admin_anti_spam">1.2.6. Anti Spam</h5>
+          <h5 id="admin_anti_spam">1.2.5. Anti Spam</h5>
 
           <p>Casual Bot borrará los mensajes de spam y baneará al miembro que mandó el mensaje.</p>
 
-          <h5 id="admin_pulsar_boton_hablar">1.2.7. Pulsar botón para hablar</h5>
+          <h5 id="admin_pulsar_boton_hablar">1.2.6. Pulsar botón para hablar</h5>
 
           <p>
             Con esta opción cuando entre un nuevo miembro al grupo tendrá que responder a una pregunta pulsando un botón.

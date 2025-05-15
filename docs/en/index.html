@@ -93,18 +93,12 @@
                     <ol>
                       <li><a href="#user_battles_organize">1. How to create a Pokémon Battle list?</a></li>
                       <li><a href="#user_battles_commands">2. Organizer commands (or admin)</a></li>
-                      <li><a href="#user_battles_commands_admin">3 Admin commands</a></li>
+                      <li><a href="#user_battles_commands_admin">3. Admin commands</a></li>
+                      <li><a href="#user_battles_commands_admin">4. Set Pokémon Battle time relatively</a></li>
                     </ol>
                   </li>
-                  <li><a href="#user_commands">3. Commands</a></li>
-                  <li>
-                    <a href="#user_bots_commands">4. Bots commands</a>
-                    <ol>
-                      <li>
-                        <a href="#user_detectivepikachubot_commands">1. 🐱 @detectivepikachubot</a>
-                      </li>
-                    </ol>
-                  </li>
+                  <li><a href="#user_register_profile">3. Register and profile</a></li>
+                  <li><a href="#user_commands">4. Commands</a></li>
                   <li>
                     <a href="#user_pvp_pve_commands">5. PVP/PVE commands</a>
                     <ol>
@@ -133,20 +127,17 @@
                         <ol>
                           <li><a href="#admin_commands">1. Commands</a></li>
                           <li>
-                            <a href="#admin_bots_commands">2. Bots commands</a>
+                            <a href="#admin_pvp_pve_commands">2. PVP/PVE commands</a>
                           </li>
                           <li>
-                            <a href="#admin_pvp_pve_commands">3. PVP/PVE commands</a>
+                            <a href="#admin_delete_common_messages">3. Delete common messages</a>
                           </li>
                           <li>
-                            <a href="#admin_delete_common_messages">4. Delete common messages</a>
+                            <a href="#admin_delete_friendcodes">4. Delete friend codes</a>
                           </li>
+                          <li><a href="#admin_anti_spam">5. Anti Spam</a></li>
                           <li>
-                            <a href="#admin_delete_friendcodes">5. Delete friend codes</a>
-                          </li>
-                          <li><a href="#admin_anti_spam">6. Anti Spam</a></li>
-                          <li>
-                            <a href="#admin_press_button_to_talk">7. Press button to talk</a>
+                            <a href="#admin_press_button_to_talk">6. Press button to talk</a>
                           </li>
                         </ol>
                       </li>
@@ -375,11 +366,11 @@
 
           <p>Commands only for the organizer or group admins that can be used to modify or update a Pokémon Battle message.</p>
 
-          <h5 id="usuario_combates_change_pokemon">2.2.1. Change Pokémon</h5>
+          <h5 id="user_battles_change_pokemon">2.2.1. Change Pokémon</h5>
 
           <p>To change the Pokémon reply to a Pokémon Battle message using the following command: <span class="highlight">/pokemon Pokémon name</span>.</p>
 
-          <h5 id="usuario_combates_change_time">2.2.2. Change time or date</h5>
+          <h5 id="user_battles_change_time">2.2.2. Change time or date</h5>
 
           <p>To change the time reply to a Pokémon Battle message using the following command: <span class="highlight">/time HH:MM</span>.</p>
 
@@ -387,7 +378,7 @@
 
           <p>Where DD has to be a day later than the current day.</p>
 
-          <h5 id="usuario_combates_change_name">2.2.3. Change Power Spot name or Gym</h5>
+          <h5 id="user_battles_change_name">2.2.3. Change Power Spot name or Gym</h5>
 
           <p><b><u>Max Battle</u></b></p>
 
@@ -404,27 +395,27 @@
             </b>
           </p>
 
-          <h5 id="usuario_combates_change_location">2.2.4. Change location</h5>
+          <h5 id="user_battles_change_location">2.2.4. Change location</h5>
 
           <p>To change the location of the Power Spot reply to a Pokémon Battle message with a Telegram location.</p>
 
           <p>Alternatively, you can reply to a Pokémon Battle message using the following command: <span class="highlight">/locationcasual campfire_link</span>.</p>
 
-          <h5 id="usuario_combates_note">2.2.5. Add a note</h5>
+          <h5 id="user_battles_note">2.2.5. Add a note</h5>
 
           <img class="example" src="../images/maxbattle_note.jpeg" alt="Pokémon Battle note example" />
 
           <p>To add a note to the end of a list reply to a Pokémon Battle message using the following command: <span class="highlight">/notecasual Note text</span>.</p>
 
-          <h5 id="usuario_combates_refloat">2.2.6. Refloat a message</h5>
+          <h5 id="user_battles_refloat">2.2.6. Refloat a message</h5>
 
           <p>To make a Pokémon Battle message appear last in the group reply to the message using the following command: <span class="highlight">/refloat</span>.</p>
 
-          <h5 id="usuario_combates_delete">2.2.7. Delete a message</h5>
+          <h5 id="user_battles_delete">2.2.7. Delete a message</h5>
 
           <p>To delete a Pokémon Battle message reply to the message using the following command: <span class="highlight">/delete</span>.</p>
 
-          <h5 id="usuario_combates_close">2.2.8. Close a message</h5>
+          <h5 id="user_battles_close">2.2.8. Close a message</h5>
 
           <p>To end a Pokémon Battle message reply to the message using the following command: <span class="highlight">/close</span>.</p>
 
@@ -434,13 +425,44 @@
 
           <p>Commands only for group admins that can be used to modify or update a Pokémon Battle message.</p>
 
-          <h5 id="usuario_combates_cambiar_pokemon">2.3.1. Refloat all messages</h5>
+          <h5 id="user_battles_refloat_all">2.3.1. Refloat all messages</h5>
 
           <p>To make all Pokémon Battle messages appear last in the group use the following command: <span class="highlight">/refloatallcasual</span>.</p>
 
+          <hr />
+
+          <h4 id="user_battles_relative_hour">2.4 Set Pokémon Battle time relatively</h4>
+
+          <p>In Pokémon Battle Commands where the time is specified as <span class="highlight">HH:MM</span> you can also use the format <span class="highlight">+MMm</span>. With this format, the time in the list will be MM minutes past the current time.</p>
+
+          <p>Examples:</p>
+
+          <p><span class="highlight">/maxbattle campfire_link +60m Power Spot name</span></p>
+          <p><span class="highlight">/maxbattle Machamp +30m Power Spot name</span></p>
+          <p><span class="highlight">/time +20m</span></p>
+          <p>Screenshot of raid along with <span class="highlight">raidbattle +15m</span></p>
+
           <hr class="main" />
 
-          <h3 id="user_commands">3. Commands</h3>
+          <h3 id="user_register_profile">3. Register and profile</h3>
+
+          <p>You can register and add your friend code to enhance the experience when using the <a href="#user_battles">Pokémon Battles</a> feature.</p>
+
+          <p><b>Register</b></p>
+
+          <p>By private message to <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a>, use the command <span class="highlight">/register</span> for more info.</p>
+
+          <p><b>Friend code</b></p>
+
+          <p>Once registered, by private message to <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a>, use the command <span class="highlight">/friendcode</span> for more info.</p>
+
+          <p><b>Profile</b></p>
+
+          <p>To view the Pokémon GO data provided during registration, write by private message to <a href="https://t.me/KingCasualBot" target="_blank" rel="noopener">@KingCasualBot</a> and use the command <span class="highlight">/profile</span>.</p>
+
+          <hr class="main" />
+
+          <h3 id="user_commands">4. Commands</h3>
 
           <p>Casual Bot will answer to some phrases such as:</p>
           <ol>
@@ -461,71 +483,6 @@
               Example:
               <span class="highlight">info eggs</span>
               .
-            </li>
-          </ol>
-          <p>The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.</p>
-
-          <hr class="main" />
-
-          <h3 id="user_bots_commands">4. Bots commands</h3>
-
-          <h4 id="user_detectivepikachubot_commands">
-            4.1. 🐱
-            <a href="https://t.me/detectivepikachubot" target="_blank" rel="noopener">@detectivepikachubot</a>
-          </h4>
-
-          <ol>
-            <li>
-              <b>
-                <span class="highlight">link to Pikachu map</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-pikachumap" target="_blank" rel="noopener">[Link]</a>
-                :
-              </b>
-              sends a link to the community map.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">link to raid map</span>
-                :
-              </b>
-              sends a link to the community map centered on your group area showing the heat map and active announces or raids (if you log in with Telegram).
-              <br />
-              <br />
-              If you've chat and raids splitted you can use the command
-              <span class="highlight">/setraidid followed by the id of the raid group</span>
-              so that the link works properly.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">how do i register with Pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-registerpikachu" target="_blank" rel="noopener">[Link]</a>
-                :
-              </b>
-              instructions for registering.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">how to create a raid</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-createraid" target="_blank" rel="noopener">[Link]</a>
-                :
-              </b>
-              instructions for creating an announce or raid.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">instructions to invite with pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-invitepikachu" target="_blank" rel="noopener">[Link]</a>
-                :
-              </b>
-              instructions to invite to a raid.
-            </li>
-            <li>
-              <b>
-                <span class="highlight">find trainer with pikachu</span>
-                <a href="https://t.me/KingCasualBot?start=cmd-findtrainerpikachu" target="_blank" rel="noopener">[Link]</a>
-                :
-              </b>
-              instructions to find a trainer.
             </li>
           </ol>
           <p>The commands that have a link can be put in a message so that if someone clicks it, they will send the information by private message.</p>
@@ -697,15 +654,7 @@
             option.
           </p>
 
-          <h5 id="admin_bots_commands">1.2.2. Bots commands</h5>
-
-          <p>
-            To individually enable or disable the
-            <a href="#user_bots_commands">bots commands</a>
-            .
-          </p>
-
-          <h5 id="admin_pvp_pve_commands">1.2.3. PVP/PVE commands</h5>
+          <h5 id="admin_pvp_pve_commands">1.2.2. PVP/PVE commands</h5>
 
           <p>
             To enable or disable the
@@ -713,11 +662,11 @@
             option.
           </p>
 
-          <h5 id="admin_delete_common_messages">1.2.4. Delete common messages</h5>
+          <h5 id="admin_delete_common_messages">1.2.3. Delete common messages</h5>
 
           <p>If this option is activated, Casual Bot will delete messages such as "someone else join", "if more people go I'll join", "I'm about to join", etc.</p>
 
-          <h5 id="admin_delete_friendcodes">1.2.5. Delete friend codes</h5>
+          <h5 id="admin_delete_friendcodes">1.2.4. Delete friend codes</h5>
 
           <p>With this option messages containing friend codes will be deleted. Screenshots are included (except for oddly cropped ones).</p>
           <p>
@@ -736,11 +685,11 @@
             .
           </p>
 
-          <h5 id="admin_anti_spam">1.2.6. Anti Spam</h5>
+          <h5 id="admin_anti_spam">1.2.5. Anti Spam</h5>
 
           <p>Casual Bot will delete spam messages and ban the member who sent the message.</p>
 
-          <h5 id="admin_press_button_to_talk">1.2.7. Press button to talk</h5>
+          <h5 id="admin_press_button_to_talk">1.2.6. Press button to talk</h5>
 
           <p>
             With this option when a new member enters the group he/she will have to answer a question by pressing a button.
