@@ -197,6 +197,9 @@
                       <li>
                         <a href="#admin_friendcodes_topic">2. Set friend codes topic</a>
                       </li>
+                      <li>
+                        <a href="#admin_pokemon_battles_topic">3. Set Pokémon Battles topic</a>
+                      </li>
                     </ol>
                   </li>
                 </ol>
@@ -334,6 +337,8 @@
           <p><b><u>Max Battle</u></b></p>
 
           <p>If the power spot has been added use the command: <span class="highlight">/maxbattle Pokémon name HH:MM Power Spot name</span></p>
+
+          <p><b>NOTE: if the option <a href="#admin_battles">Allow Power Spot without location</a> is enabled, Max Battles can be organized even if the gym has not been added to the bot.</b></p>
 
           <p><b><u>Raid</u></b></p>
 
@@ -777,6 +782,7 @@
             <li><b>Image recognition:</b> allows you to organize Pokémon Battles using screenshots. The group has to have at least 50 members or be <a href="#admin_premium_groups">premium</a>. Go to <a href="#user_battles_organize_screenshot">screenshots</a> for more info.</li>
             <li><b>Automatic refloat:</b> to make all Pokémon Battle messages appear last in the group every 5 minutes when there are less than 30 minutes left before the meeting time</li>
             <li><b>Dynamax extra trainers:</b> in Max Battles against Dynamax Pokémon increases the limit of trainers from 20 to 40</li>
+            <li><b>Allow Power Spot without location:</b> allows you to organize Max Battles without indicating a location</li>
             <li><b>Allow gym without location:</b> allows you to organize Raids without indicating a location</li>
           </ul>
 
@@ -1146,29 +1152,32 @@
             topic.
           </p>
           <p>
-            To set a different topic to forward messages to, put the following command in the topic you want to use:
+            To set up a different topic to forward messages to, put the following command in the topic you want to use:
             <span class="highlight">/setfwtopiccasual</span>
           </p>
-          <p>
-            To delete the the forwarding topic put in any topic
-            <span class="highlight">/setfwtopiccasual -</span>
-            .
-          </p>
+          <p>To delete the the forwarding topic put in any topic <span class="highlight">/setfwtopiccasual -</span>.</p>
 
           <hr />
 
           <h4 id="admin_friendcodes_topic">8.2 Set friend codes topic</h4>
 
-          <p>If you have activated the <a href="#admin_delete_friendcodes">delete friend codes</a>, a topic can be set in which these types of messages are not deleted.</p>
+          <p>If you have activated the <a href="#admin_delete_friendcodes">delete friend codes</a>, a topic can be set up in which these types of messages are not deleted.</p>
           <p>
             To set a topic for friend codes, put the following command in the topic you want to use:
             <span class="highlight">/setfctopiccasual</span>
           </p>
+          <p>To delete the the friend codes topic put in any topic <span class="highlight">/setfctopiccasual -</span>.</p>
+
+          <hr />
+
+          <h4 id="admin_pokemon_battles_topic">8.3 Set Pokémon Battles topic</h4>
+
+          <p>If you have activated the <a href="#admin_battles">Pokémon Battles</a>, a topic can be set up in which Pokémon Battles messages can only be sent there.</p>
           <p>
-            To delete the the friend codes topic put in any topic
-            <span class="highlight">/setfctopiccasual -</span>
-            .
+            To set a topic for Pokémon Battles, put the following command in the topic you want to use:
+            <span class="highlight">/setpbtopiccasual</span>
           </p>
+          <p>To delete the the Pokémon Battles topic put in any topic <span class="highlight">/setpbtopiccasual -</span>.</p>
         </div>
       </section>
 
@@ -1439,6 +1448,10 @@
               </ul>
             </li>
             <li>In the <a href="#admin_time_zone">Time zone</a> settings set UTC as time zone</li>
+
+            <p>Raid Battle example using UTC time zone:</p>
+
+            <img class="example" src="../images/raidbattle_UTC_example.jpeg" alt="Raid Battle using UTC time zone" />
           </ol>
         </div>
       </section>

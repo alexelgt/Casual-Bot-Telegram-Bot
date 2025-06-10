@@ -197,6 +197,9 @@
                       <li>
                         <a href="#admin_tema_codigos_amigos">2. Establecer tema para códigos de amigos</a>
                       </li>
+                      <li>
+                        <a href="#admin_tema_combates_pokemon">3. Establecer tema para Combates Pokémon</a>
+                      </li>
                     </ol>
                   </li>
                 </ol>
@@ -341,6 +344,8 @@
           <p><b><u>Combate Max</u></b></p>
 
           <p>Si el nodo ha sido añadido usa el comando: <span class="highlight">/maxbattle Nombre Pokémon HH:MM Nombre nodo</span></p>
+
+          <p><b>NOTA: si se activa la opción <a href="#admin_combates">Permitir nodo sin ubicación</a> se puede organizar Combates Max incluso si el nodo no se ha añadido al bot.</b></p>
 
           <p><b><u>Raid</u></b></p>
 
@@ -790,6 +795,7 @@
             <li><b>Reconocimiento de imágenes:</b> permite organizar Combates Pokémon usando capturas de pantalla. El grupo tiene que tener al menos 50 miembros o ser <a href="#admin_grupos_premium">premium</a>. Ve a <a href="#usuario_combates_organizar_imagen">capturas de pantalla</a> para más información.</li>
             <li><b>Reflotar automático:</b> para hacer que todos los mensajes de Combate Pokémon aparezcan los últimos en el grupo cada 5 minutos cuando queda menos de 30 minutos para la hora de quedada</li>
             <li><b>Entrenadores extra Dinamax:</b> en Combates Max contra Pokémon Dinamax aumenta el límite de entrenadores de 20 a 40</li>
+            <li><b>Permitir nodo sin ubicación:</b> permite organizar Combates Max sin indicar una ubicación</li>
             <li><b>Permitir gimnasio sin ubicación:</b> permite organizar Raids sin indicar una ubicación</li>
           </ul>
 
@@ -1160,11 +1166,7 @@
             Para establecer un tema distinto al que reenviar los mensajes, pon el siguiente comando en el tema que quieras que se use:
             <span class="highlight">/setfwtopiccasual</span>
           </p>
-          <p>
-            Para borrar el tema para reenvíos pon en cualquier tema
-            <span class="highlight">/setfwtopiccasual -</span>
-            .
-          </p>
+          <p>Para borrar el tema para reenvíos pon en cualquier tema <span class="highlight">/setfwtopiccasual -</span>.</p>
 
           <hr />
 
@@ -1175,11 +1177,18 @@
             Para establecer un tema para códigos de amigos, pon el siguiente comando en el tema que quieras que se use:
             <span class="highlight">/setfctopiccasual</span>
           </p>
+          <p>Para borrar el tema para códigos de amigos pon en cualquier tema <span class="highlight">/setfctopiccasual -</span>.</p>
+
+          <hr />
+
+          <h4 id="admin_tema_combates_pokemon">8.3 Establecer tema para Combates Pokémon</h4>
+
+          <p>Si tienes activado los <a href="#admin_combates">Combates Pokémon</a>, se puede establecer un tema en el que los mensajes de Combates Pokémon solo se puedan mandar ahí.</p>
           <p>
-            Para borrar el tema para códigos de amigos pon en cualquier tema
-            <span class="highlight">/setfctopiccasual -</span>
-            .
+            Para establecer un tema para Combates Pokémon, pon el siguiente comando en el tema que quieras que se use:
+            <span class="highlight">/setpbtopiccasual</span>
           </p>
+          <p>Para borrar el tema para Combates Pokémon pon en cualquier tema <span class="highlight">/setpbtopiccasual -</span>.</p>
         </div>
       </section>
 
@@ -1448,6 +1457,10 @@
               </ul>
             </li>
             <li>En los ajustes de <a href="#admin_zona_horaria">Zona horaria</a> establece UTC como zona horaria</li>
+
+            <p>Ejemplo Combate Raid con zona horaria UTC:</p>
+
+            <img class="example" src="images/raidbattle_UTC_example.jpeg" alt="Combate Raid con zona horaria UTC" />
           </ol>
         </div>
       </section>
