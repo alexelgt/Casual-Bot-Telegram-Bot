@@ -94,7 +94,7 @@
                       <li><a href="#user_battles_organize">1. How to create a Pokémon Battle list?</a></li>
                       <li><a href="#user_battles_commands">2. Organizer commands (or admin)</a></li>
                       <li><a href="#user_battles_commands_admin">3. Admin commands</a></li>
-                      <li><a href="#user_battles_commands_admin">4. Set Pokémon Battle time relatively</a></li>
+                      <li><a href="#user_battles_relative_time">4. Set Pokémon Battle time relatively</a></li>
                     </ol>
                   </li>
                   <li><a href="#user_register_profile">3. Register and profile</a></li>
@@ -438,7 +438,7 @@
 
           <hr />
 
-          <h4 id="user_battles_relative_hour">2.4 Set Pokémon Battle time relatively</h4>
+          <h4 id="user_battles_relative_time">2.4 Set Pokémon Battle time relatively</h4>
 
           <p>In Pokémon Battle Commands where the time is specified as <span class="highlight">HH:MM</span> you can also use the format <span class="highlight">+MMm</span>. With this format, the time in the list will be MM minutes past the current time.</p>
 
@@ -1201,7 +1201,8 @@
             <li>Be able to activate events and news in groups with few members.</li>
             <li>25 alerts can be configured instead of 10.</li>
             <li>An image can be set in the welcome message.</li>
-            <li>Organize Pokémon Battles with <a href="#user_battles_organize_screenshot">screenshot</a> if the group has less than 50 members.</li>
+            <li>12 <a href="#admin_battles">Pokémon Battles</a> can be organized simultaneously.</li>
+            <li>Organize <a href="#admin_battles">Pokémon Battles</a> with <a href="#user_battles_organize_screenshot">screenshot</a> if the group has less than 50 members.</li>
           </ul>
         </div>
       </section>
@@ -1447,11 +1448,14 @@
                 <li>Allow gym without location</li>
               </ul>
             </li>
-            <li>In the <a href="#admin_time_zone">Time zone</a> settings set UTC as time zone</li>
+            <li>
+              <p>In the <a href="#admin_time_zone">Time zone</a> settings set UTC as time zone</p>
 
-            <p>Raid Battle example using UTC time zone:</p>
+              <p>Raid Battle example using UTC time zone:</p>
 
-            <img class="example" src="../images/raidbattle_UTC_example.jpeg" alt="Raid Battle using UTC time zone" />
+              <img class="example" src="../images/raidbattle_UTC_example.jpeg" alt="Raid Battle using UTC time zone" />
+            </li>
+            <li>It's recommended to create Pokémon Battles by indicating the <a href="#user_battles_relative_time">time relatively</a></li>
           </ol>
         </div>
       </section>
