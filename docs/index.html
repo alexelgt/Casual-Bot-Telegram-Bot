@@ -348,7 +348,7 @@
 
           <p>Si el gimnasio ha sido añadido usa el comando: <span class="highlight">/raidbattle Nombre Pokémon HH:MM Nombre gimnasio</span></p>
 
-          <p><b>NOTA: si se activa la opción <a href="#admin_combates">Permitir gimnasios sin ubicación</a> se puede organizar Raids incluso si el gimnasio no se ha añadido al bot.</b></p>
+          <p><b>NOTA: si se activa la opción <a href="#admin_combates">Permitir gimnasio sin ubicación</a> se puede organizar Raids incluso si el gimnasio no se ha añadido al bot.</b></p>
 
           <h5 id="usuario_combates_organizar_imagen">2.1.4. Captura de pantalla</h5>
 
@@ -359,17 +359,25 @@
             </b>
           </p>
 
+          <p><b>NOTA: si se activa la opción <a href="#admin_combates">Permitir nodo sin ubicación</a> se puede organizar Combates Max incluso si el nodo no se ha añadido al bot.</b></p>
+
+          <p><b>NOTA 2: si se activa la opción <a href="#admin_combates">Permitir gimnasio sin ubicación</a> se puede organizar Raids incluso si el gimnasio no se ha añadido al bot.</b></p>
+
           <p><b><u>Combate Max</u></b></p>
 
           <img class="example" src="images/maxbattle_telegram_image.gif" alt="Combate Max ejemplo captura de pantalla" />
 
           <p>Manda una imagen acompañada del siguiente texto: <span class="highlight">maxbattle HH:MM</span></p>
 
+          <p><b>NOTA: si se manda una imagen sin ese texto, el bot intentará identificar que es una imagen de Combate Max.</b></p>
+
           <p><b><u>Raid</u></b></p>
 
           <img class="example" src="images/raidbattle_telegram_image.gif" alt="Raid ejemplo captura de pantalla" />
 
           <p>Manda una imagen acompañada del siguiente texto: <span class="highlight">raidbattle HH:MM</span></p>
+
+          <p><b>NOTA: si se manda una imagen sin ese texto, el bot intentará identificar que es una imagen de Raid.</b></p>
 
           <hr />
 
@@ -422,11 +430,15 @@
 
           <p>Para hacer que un mensaje de Combate Pokémon aparezca el último en el grupo responde al mensaje usando el siguiente comando: <span class="highlight">/refloat</span>.</p>
 
-          <h5 id="usuario_combates_borrar">2.2.7. Borrar un mensaje</h5>
+          <h5 id="usuario_combates_reflotar">2.2.7. Quitar a un jugador de la lista</h5>
+
+          <p>Para quitar a un jugador de la lista responde al mensaje usando el siguiente comando: <span class="highlight">/unlist NombreJugador</span>.</p>
+
+          <h5 id="usuario_combates_borrar">2.2.8. Borrar un mensaje</h5>
 
           <p>Para borrar un mensaje de Combate Pokémon responde al mensaje usando el siguiente comando: <span class="highlight">/delete</span>.</p>
 
-          <h5 id="usuario_combates_cerrar">2.2.8. Cerrar un mensaje</h5>
+          <h5 id="usuario_combates_cerrar">2.2.9. Cerrar un mensaje</h5>
 
           <p>Para finalizar un mensaje de Combate Pokémon responde al mensaje usando el siguiente comando: <span class="highlight">/close</span>.</p>
 

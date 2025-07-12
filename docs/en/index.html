@@ -352,17 +352,25 @@
             </b>
           </p>
 
+          <p><b>NOTE: if the option <a href="#admin_battles">Allow Power Spot without location</a> is enabled, Max Battles can be organized even if the gym has not been added to the bot.</b></p>
+
+          <p><b>NOTE 2: if the option <a href="#admin_battles">Allow gym without location</a> is enabled, Raids can be organized even if the gym has not been added to the bot.</b></p>
+
           <p><b><u>Max Battle</u></b></p>
 
           <img class="example" src="../images/maxbattle_telegram_image.gif" alt="Max Battle screenshot example" />
 
           <p>Send an image accompanied by the following text: <span class="highlight">maxbattle HH:MM</span></p>
 
+          <p><b>NOTE: if you send an image without that text, the bot will try to identify if the image is a Max Battle.</b></p>
+
           <p><b><u>Raid</u></b></p>
 
           <img class="example" src="../images/raidbattle_telegram_image.gif" alt="Raid screenshot example" />
 
           <p>Send an image accompanied by the following text: <span class="highlight">raidbattle HH:MM</span></p>
+
+          <p><b>NOTE: if you send an image without that text, the bot will try to identify if the image is a Raid.</b></p>
 
           <hr />
 
@@ -415,11 +423,15 @@
 
           <p>To make a Pokémon Battle message appear last in the group reply to the message using the following command: <span class="highlight">/refloat</span>.</p>
 
-          <h5 id="user_battles_delete">2.2.7. Delete a message</h5>
+          <h5 id="user_battles_refloat">2.2.7. Remove a player from the list</h5>
+
+          <p>To remove a player from the list reply to the message using the following command: <span class="highlight">/unlist PlayerName</span>.</p>
+
+          <h5 id="user_battles_delete">2.2.8. Delete a message</h5>
 
           <p>To delete a Pokémon Battle message reply to the message using the following command: <span class="highlight">/delete</span>.</p>
 
-          <h5 id="user_battles_close">2.2.8. Close a message</h5>
+          <h5 id="user_battles_close">2.2.9. Close a message</h5>
 
           <p>To end a Pokémon Battle message reply to the message using the following command: <span class="highlight">/close</span>.</p>
 
